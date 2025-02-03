@@ -1,0 +1,189 @@
+@use "sass:math";
+.indicator {
+  position: absolute;
+  top: var(--pos-y);
+  left: var(--pos-x);
+  height: var(--height-set);
+  width: var(--width-set);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+:root {
+  --theme-color: #09675c;
+  --gr-color2: #f3f3ff;
+  --title-color: #f3f3ff;
+  --body-color: #f3f3ff;
+  
+  --black-color: #000000;
+  --black-color2: #121217;
+ 
+  --white-color: #ffffff;
+  --body-bg: #e1e4e5;
+  --light-color: #f3f3ff;
+
+}
+
+
+.why-feature {
+  border-radius: 24px;
+  
+  position: relative;
+  z-index: 2;
+  margin-bottom: 24px;
+  background-color: var(--light-color);
+}
+
+.why-feature:after {
+  content: url('data:image/svg+xml,<svg width="93" height="90" viewBox="0 0 93 90" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.9487 30.5588C24.254 51.3254 41.1756 68 61.9445 68H68.9993C81.5806 68 91.9008 77.6809 92.9171 90H93V0H0C13.0484 0.0801305 23.6549 10.5815 23.847 23.6471L23.9487 30.5588Z" fill="white"/></svg>');
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  z-index: 2;
+}
+
+.why-feature .box-number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--title-color);
+  color: var(--white-color);
+  
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--title-font);
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 99px;
+  z-index: 4;
+}
+
+ .box-icon {
+  margin-bottom: 24px;
+  margin-right: 50%;
+  
+}
+
+.why-feature {
+  margin-bottom: 8px;
+}
+.divider {
+  height: 1px;
+  background-color: #0f0f0f;
+}
+.count {
+  color: var(--secondary-color);
+  font-family: Koh Santepheap;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40.63px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+/* .why-feature:hover .box-icon img {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+} */
+.blog-image {
+    width: 100%;
+    height: 332px;
+    object-fit: cover;
+    border-bottom: 20px;
+}
+ .card-title{
+    color: var(--secondary-color);
+font-family: Koh Santepheap;
+font-size: 32px;
+font-weight: 700;
+line-height: 40.63px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+ }
+.blog-card {
+    
+    border-radius: 20px;
+    overflow: hidden;
+    
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+.blog-content {
+    padding: 0.5rem;
+}
+.about-us-butn{
+  
+    border-radius: 100px;
+    border: 0;
+    color: #004457;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 400;
+    transition: all 1s ease;
+  }
+
+.blog-meta {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+}
+
+
+
+.blog-title {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.blog-title:hover {
+    color: var(--secondary-color);
+}
+
+.arrow-icon {
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+    background: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 992px) {
+    .blog-card {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .blog-image {
+        height: 200px;
+    }
+}

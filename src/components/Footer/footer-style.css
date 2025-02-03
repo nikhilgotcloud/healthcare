@@ -1,0 +1,167 @@
+.footer-section {
+    background-color: var(--bg-secondar-color);
+    color: white;
+    padding: 4rem 0 2rem;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.footer-logo {
+    max-width: 200px;
+    margin-bottom: 1.5rem;
+}
+
+.footer-description {
+    color: #ffffff;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+.certification-badges {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.certification-badges img {
+    height: 60px;
+    width: auto;
+}
+
+.footer-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: #ffffff;
+    opacity: 0.8;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+}
+
+.newsletter-form {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.newsletter-form input {
+    width: 100%;
+    padding: 0.8rem 100px 0.8rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    color: white;
+}
+
+.newsletter-form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter-form button {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #5ccccc;
+    border: none;
+    padding:  1rem;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-info {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-item img {
+    width: 36px;
+    height: 36px;
+}
+
+.social-footer-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-footer-icon {
+    background: rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.social-icon:hover {
+    background: #5ccccc;
+}
+
+.demo-button {
+    background: #5ccccc;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.copyright {
+    
+    padding-top: 1rem;
+    text-align: center;
+    
+}
+
+@media (max-width: 992px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .footer-section {
+        padding: 3rem 1rem 1.5rem;
+    }
+}

@@ -1,0 +1,73 @@
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  
+  .slider {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: scroll 20s linear infinite;
+  }
+  
+  
+  .slide {
+    flex: 0 0 30%;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+ 
+  .logo-img {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  
+  .overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    background: rgba(0, 75, 90, 0.8);
+    display: flex;
+    border-top: 20%;
+    align-items: center;
+    justify-content: center;
+    transition: bottom 0.8s ease-in-out;
+    -webkit-transition: bottom 0.8s ease-in-out;
+    -moz-transition: bottom 0.8s ease-in-out;
+    -ms-transition: bottom 0.8s ease-in-out;
+    -o-transition: bottom 0.8s ease-in-out;
+}
+  
+  
+  .brand-name {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  
+  .slide:hover .logo-img {
+    opacity: 0.3;
+  }
+  
+  .slide:hover .overlay {
+    bottom: 0;
+  }
+  
+  .slide:hover .brand-name {
+    opacity: 1;
+  }
+  

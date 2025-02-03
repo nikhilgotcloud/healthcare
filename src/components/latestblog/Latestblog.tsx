@@ -1,0 +1,104 @@
+import React from "react";
+import "./latestblog-style.css";
+import { Link } from "react-router-dom";
+
+const Latestblog = () => {
+  const cardData = [
+    {
+      id: 1,
+      image: "./image/latestblog/Vector16.png",
+      title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
+      name: "Sarah Miller",
+      date: "January 5, 2024",
+      category: "Medical Billing",
+    },
+    {
+      id: 2,
+      image: "./image/latestblog/Vector16.png",
+      title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
+      name: "Sarah Miller",
+      date: "January 5, 2024",
+      category: "Medical Billing",
+    },
+    {
+      id: 3,
+      image: "./image/latestblog/Vector16.png",
+      title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
+      name: "Sarah Miller",
+      date: "January 5, 2024",
+      category: "Medical Billing",
+    },
+  ];
+
+  return (
+    <div className="container">
+      <div>
+        <span className="badge badge-white mb-2 bg-white about-us-butn p-3">
+          UPDATES NEWS
+        </span>
+        <h2 className="section-title mb-3">Latest Blogs & Articles</h2>
+
+        <div className="container my-4 mainexp ">
+          <div className="row">
+            {cardData.map((card) => (
+              <div key={card.id} className="col-12 col-md-4 mb-4">
+                <div className="why-feature ">
+                  <div className="box-number text-dark">
+                    <svg
+                      width="30"
+                      height="40"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#004d4d"
+                      stroke-width="2"
+                    >
+                      <path d="M7 17l9.2-9.2M17 17V7H7" />
+                    </svg>
+                  </div>
+                  <div className="justify-content-center">
+                    <img src={card.image} alt="" className="blog-image" />
+                  </div>
+                  <div className="blog-content">
+                    <div className="blog-meta">
+                      <div className="meta-item">
+                        <img
+                          src="./image/latestblog/profie-icon.png"
+                          alt=""
+                          loading="lazy"
+                        />
+                        <span>{card.name}</span>
+                      </div>
+                      <div className="meta-item">
+                        <img
+                          src="./image/latestblog/calander-icon.png"
+                          alt=""
+                          loading="lazy"
+                        />
+                        <span>{card.date}</span>
+                      </div>
+                      <div className="meta-item">
+                        <img
+                          src="./image/latestblog/bookmark-icon.png"
+                          alt=""
+                          loading="lazy"
+                          width="30px"
+                          height="30px"
+                        />
+                        <span>{card.category}</span>
+                      </div>
+                    </div>
+                    <Link to="#" className="blog-title d-block">
+                      {card.title}
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Latestblog;

@@ -1,0 +1,129 @@
+.appointment_form_new .bg {
+    margin: 135px 0;
+    background-color: var(--bg-secondar-color);
+    border-radius: 70px;
+    overflow: hidden;
+}
+
+.appointment_form_new .main_appoint_form {
+    /* background-image: url(../../assets/img/new_img/bg_form.png); */
+    padding: 100px 55px;
+    background-size: cover;
+    background-position: center;
+}
+
+.appointment_form_new .main_appoint_form .badge.appoint {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 105px;
+    margin-bottom: 18px;
+}
+
+.appoint_form_box {
+    margin-top: 25px;
+}
+
+.appoint_form_box .input {
+    height: 32px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+    background-color: var(--bg-color);
+    color: #00000096;
+    font-size: 12px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.appoint_form_box .input:hover {
+    border: 1px solid var(--primary-color);
+}
+
+.appoint_form_box textarea.input {
+    height: 54px;
+}
+
+.testimonial-card {
+    color: white;
+    padding: 100px 55px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.star-rating i {
+    color: #5ccccc;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.profile-info h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.profile-info p {
+    margin: 0;
+    color: #5ccccc;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.book-demo-butn {
+    background-color: var(--secondary-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 576px) {
+    .testimonial-card {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .star-rating {
+        font-size: 20px;
+    }
+
+    .testimonial-text {
+        font-size: 1rem;
+    }
+
+    .profile-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .profile-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .profile-info p {
+        font-size: 0.8rem;
+    }
+}

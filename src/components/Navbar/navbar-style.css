@@ -1,0 +1,131 @@
+.healthcare-navbar {
+    background-color: white; 
+    border-radius: 8px;
+   
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .brand-text {
+    font-weight: bold;
+    color: var(--primary-color); 
+    font-size: 20px;
+  }
+  
+ 
+ .menu-items .nav-link{
+    cursor: pointer;
+    border-bottom: 5px;
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #000;
+}
+.menu-items .nav-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width .8s;
+    border-radius: 2px;
+    -webkit-transition: width .8s;
+    -moz-transition: width .8s;
+    -ms-transition: width .8s;
+    -o-transition: width .8s;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.menu-items .nav-link:hover::after{
+    width: 90%;
+    border-bottom-color: var(--primary-color) !important;
+}
+  
+  .search-form {
+    margin-right: 15px;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 15.5vw;
+  }
+  
+  .search-input {
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+ 
+  }
+  .make_appoint_btn img {
+    max-height: 20px; 
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 1s ease;
+  }
+  
+  .make_appoint_btn:hover {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  
+  .make_appoint_btn:hover img {
+    transform: translate(
+      calc(16px * cos(45deg)),
+      calc(-13px * sin(45deg))
+    ) !important;
+    opacity: 0;
+  }
+  .make_appoint_btn {
+    height: 40px;
+    width: 174px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 100px;
+    background-color: var(--primary-color);
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    transition: all 1s ease;
+  }
+  
+  .search-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+  }
+  
+  .search-button:hover {
+    background-color: #a82231; /* Darker red */
+  }
+  .navbar-divider {
+    border-left: 2px solid var(--primary-color);
+    height: 50px;
+    margin: 0 15px;
+  }
+  
+ 
+  

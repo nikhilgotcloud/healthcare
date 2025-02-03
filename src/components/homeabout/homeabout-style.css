@@ -1,0 +1,67 @@
+.about-us-butn{
+  
+    border-radius: 100px;
+    border: 0;
+    color: var(--secondary-color);
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 400;
+    transition: all 1s ease;
+  }
+  .about-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #004466;
+}
+.about-description {
+    font-size: 14px;
+}
+.make_appoint_btn img {
+    max-height: 20px; 
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 1s ease;
+  }
+  
+  .make_appoint_btn:hover {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  
+  .make_appoint_btn:hover img {
+    transform: translate(
+      calc(16px * cos(45deg)),
+      calc(-13px * sin(45deg))
+    ) !important;
+    opacity: 0;
+  }
+  .make_appoint_btn {
+    height: 40px;
+    width: 174px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 100px;
+    background-color: var(--primary-color);
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    transition: all 1s ease;
+  }
+
+  .about-play-butn{
+    border-radius: 50%;
+    margin-left: -1.6rem;
+    margin-top: -2.4rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.about-play-butn img{
+width: 35px;
+height: 35px;
+}

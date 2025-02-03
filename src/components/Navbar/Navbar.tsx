@@ -1,0 +1,58 @@
+// Navbar.tsx
+import React from "react";
+import { Container, Navbar, Nav, Form, Button } from "react-bootstrap";
+
+import "./navbar-style.css";
+
+const HealthcareNavbar: React.FC = () => {
+    const btncolor= {color:'#ab0000'}
+  return (
+    <Navbar expand="lg" className="healthcare-navbar rounded-lg shadow-md p-2 my-2">
+      <Container>
+        <Navbar.Brand href="#home" className="brand">
+          <img
+            src=".\image\INF-healthcare-logo.png"
+            alt="INF Healthcare Logo"
+            className="logo"
+           
+          />
+          
+        </Navbar.Brand>
+        <div className="navbar-divider d-none d-lg-block "></div>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto menu-items ">
+            <Nav.Link href="#home">HOME</Nav.Link>
+            <Nav.Link href="#about">ABOUT US</Nav.Link>
+            <Nav.Link href="#services">SERVICES</Nav.Link>
+            <Nav.Link href="#blog">BLOG</Nav.Link>
+            <Nav.Link href="#contact">CONTACT US</Nav.Link>
+          </Nav>
+          <Form className="d-flex search-form ">
+            <div className="search-box rounded-pill">
+              <input
+                type="text"
+                placeholder="Search"
+                className="search-input"
+              />
+              <Button className="search-button rounded-circle " >
+              <i className="bi bi-search"></i>
+              </Button>
+            </div>
+          </Form>
+          <div className="navbar-divider d-none d-lg-block "></div>
+          <Button href="#appointment" className="make_appoint_btn d-flex p-2">
+            <span>Make An Appointment </span>
+            <img
+            src=".\image\iconArrow.svg"
+            alt="INF Healthcare Logo"
+           
+          />
+          </Button>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+};
+
+export default HealthcareNavbar;
