@@ -122,7 +122,7 @@ text-decoration-skip-ink: none;
 .blog-content {
     padding: 0.5rem;
 }
-.about-us-butn{
+.blog-us-butn{
   
     border-radius: 100px;
     border: 0;
@@ -131,6 +131,7 @@ text-decoration-skip-ink: none;
     line-height: 16px;
     font-weight: 400;
     transition: all 1s ease;
+    margin-left: 45%;
   }
 
 .blog-meta {

@@ -2,6 +2,8 @@ import React from "react";
 import "./homeiso-style.css";
 
 const Homeiso: React.FC = () => {
+  const headstyle ={color:'#004457'}
+
   return (
     <section className="healthcare-section my-4">
       <div className="section-container">
@@ -17,7 +19,7 @@ const Homeiso: React.FC = () => {
 
         
         <div className="content-container">
-          <span className="badge badge-white mb-4 bg-white about-us-butn p-3">
+          <span className="badge badge-white mb-4 bg-white about-us-butn p-3 shadow-lg" style={headstyle}> 
             ISO CERTIFIED
           </span>
           <h1 className="main-heading mb-5">

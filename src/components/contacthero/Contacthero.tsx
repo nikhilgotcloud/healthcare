@@ -16,7 +16,7 @@ const Contacthero: React.FC = () => {
   const imageSrc = imageMap[location.pathname] || defaultImage;
 
   return (
-    <div className="  m-5 ps-2">
+    <div className="m-5 ps-2">
       <img src={imageSrc} className="" alt="Best heathcare services" />
     </div>
   );

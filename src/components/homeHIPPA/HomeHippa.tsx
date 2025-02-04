@@ -2,11 +2,13 @@ import React from "react";
 import "./hippa-style.css";
 
 const HomeHippa: React.FC = () => {
+  const headstyle ={color:'#004457'}
+
   return (
     <div className="healthcare-section">
       <div className="section-container">
         <div className="content-container">
-          <span className="badge badge-white mb-3 bg-white about-us-butn p-3">
+          <span className="badge badge-white mb-3 bg-white about-us-butn p-3 shadow-lg" style={headstyle}>
             HIPPA
           </span>
 

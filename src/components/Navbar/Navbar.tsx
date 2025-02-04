@@ -1,6 +1,6 @@
 // Navbar.tsx
 import React from "react";
-import { Container, Navbar, Nav, Form, Button } from "react-bootstrap";
+import { Container, Navbar, Nav, Form } from "react-bootstrap";
 
 import "./navbar-style.css";
 

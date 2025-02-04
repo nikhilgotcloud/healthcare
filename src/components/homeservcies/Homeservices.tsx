@@ -3,6 +3,7 @@ import './homeservices-style.css'
 
 const Homeservices = () => {
    const arrowstyles= {width:'40px', height:'40px'};
+   const headstyle ={color:'#004457'}
 
   const servicesData = [
     {
@@ -69,7 +70,7 @@ const Homeservices = () => {
         {/* Section Header */}
         <div className="row">
           <div className="col-12 text-center mt-3">
-            <span className="badge badge-white mb-3 bg-white about-us-butn p-3">
+            <span className="badge badge-white mb-3 bg-white about-us-butn p-3" style={headstyle}>
               Services
             </span>
             <h2 className="about-title text-white">Our Services</h2>
