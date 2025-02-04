@@ -22,11 +22,11 @@ const HealthcareNavbar: React.FC = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto menu-items ">
-            <Nav.Link href="/">HOME</Nav.Link>
-            <Nav.Link href="about">ABOUT US</Nav.Link>
-            <Nav.Link href="services">SERVICES</Nav.Link>
-            <Nav.Link href="blog">BLOG</Nav.Link>
-            <Nav.Link href="contact">CONTACT US</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="about">About us</Nav.Link>
+            <Nav.Link href="services">Services</Nav.Link>
+            <Nav.Link href="blog">Blog</Nav.Link>
+            <Nav.Link href="contact">Contact us</Nav.Link>
             
           </Nav>
           <Form className="d-flex search-form ">
