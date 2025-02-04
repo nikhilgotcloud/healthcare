@@ -1,10 +1,23 @@
 import React from "react";
+import Marquee from "../../components/marquee/Marquee";
+import HealthcareNavbar from "../../components/Navbar/Navbar";
+import Contacthero from "../../components/contacthero/Contacthero";
+import AppointmentForm from "../../components/contactsection/AppointmentForm";
+import Footer from "../../components/Footer/Footer";
+import Homeservices from "../../components/homeservcies/Homeservices";
+import Aboutinfo from "../../components/aboutinfo/Aboutinfo";
 
 const About = () => {
     return (
-      <div className="container mx-auto p-4">
-        <h1 className="text-3xl font-bold mb-4">About Us</h1>
-        <p>Learn more about our company and mission.</p>
+      <div>
+        <Marquee/>
+        <HealthcareNavbar/>
+        <Contacthero/>
+        
+        <Aboutinfo/>
+        <Homeservices/>
+        <AppointmentForm/>
+        <Footer/>
       </div>
     );
   };
