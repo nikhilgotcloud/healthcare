@@ -29,16 +29,16 @@ const Marquee = () => {
               
               <div className="social-icons d-flex">
                 <Link to="#" className="social-icon-bg px-2 py-1">
-                  <i className="bi bi-facebook socialIconStyle"></i>
+                  <i className="bi bi-facebook socialmIconStyle"></i>
                 </Link>
                 <Link to="#" className="social-icon-bg px-2 py-1">
-                  <i className="bi bi-youtube socialIconStyle"></i>
+                  <i className="bi bi-youtube socialmIconStyle"></i>
                 </Link>
                 <Link to="#" className="social-icon-bg px-2 py-1">
-                  <i className="bi bi-linkedin socialIconStyle"></i>
+                  <i className="bi bi-linkedin socialmIconStyle"></i>
                 </Link>
                 <Link to="#" className="social-icon-bg px-2 py-1">
-                  <i className="bi bi-instagram socialIconStyle"></i>
+                  <i className="bi bi-instagram socialmIconStyle"></i>
                 </Link>
               </div>
             </div>

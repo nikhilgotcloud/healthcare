@@ -97,7 +97,7 @@ const Homeservices = () => {
 
             return (
               <div key={card.id} className={colClass}>
-                <div className={containerClass}>
+                {/* <div className={containerClass}>
                   <img
                     src={card.image}
                     alt="Medical Consultation"
@@ -126,7 +126,9 @@ const Homeservices = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
+
+                
               </div>
             );
           })}
