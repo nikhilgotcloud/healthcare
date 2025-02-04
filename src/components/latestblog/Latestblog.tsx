@@ -3,6 +3,7 @@ import "./latestblog-style.css";
 import { Link } from "react-router-dom";
 
 const Latestblog = () => {
+  const headstyle ={color:'#004457'}
   const cardData = [
     {
       id: 1,
@@ -33,7 +34,7 @@ const Latestblog = () => {
   return (
     <div className="container">
       <div>
-        <span className="badge badge-white mb-2 bg-white about-us-butn p-3">
+        <span className="badge badge-white mb-2 bg-white blog-us-butn p-3 shadow-lg" style={headstyle}>
           UPDATES NEWS
         </span>
         <h2 className="section-title mb-3">Latest Blogs & Articles</h2>

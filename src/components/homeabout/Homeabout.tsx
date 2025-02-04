@@ -1,15 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import './homeabout-style.css'
 
 const Homeabout = () => {
+  const headstyle ={color:'#004457'}
+
   return (
     <div>
       <div className="container">
         <div className="about-section py-4 px-3 d-flex">
             
           <div className="col-md-6">
-            <span className="badge badge-white mb-3 bg-white about-us-butn p-3 shadow-lg">
+            <span className="badge badge-white mb-3 bg-white about-us-butn p-3 shadow-lg" style={headstyle}>
               About Us
             </span>
             <h2 className="about-title mb-1">Who We Are</h2>
