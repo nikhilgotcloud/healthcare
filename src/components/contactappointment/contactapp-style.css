@@ -54,7 +54,6 @@
     border-radius: 10px;
     max-width: 600px;
     margin: 2rem auto;
-    
 }
 
 .star-rating i {
@@ -128,3 +127,19 @@
         font-size: 0.8rem;
     }
 }
+.make_demo_btn {
+    height: 40px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 100px;
+    background-color: white;
+    border: 0;
+    color: var(--bg-secondar-color);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    transition: all 1s ease;
+  }

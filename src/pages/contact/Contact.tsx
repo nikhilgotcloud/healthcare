@@ -1,11 +1,22 @@
 import React from "react";
+import Marquee from "../../components/marquee/Marquee";
+import HealthcareNavbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import Contactapp from "../../components/contactappointment/Contactapp";
+import GoogleMapComponent from "../../components/map/Map";
+import Contacthero from "../../components/contacthero/Contacthero";
+
 
 const Contact = () => {
     return (
-      <div className="container mx-auto p-4">
-        <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
-        <p>Get in touch with us.</p>
-      </div>
+      <div>
+      <Marquee/>
+      <HealthcareNavbar/>
+      <Contacthero/>
+      <Contactapp/>
+      <GoogleMapComponent/>
+      <Footer/>
+    </div>
     );
   };
   

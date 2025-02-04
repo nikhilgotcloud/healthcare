@@ -1,37 +1,66 @@
 import React from "react";
-import "./appointment-style.css";
-import StarRating from "../Ratingstar";
+import "./contactapp-style.css";
+import { Link } from "react-router-dom";
 
-const AppointmentForm: React.FC = () => {
+const Contactapp = () => {
   return (
     <section className="appointment_form_new">
       <div className="container">
         <div className="bg shadow-lg">
           <div className="row">
-            
             <div className="col-lg-6">
-              <div className="testimonial-card h-100">
-                
-                <div className="star-rating">
-                  <StarRating/>
-                </div>
-
-               
-                <div className="testimonial-text text-white mt-1">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                </div>
-
-             
-                <div className="profile-section">
-                  <img
-                    src="./image/Frame 133.png"
-                    alt="Dr. Blanco Smith"
-                    className="profile-image"
-                  />
-                  <div className="profile-info">
-                    <h3>Dr. Blanco Smith</h3>
-                    <p className="text-white">SURGEON</p>
+              <div className="testimonial-card h-100 ">
+                <button className="make_demo_btn ">GET IN TOUCH</button>
+                <h2 className="text-white my-2">Let's Talk</h2>
+                <p className="text-white">
+                  Reach out today to experience personalized service and
+                  optimized financial outcomes.
+                </p>
+                <div className="info-item d-flex align-items-center mb-4">
+                  <div className="icon-wrapper">
+                    <img
+                      src="./image/call-bg.png"
+                      alt="Phone Icon"
+                      className="contact-icon"
+                    />
                   </div>
+                  <Link
+                    to="tel:888-512-6265"
+                    className="text-white text-decoration-none ms-2"
+                  >
+                    888-512-6265
+                  </Link>
+                </div>{" "}
+                <br />
+                <div className="info-item d-flex align-items-center mb-4">
+                  <div className="icon-wrapper">
+                    <img
+                      src="./image/mail-bg.png"
+                      alt="Email Icon"
+                      className="contact-icon"
+                    />
+                  </div>
+                  <Link
+                    to="mailto:info@infhealthcare.com"
+                    className="text-white text-decoration-none ms-2"
+                  >
+                    info@infhealthcare.com
+                  </Link>
+                </div>{" "}
+                <br />
+                <div className="info-item d-flex align-items-center">
+                  <div className="icon-wrapper">
+                    <img
+                      src="./image/location-bg.png"
+                      alt="Location Icon"
+                      className="contact-icon"
+                    />
+                  </div>
+                  <address className="text-white mb-0 ms-2">
+                    600 BROADWAY, STE 200 #5035,
+                    <br />
+                    ALBANY, NEW YORK 12207
+                  </address>
                 </div>
               </div>
             </div>
@@ -92,7 +121,9 @@ const AppointmentForm: React.FC = () => {
                       </div>
                       <div className="col-md-12 input_box">
                         <select className="form-control input" id="option">
-                          <option defaultValue="">Please Choose an option</option>
+                          <option defaultValue="">
+                            Please Choose an option
+                          </option>
                           <option value="1">One</option>
                           <option value="2">Two</option>
                           <option value="3">Three</option>
@@ -115,13 +146,16 @@ const AppointmentForm: React.FC = () => {
                       <div className="col-md-12 btn_box">
                         <button className="make_appoint_btn">
                           Make an Appointment{" "}
-                          <img src="image/iconArrow.svg" alt="Arrow Icon" loading="lazy" />
+                          <img
+                            src="image/iconArrow.svg"
+                            alt="Arrow Icon"
+                            loading="lazy"
+                          />
                         </button>
                       </div>
                     </div>
                   </div>
                 </form>
-
               </div>
             </div>
           </div>
@@ -131,4 +165,4 @@ const AppointmentForm: React.FC = () => {
   );
 };
 
-export default AppointmentForm;
+export default Contactapp;

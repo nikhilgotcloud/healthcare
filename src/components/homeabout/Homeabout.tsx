@@ -29,9 +29,10 @@ const Homeabout = () => {
               and meticulous denial management, maximizing your reimbursements
               and minimizing revenue loss.
             </p>
-            <Link to="#" className="make_appoint_btn d-flex btn p-2">
-              Make an Appointment <img src="image/iconArrow.svg" alt="" />
-            </Link>
+            <button className="make_appoint_btn">
+                          Make an Appointment{" "}
+                          <img src="image/iconArrow.svg" alt="Arrow Icon" loading="lazy" />
+                        </button>
           </div>
           <div className="col-md-1"></div>
           <div className="col-md-4">

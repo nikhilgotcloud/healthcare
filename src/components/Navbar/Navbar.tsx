@@ -5,7 +5,7 @@ import { Container, Navbar, Nav, Form, Button } from "react-bootstrap";
 import "./navbar-style.css";
 
 const HealthcareNavbar: React.FC = () => {
-    const btncolor= {color:'#ab0000'}
+    const btncolor= {backgroundColor:'#ab0000'}
   return (
     <Navbar expand="lg" className="healthcare-navbar rounded-lg shadow-md p-2 my-2">
       <Container>
@@ -22,11 +22,12 @@ const HealthcareNavbar: React.FC = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto menu-items ">
-            <Nav.Link href="#home">HOME</Nav.Link>
-            <Nav.Link href="#about">ABOUT US</Nav.Link>
-            <Nav.Link href="#services">SERVICES</Nav.Link>
-            <Nav.Link href="#blog">BLOG</Nav.Link>
-            <Nav.Link href="#contact">CONTACT US</Nav.Link>
+            <Nav.Link href="/">HOME</Nav.Link>
+            <Nav.Link href="about">ABOUT US</Nav.Link>
+            <Nav.Link href="services">SERVICES</Nav.Link>
+            <Nav.Link href="blog">BLOG</Nav.Link>
+            <Nav.Link href="contact">CONTACT US</Nav.Link>
+            
           </Nav>
           <Form className="d-flex search-form ">
             <div className="search-box rounded-pill">
@@ -35,20 +36,16 @@ const HealthcareNavbar: React.FC = () => {
                 placeholder="Search"
                 className="search-input"
               />
-              <Button className="search-button rounded-circle " >
+              <button className="search-button rounded-circle " style={btncolor} >
               <i className="bi bi-search"></i>
-              </Button>
+              </button>
             </div>
           </Form>
           <div className="navbar-divider d-none d-lg-block "></div>
-          <Button href="#appointment" className="make_appoint_btn d-flex p-2">
-            <span>Make An Appointment </span>
-            <img
-            src=".\image\iconArrow.svg"
-            alt="INF Healthcare Logo"
-           
-          />
-          </Button>
+          <button className="make_appoint_btn d-flex p-2" style={btncolor}>
+                          Make an Appointment{" "}
+                          <img src="image/iconArrow.svg" alt="Arrow Icon" loading="lazy" />
+                        </button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

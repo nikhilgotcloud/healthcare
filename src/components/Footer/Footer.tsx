@@ -3,6 +3,7 @@ import "./footer-style.css";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const inputbg= {color: 'rgb(49, 49, 49)'}
   return (
     <footer className="footer-section mb-3 px-3">
       <div className="container">
@@ -104,16 +105,17 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter your email here"
-                className="bg-white text-dark"
+                className="bg-white"
+                style={inputbg}
               />
               <button type="submit">Subscribe</button>
             </div>
 
             <h3 className="footer-heading">Book Your Free Demo</h3>
-            <Link to="#" className="demo-button rounded-pill">
+            <button  className="demo-button rounded-pill">
               Request Demo
               <img src="image/iconArrow.svg" alt="" loading="lazy" />
-            </Link>
+            </button>
           </div>
         </div>
 
@@ -143,16 +145,16 @@ const Footer = () => {
           </div>
           <div className="social-footer-icons">
             <Link to="#" className="social-footer-icon">
-              <img src="./image/footer-youtube.png" alt="YouTube" />
+            <i className="bi bi-youtube socialIconStyle"></i>
             </Link>
             <Link to="#" className="social-footer-icon">
-              <img src="./image/footer-facebook.png" alt="Facebook" />
+            <i className="bi bi-facebook socialIconStyle"></i>
             </Link>
             <Link to="#" className="social-footer-icon">
-              <img src="./image/footer-linkedin.png" alt="LinkedIn" />
+            <i className="bi bi-linkedin socialIconStyle"></i>
             </Link>
             <Link to="#" className="social-footer-icon">
-              <img src="./image/footer-insta.png" alt="Instagram" />
+            <i className="bi bi-instagram socialIconStyle"></i>
             </Link>
           </div>
         </div>
