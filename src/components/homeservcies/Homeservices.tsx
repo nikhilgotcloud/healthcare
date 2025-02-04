@@ -1,9 +1,18 @@
-import React from 'react';
-import './homeservices-style.css'
+import React from "react";
+import "./homeservices-style.css";
 
 const Homeservices = () => {
-   const arrowstyles= {width:'40px', height:'40px'};
-   const headstyle ={color:'#004457'}
+  const arrowstyles = { width: "40px", height: "40px" };
+  const headstyle = { color: "#004457" };
+  const svgStyles: React.CSSProperties = {
+    userSelect: "none",
+    width: "100%",
+    height: "100%",
+    display: "inline-block",
+    fill: "rgb(224, 223, 220)",
+    flexShrink: 0,
+    cursor: "auto",
+  };
 
   const servicesData = [
     {
@@ -11,7 +20,7 @@ const Homeservices = () => {
       title: "Denial Management",
       image: "./image/services/denial-managment.png",
       description: "Lorem Ipsum is simply dummy text of",
-      type: "card", 
+      type: "card",
     },
     {
       id: 2,
@@ -53,7 +62,7 @@ const Homeservices = () => {
       title: "HME Billing",
       image: "./image/services/hme-billing.png",
       description: "Lorem Ipsum is simply dummy text of",
-      type: "extendcard", 
+      type: "extendcard",
     },
     {
       id: 8,
@@ -70,11 +79,16 @@ const Homeservices = () => {
         {/* Section Header */}
         <div className="row">
           <div className="col-12 text-center mt-3">
-            <span className="badge badge-white mb-3 bg-white about-us-butn p-3" style={headstyle}>
+            <span
+              className="badge badge-white mb-3 bg-white about-us-butn p-3"
+              style={headstyle}
+            >
               Services
             </span>
             <h2 className="about-title text-white">Our Services</h2>
-            <p className="text-white p-2">Seamless Collaboration for Superior Patient Outcomes</p>
+            <p className="text-white p-2">
+              Seamless Collaboration for Superior Patient Outcomes
+            </p>
           </div>
         </div>
 
@@ -89,7 +103,6 @@ const Homeservices = () => {
                 ? "col-12 col-md-6 col-lg-4"
                 : "col-12 col-md-6 col-lg-6";
 
-          
             const containerClass =
               card.type === "card"
                 ? "service-card-container"
@@ -97,7 +110,7 @@ const Homeservices = () => {
 
             return (
               <div key={card.id} className={colClass}>
-                <div className={containerClass}>
+                {/* <div className={containerClass}>
                   <img
                     src={card.image}
                     alt="Medical Consultation"
@@ -126,6 +139,65 @@ const Homeservices = () => {
                       </div>
                     </div>
                   </div>
+                </div> */}
+<div className={containerClass}>
+                <div className="card ">
+                  <div ><img
+                    src={card.image}
+                    alt="Medical Consultation"
+                    className="service-card-image"
+                  /></div>
+                  <h2 className="card__title p-2">{card.title}</h2>
+                  
+                  <div className="card__wrapper">
+                  <div className="card__subtitle">{card.description}</div>
+                    <div className="card__icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 256"
+                        style={svgStyles}
+                        color="rgb(224, 223, 220)"
+                      >
+                        <g color="rgb(224, 223, 220)">
+                          <circle
+                            cx="128"
+                            cy="128"
+                            r="96"
+                            opacity="0.2"
+                          ></circle>
+                          <circle
+                            cx="128"
+                            cy="128"
+                            r="96"
+                            fill="none"
+                            stroke="rgb(224, 223, 220)"
+                            stroke-miterlimit="10"
+                            stroke-width="16"
+                          ></circle>
+                          <polyline
+                            points="134.1 161.9 168 128 134.1 94.1"
+                            fill="none"
+                            stroke="rgb(224, 223, 220)"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="16"
+                          ></polyline>
+                          <line
+                            x1="88"
+                            y1="128"
+                            x2="168"
+                            y2="128"
+                            fill="none"
+                            stroke="rgb(224, 223, 220)"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="16"
+                          ></line>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
                 </div>
               </div>
             );

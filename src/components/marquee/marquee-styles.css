@@ -63,9 +63,9 @@
 .iconStyle{
   color: var(--primary-color);
 }
-.socialIconStyle{
+.socialmIconStyle{
   color: black;
 }
-.socialIconStyle:hover{
+.socialmIconStyle:hover{
   color: var(--primary-color);
 }
