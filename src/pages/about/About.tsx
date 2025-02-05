@@ -6,6 +6,7 @@ import AppointmentForm from "../../components/contactsection/AppointmentForm";
 import Footer from "../../components/Footer/Footer";
 import Homeservices from "../../components/homeservcies/Homeservices";
 import Aboutinfo from "../../components/aboutinfo/Aboutinfo";
+import Aboutexp from "../../components/aboutexp/Aboutexp";
 
 const About = () => {
     return (
@@ -13,7 +14,7 @@ const About = () => {
         <Marquee/>
         <HealthcareNavbar/>
         <Contacthero/>
-        
+        <Aboutexp/>
         <Aboutinfo/>
         <Homeservices/>
         <AppointmentForm/>

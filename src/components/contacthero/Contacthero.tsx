@@ -12,7 +12,7 @@ const Contacthero: React.FC = () => {
   };
 
 
-  const defaultImage = "./image/defaulthero.png";
+  const defaultImage = "./image/abouthero.png";
   const imageSrc = imageMap[location.pathname] || defaultImage;
 
   return (

@@ -1,3 +1,8 @@
+.about-us-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #004466;
+}
 @use "sass:math";
 .indicator {
   position: absolute;
@@ -23,11 +28,14 @@
   --light-color: #f3f3ff;
 
 }
-
+.mainexp{
+margin-left: 100px;
+margin-right: 100px;
+}
 
 .why-feature {
   border-radius: 24px;
-  
+  padding: 24px;
   position: relative;
   z-index: 2;
   margin-bottom: 24px;
@@ -67,11 +75,12 @@
 }
 
 .why-feature {
- padding: 0 !important;
+  margin-bottom: 8px;
 }
 .divider {
   height: 1px;
   background-color: #0f0f0f;
+  
 }
 .count {
   color: var(--secondary-color);
@@ -87,13 +96,9 @@
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 } */
-.blog-image {
-    width: 100%;
-    height: 332px;
-    object-fit: cover;
-    border-bottom: 20px;
-    border-top: 90px;
-}
+ .card-image{
+    align-items: center;
+ }
  .card-title{
     color: var(--secondary-color);
 font-family: Koh Santepheap;
@@ -105,87 +110,27 @@ text-underline-position: from-font;
 text-decoration-skip-ink: none;
 
  }
-.blog-card {
+ .card-text{
+font-family: Lato;
+font-size: 20px;
+font-weight: 600;
+line-height: 24.28px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+ }
+ .card-description{
     
-    border-radius: 20px;
-    overflow: hidden;
-    
-    height: 100%;
-    transition: transform 0.3s ease;
-}
-
-.blog-card:hover {
-    transform: translateY(-5px);
-}
-
-
-
-.blog-content {
-    padding: 0.5rem;
-}
-.blog-us-butn{
-  
-    border-radius: 100px;
-    border: 0;
-    color: #004457;
-    font-size: 18px;
-    line-height: 16px;
-    font-weight: 400;
-    transition: all 1s ease;
-    margin-left: 45%;
-  }
-
-.blog-meta {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-}
-
-.meta-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: #666;
-}
-
-
-
-.blog-title {
-    color: var(--secondary-color);
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    text-decoration: none;
-}
-
-.blog-title:hover {
-    color: var(--secondary-color);
-}
-
-.arrow-icon {
-    position: absolute;
-    top: 0rem;
-    right: 1rem;
-    background: white;
-    padding: 0.5rem;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 992px) {
-    .blog-card {
-        margin-bottom: 2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .blog-image {
-        height: 200px;
-    }
+font-family: Lato;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+ }
+.card-image{
+    margin-left: 70%;
+    margin-top: 10%;
 }

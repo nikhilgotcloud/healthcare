@@ -3,7 +3,15 @@ import "./latestblog-style.css";
 import { Link } from "react-router-dom";
 
 const Latestblog = () => {
-  const headstyle ={color:'#004457'}
+   const headstyle: React.CSSProperties = {
+          color: "#004457",
+          borderRadius: "100px",
+          border: "0",
+          fontSize: "18px",
+          lineHeight: "16px",
+          fontWeight: 400,
+          transition: "all 1s ease",
+        };
   const cardData = [
     {
       id: 1,
@@ -57,7 +65,7 @@ const Latestblog = () => {
                     </svg>
                   </div>
                   <div className="justify-content-center">
-                    <img src={card.image} alt="" className="blog-image" />
+                    <img src={card.image} alt="" className="blog-image " />
                   </div>
                   <div className="blog-content">
                     <div className="blog-meta">
@@ -66,6 +74,7 @@ const Latestblog = () => {
                           src="./image/latestblog/profie-icon.png"
                           alt=""
                           loading="lazy"
+                          className=""
                         />
                         <span>{card.name}</span>
                       </div>
