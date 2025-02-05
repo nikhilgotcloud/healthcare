@@ -1,10 +1,22 @@
 import React from "react";
+import Marquee from "../../components/marquee/Marquee";
+import HealthcareNavbar from "../../components/Navbar/Navbar";
+import Contacthero from "../../components/contacthero/Contacthero";
+import Homeservices from "../../components/homeservcies/Homeservices";
+import Latestblog from "../../components/latestblog/Latestblog";
+import Footer from "../../components/Footer/Footer";
+import Serviceinfo from "../../components/serviceinfo/Serviceinfo";
 
 const Services = () => {
     return (
-      <div className="container mx-auto p-4">
-        <h1 className="text-3xl font-bold mb-4">Our Services</h1>
-        <p>Explore the services we offer.</p>
+      <div >
+       <Marquee/>
+       <HealthcareNavbar/>
+       <Contacthero/>
+       <Serviceinfo/>
+       <Homeservices/>
+       <div className="mt-4"><Latestblog/></div>
+       <Footer/>
       </div>
     );
   };
