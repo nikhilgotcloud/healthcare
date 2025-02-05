@@ -85,7 +85,7 @@ const Homeservices = () => {
   return (
     <section className="service-section py-5">
       <div className="container">
-        {/* Section Header */}
+        
         <div className="row">
           <div className="col-12 text-center mt-3">
             <span
@@ -101,7 +101,7 @@ const Homeservices = () => {
           </div>
         </div>
 
-        {/* Cards Section */}
+       
         <div className="row g-4 p-3 justify-content-center">
           {servicesData.map((card) => {
             // Determine the grid classes based on card type
