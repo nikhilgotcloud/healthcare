@@ -3,7 +3,16 @@ import "./homeservices-style.css";
 
 const Homeservices = () => {
   const arrowstyles = { width: "40px", height: "40px" };
-  const headstyle = { color: "#004457" };
+  const headStyle: React.CSSProperties = {
+    color: "#004457",
+    borderRadius: "100px",
+    border: "0",
+    fontSize: "18px",
+    lineHeight: "16px",
+    fontWeight: 400,
+    transition: "all 1s ease",
+  };
+  
   const svgStyles: React.CSSProperties = {
     userSelect: "none",
     width: "100%",
@@ -81,7 +90,7 @@ const Homeservices = () => {
           <div className="col-12 text-center mt-3">
             <span
               className="badge badge-white mb-3 bg-white about-us-butn p-3"
-              style={headstyle}
+              style={headStyle}
             >
               Services
             </span>
@@ -140,64 +149,66 @@ const Homeservices = () => {
                     </div>
                   </div>
                 </div> */}
-<div className={containerClass}>
-                <div className="card ">
-                  <div ><img
-                    src={card.image}
-                    alt="Medical Consultation"
-                    className="service-card-image"
-                  /></div>
-                  <h2 className="card__title p-2">{card.title}</h2>
-                  
-                  <div className="card__wrapper">
-                  <div className="card__subtitle">{card.description}</div>
-                    <div className="card__icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 256 256"
-                        style={svgStyles}
-                        color="rgb(224, 223, 220)"
-                      >
-                        <g color="rgb(224, 223, 220)">
-                          <circle
-                            cx="128"
-                            cy="128"
-                            r="96"
-                            opacity="0.2"
-                          ></circle>
-                          <circle
-                            cx="128"
-                            cy="128"
-                            r="96"
-                            fill="none"
-                            stroke="rgb(224, 223, 220)"
-                            stroke-miterlimit="10"
-                            stroke-width="16"
-                          ></circle>
-                          <polyline
-                            points="134.1 161.9 168 128 134.1 94.1"
-                            fill="none"
-                            stroke="rgb(224, 223, 220)"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="16"
-                          ></polyline>
-                          <line
-                            x1="88"
-                            y1="128"
-                            x2="168"
-                            y2="128"
-                            fill="none"
-                            stroke="rgb(224, 223, 220)"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="16"
-                          ></line>
-                        </g>
-                      </svg>
+                <div className={containerClass}>
+                  <div className="card ">
+                    <div>
+                      <img
+                        src={card.image}
+                        alt="Medical Consultation"
+                        className="service-card-image"
+                      />
+                    </div>
+                    <h2 className="card__title px-3">{card.title}</h2>
+
+                    <div className="card__wrapper mb-2">
+                      <div className="card__subtitle ms-3 ">{card.description}</div>
+                      <div className="card__icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 256 256"
+                          style={svgStyles}
+                          color="rgb(224, 223, 220)"
+                        >
+                          <g color="rgb(224, 223, 220)">
+                            <circle
+                              cx="128"
+                              cy="128"
+                              r="96"
+                              opacity="0.2"
+                            ></circle>
+                            <circle
+                              cx="128"
+                              cy="128"
+                              r="96"
+                              fill="none"
+                              stroke="rgb(224, 223, 220)"
+                              stroke-miterlimit="10"
+                              stroke-width="16"
+                            ></circle>
+                            <polyline
+                              points="134.1 161.9 168 128 134.1 94.1"
+                              fill="none"
+                              stroke="rgb(224, 223, 220)"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="16"
+                            ></polyline>
+                            <line
+                              x1="88"
+                              y1="128"
+                              x2="168"
+                              y2="128"
+                              fill="none"
+                              stroke="rgb(224, 223, 220)"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="16"
+                            ></line>
+                          </g>
+                        </svg>
+                      </div>
                     </div>
                   </div>
-                </div>
                 </div>
               </div>
             );

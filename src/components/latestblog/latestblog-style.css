@@ -67,7 +67,7 @@
 }
 
 .why-feature {
-  margin-bottom: 8px;
+ padding: 0 !important;
 }
 .divider {
   height: 1px;
@@ -92,6 +92,7 @@
     height: 332px;
     object-fit: cover;
     border-bottom: 20px;
+    border-top: 90px;
 }
  .card-title{
     color: var(--secondary-color);

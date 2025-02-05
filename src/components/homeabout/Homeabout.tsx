@@ -2,7 +2,15 @@ import React from "react";
 import './homeabout-style.css'
 
 const Homeabout = () => {
-  const headstyle ={color:'#004457'}
+ const headstyle: React.CSSProperties = {
+      color: "#004457",
+      borderRadius: "100px",
+      border: "0",
+      fontSize: "18px",
+      lineHeight: "16px",
+      fontWeight: 400,
+      transition: "all 1s ease",
+    };
 
   return (
     <div>

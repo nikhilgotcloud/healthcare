@@ -57,7 +57,7 @@ const Latestblog = () => {
                     </svg>
                   </div>
                   <div className="justify-content-center">
-                    <img src={card.image} alt="" className="blog-image" />
+                    <img src={card.image} alt="" className="blog-image " />
                   </div>
                   <div className="blog-content">
                     <div className="blog-meta">
@@ -66,6 +66,7 @@ const Latestblog = () => {
                           src="./image/latestblog/profie-icon.png"
                           alt=""
                           loading="lazy"
+                          className=""
                         />
                         <span>{card.name}</span>
                       </div>
