@@ -5,6 +5,7 @@ import Marquee from "../marquee/Marquee";
 
 
 import "./navbar-style.css";
+import { NavLink } from "react-router-dom";
 
 const HealthcareNavbar: React.FC = () => {
   const btncolor = { backgroundColor: '#ab0000' }
@@ -36,11 +37,11 @@ const HealthcareNavbar: React.FC = () => {
           </button>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto menu-items ">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="about">About us</Nav.Link>
-              <Nav.Link href="services">Services</Nav.Link>
-              <Nav.Link href="blog">Blog</Nav.Link>
-              <Nav.Link href="contact">Contact us</Nav.Link>
+              <NavLink className="nav-link" to="/">Home</NavLink>
+              <NavLink className="nav-link" to="about">About us</NavLink>
+              <NavLink className="nav-link" to="services">Services</NavLink>
+              <NavLink className="nav-link" to="blog">Blog</NavLink>
+              <NavLink className="nav-link" to="contact">Contact us</NavLink>
 
             </Nav>
             <Form className="d-flex search-form ">
@@ -73,11 +74,11 @@ const HealthcareNavbar: React.FC = () => {
         </div>
         <div className="offcanvas-body">
           <Nav className="me-auto menu-items ">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="about">About us</Nav.Link>
-            <Nav.Link href="services">Services</Nav.Link>
-            <Nav.Link href="blog">Blog</Nav.Link>
-            <Nav.Link href="contact">Contact us</Nav.Link>
+            <NavLink className="nav-link" to="/">Home</NavLink>
+            <NavLink className="nav-link" to="about">About us</NavLink>
+            <NavLink className="nav-link" to="services">Services</NavLink>
+            <NavLink className="nav-link" to="blog">Blog</NavLink>
+            <NavLink className="nav-link" to="contact">Contact us</NavLink>
 
           </Nav>
           <Form className="d-flex search-form ">
