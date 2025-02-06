@@ -39,10 +39,23 @@
 
 .social-icon-bg:hover {
   color: var(--primary-color);
-  box-shadow: 1px 1.5px 1px var(--primary-color);
-  transition: 0.8sec ease-in-out;
+  /* box-shadow: 1px 1.5px 1px var(--primary-color); */
+  transition:all  0.8sec ease-in-out;
+  box-shadow: #ab01018a 0 0 4px 1px;
 }
 
+.social-icon-bg {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 100px;
+  box-shadow: none;
+  transition: all 2s ease;
+  font-size: 19px;
+}
 @media (max-width: 991.98px) {
   .contact-marquee-wrapper {
     flex-wrap: wrap; 
@@ -65,7 +78,33 @@
 }
 .socialmIconStyle{
   color: black;
+  transition: all 2s ease;
 }
-.socialmIconStyle:hover{
+.social-icon-bg:hover .socialmIconStyle{
   color: var(--primary-color);
+}
+.marquee-font i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.contact-marquee-wrapper {
+  padding-left: 20px;
+}
+
+
+@media(min-width:767px){
+  .healthcare-navbar {
+    min-height: 80px;
+  }
+}
+@media(max-width:1082px){
+  .brand.navbar-brand {
+    margin-right: 0;
+  }
+  .logo {
+    width: 99px;
+    height: 50px;
+    margin-right: 0;
+    object-fit: contain;
+  }
 }

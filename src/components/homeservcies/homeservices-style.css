@@ -27,7 +27,9 @@
     background-color: var(--bg-secondar-color);
 }
 .service-extendcard-container{
-    width: 31rem;
+    /* width: 31rem; */
+    width: 100%;
+
     background-color: var(--bg-secondar-color);
 }
 
@@ -270,4 +272,8 @@
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-miterlimit: 10
+  }
+
+  .service-card-container .card {
+    width: 100%;
   }

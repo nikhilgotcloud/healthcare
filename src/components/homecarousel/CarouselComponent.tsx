@@ -21,7 +21,7 @@ const CarouselComponent: React.FC = () => {
   };
 
   return (
-    <div className="carousel-container position-relative d-flex align-items-center py-3">
+    <div className="carousel-container position-relative d-flex align-items-center py-3 m-auto" >
       <button
         className="carousel-control left-arrow position-absolute"
         onClick={handlePrev}
