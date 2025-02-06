@@ -5,19 +5,26 @@ import About from './pages/about/About';
 import Services from './pages/services/Services';
 import Blog from './pages/blog/Blog';
 import Contact from './pages/contact/Contact';
+import Servicedetail from './pages/servicedetail/Servicedetail';
+import Marquee from './components/marquee/Marquee';
+import HealthcareNavbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
     <Router>
       <div>
-        
+        <Marquee />
+              <HealthcareNavbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/servicedetail" element={<Servicedetail/>} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );

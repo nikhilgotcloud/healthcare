@@ -1,7 +1,11 @@
 import React from "react";
 import "./homeservices-style.css";
+import { useNavigate } from "react-router-dom";
 
 const Homeservices = () => {
+
+  const navigate = useNavigate()
+
   const arrowstyles = { width: "40px", height: "40px" };
   const headStyle: React.CSSProperties = {
     color: "#004457",
@@ -11,6 +15,7 @@ const Homeservices = () => {
     lineHeight: "16px",
     fontWeight: 400,
     transition: "all 1s ease",
+    cursor:'pointer',
   };
   
   const svgStyles: React.CSSProperties = {
@@ -168,6 +173,7 @@ const Homeservices = () => {
                           viewBox="0 0 256 256"
                           style={svgStyles}
                           color="rgb(224, 223, 220)"
+                          onClick={() => navigate("/servicedetail")}
                         >
                           <g color="rgb(224, 223, 220)">
                             <circle

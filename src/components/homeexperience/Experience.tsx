@@ -46,7 +46,7 @@ const Expriencecards = () => {
               <div className="divider mb-3 w-75 mx-4"></div>
               <h3 className="fw-bold mb-3 count text-center card-title">{card.title}</h3>
               <h5 className="mb-2 text-center card-text">{card.text}</h5>
-              <p className="text-muted mb-2 px-2 small text-center card-description">
+              <p className="text-muted mb-2 px-2 small text-center card-description pb-3">
               {card.description}
               </p>
             </div>
