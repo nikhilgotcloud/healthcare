@@ -9,6 +9,7 @@ const Contacthero: React.FC = () => {
     "/contact": "./image/contacthero.png",
     "/about": "./image/abouthero.png", 
     "/services": "./image/serviceshero.png", 
+    "/servicedetail":"./image/serviceshero.png"
   };
 
 
