@@ -13,8 +13,14 @@ const HealthcareNavbar: React.FC = () => {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
+      if(window.innerWidth > 767){
       setScroll(window.scrollY > 90);
+    }else{
+      setScroll(window.scrollY >= 0);
+
+    }
     });
+    
   }, []);
   return (
     <>

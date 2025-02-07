@@ -169,3 +169,10 @@ text-decoration-skip-ink: none;
   background-color: #f3f3ff;
 }
 
+
+@media(max-width:700px){
+  .why-feature {
+    max-width: 265px;
+    margin: auto;
+  }
+}

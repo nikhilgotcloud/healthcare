@@ -23,7 +23,7 @@
     -o-border-radius: 40px;
 }
 .service-card-container {
-    width: 20rem;
+    width: 100%;
     background-color: var(--bg-secondar-color);
 }
 .service-extendcard-container{
@@ -276,4 +276,12 @@
 
   .service-card-container .card {
     width: 100%;
+  }
+  .service-extendcard-container .card {
+    width: 100%;
+  }
+  @media(max-width:700px){
+    .service-section.py-5 {
+      margin: 50px 0 !important;
+    }
   }

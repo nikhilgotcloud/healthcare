@@ -15,9 +15,9 @@ const Homeabout = () => {
   return (
     <div>
       <div className="container">
-        <div className="about-section py-4 px-3 d-flex">
+        <div className="about-section py-4 px-3 d-flex row">
             
-          <div className="col-md-6">
+          <div className="col-md-6 about_text_sextion">
             <span className="badge badge-white mb-3 bg-white about-us-butn p-3 shadow-lg" style={headstyle}>
               About Us
             </span>
@@ -28,7 +28,7 @@ const Homeabout = () => {
             <p className="about-description text-dark">
               <b>Enhance Efficiency with Advanced Medical Billing Services</b>
             </p>
-            <p className="mb-4 text-dark">
+            <p className="mb-4 text-dark about_dis_text">
               At INF Healthcare, we are your trusted partner in providing a
               comprehensive range of services for optimized Revenue Cycle
               Management (RCM). Our commitment to exceptional customer service
@@ -44,7 +44,8 @@ const Homeabout = () => {
                         </button>
           </div>
           <div className="col-md-1"></div>
-          <div className="col-md-4">
+          <div className="col-md-4 ">
+            <div className="inside_image_about_box position-relative w-100 h-100">
             <img
               src="./image/Rectangle 20.png"
               alt="Healthcare professional discussing billing with a client"
@@ -58,6 +59,7 @@ const Homeabout = () => {
                 loading="lazy"
               />
             </button>
+            </div>
           </div>
         </div>
       </div>

@@ -305,6 +305,18 @@
       padding: 0;
       margin: 0;
       max-width: 100% !important;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .sicky_container.container .healthcare-navbar{
+      background-color: #ffffff85;
+  transition: all .5s ease;
+    }
+    .sicky_container.container .healthcare-navbar {
+      margin-top: 0 !important;
     }
   }
 
