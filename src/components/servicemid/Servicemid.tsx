@@ -3,6 +3,7 @@ import "./servicemid-style.css";
 import { Link } from "react-router-dom";
 
 const Servicemid = () => {
+
   const cardData = [
     {
       id: 1,
@@ -43,7 +44,7 @@ const Servicemid = () => {
     "HME Billing",
     "Medical Virtual Assistant",
   ];
-
+const sidecard:React.CSSProperties={borderRadius:'20%'}
   const headstyle: React.CSSProperties = {
     backgroundColor: "#004457",
     borderRadius: "100px",
@@ -57,17 +58,45 @@ const Servicemid = () => {
   const fontstyle: React.CSSProperties = { fontSize: "14px" };
   const bgstyle: React.CSSProperties = { backgroundColor: "rgb(0, 73, 86)" };
   const txtstyle: React.CSSProperties = { color: "rgb(0, 73, 86)" };
-  const [hover, setHover] = useState(false);
-
-  const txtcolor: React.CSSProperties = {
-    color: hover ? "white" : "#004457",
-    transition: "color 0.3s ease",
+  const baseStyles = {
+    width: '30rem',
+    border: '2px solid #004457',
+    transition: 'color 0.3s ease',
+    cursor: 'pointer'
   };
+
+  const getStyles = (isHovered: boolean) => ({
+    ...baseStyles,
+    color: isHovered ? 'white' : '#004457',
+    backgroundColor: isHovered ? '#004457' : 'white',
+  });
+
+  // Create an object to track hover state for each category
+  const [hoverStates, setHoverStates] = useState<{ [key: number]: boolean }>(
+    categories.reduce((acc, _, index) => ({ ...acc, [index]: false }), {})
+  );
+
+  const handleMouseEnter = (index: number) => {
+    setHoverStates(prev => ({
+      ...prev,
+      [index]: true
+    }));
+  };
+
+  const handleMouseLeave = (index: number) => {
+    setHoverStates(prev => ({
+      ...prev,
+      [index]: false
+    }));
+  };
+
+  
   return (
     <div className="container py-5">
       <div className="row">
+        <div className="col-lg-1"></div>
         {/* <!-- Main Blog Listing Column (8 columns wide) --> */}
-        <div className="col-lg-8">
+        <div className="col-lg-6">
           <span
             className="badge badge-white mb-3 p-3 text-white shadow-lg"
             style={headstyle}
@@ -193,14 +222,14 @@ const Servicemid = () => {
             </div>
           </div>
         </div>
-
+        <div className="col-lg-1"></div>
         {/* <!-- Sidebar Column (4 columns wide) --> */}
-        <div className="col-lg-4 mt-3">
+        <div className="col-lg-3 mt-3">
           {/* <!-- Recent Articles Card --> */}
 
           {/* <!-- Categories Card --> */}
-          <div className="card border-0 shadow-sm mb-4 rounded-xl">
-            <div className="card-header bg-white border-0 d-flex justify-content-between align-items-center">
+          <div className="card border-0 shadow-sm  mb-5" >
+            <div className="card-header bg-white border-0 d-flex justify-content-between align-items-center rounded-lg  mt-4">
               <h5 className="mb-0">Our Service</h5>
               <Link to="#" className="text-decoration-none">
                 <svg
@@ -222,12 +251,15 @@ const Servicemid = () => {
                 </svg>
               </Link>
             </div>
-            <div className="card-body bg-white">
+            <div className="card-body bg-white mb-4">
               {categories.map((category, index) => (
                 <div key={index} className="d-flex mb-2">
-                  <span className="badge badge-pill blog-category-badge p-3 rounded-pill" style={txtcolor}
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}>
+                  <span
+                    className="badge badge-pill blog-category-badge p-3 rounded-pill"
+                    style={getStyles(hoverStates[index])}
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={() => handleMouseLeave(index)}
+                  >
                     {category}{" "}
                     <img src="image/iconArrow.svg" alt="" className="ms-2" />
                   </span>
@@ -237,8 +269,8 @@ const Servicemid = () => {
           </div>
 
           {/* <!-- Tag Cloud Card --> */}
-          <div className="card border-0 shadow-sm rounded-lg">
-            <div className="card-header bg-white border-0 d-flex justify-content-between align-items-center">
+          <div className="card border-0 shadow-sm">
+            <div className="card-header bg-white border-0 d-flex justify-content-between align-items-center rounded-lg mt-4">
               <h5 className="mb-0">Book Your Free Demo</h5>
               <Link to="#" className="text-decoration-none">
                 <svg
@@ -260,7 +292,7 @@ const Servicemid = () => {
                 </svg>
               </Link>
             </div>
-            <form className="w-100 d-block mb-3" id="appointmentForm">
+            <form className="w-100 d-block mb-4" id="appointmentForm">
               <div className="appoint_form_box">
                 <div className="row p-0 m-0">
                   <div className="col-md-12  input_box">

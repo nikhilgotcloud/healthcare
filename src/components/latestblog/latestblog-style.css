@@ -31,7 +31,7 @@
   position: relative;
   z-index: 2;
   margin-bottom: 24px;
-  background-color: var(--light-color);
+  background-color: #f3f3ff !important;
 }
 
 .why-feature:after {
@@ -46,7 +46,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  background-color: var(--title-color);
+  background-color: #f3f3ff !important;
   color: var(--white-color);
   
   font-size: 24px;
@@ -95,7 +95,7 @@
     border-top: 90px;
 }
  .card-title{
-    color: var(--secondary-color);
+    color: #004457;
 font-family: Koh Santepheap;
 font-size: 32px;
 font-weight: 700;
