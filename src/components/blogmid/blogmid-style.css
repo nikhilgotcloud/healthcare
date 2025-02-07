@@ -110,7 +110,6 @@ text-underline-position: from-font;
 text-decoration-skip-ink: none;
 
  }
- 
  .card-text{
 font-family: Lato;
 font-size: 20px;
@@ -169,3 +168,28 @@ text-decoration-skip-ink: none;
   background-color: #f3f3ff;
 }
 
+.blog-recent-divider{
+  color: var(--primary-color);
+}
+.blog-tag{
+  border: 2px solid #004457 !important;
+  background-color: #f3f3ff !important;
+}
+.blog-tag:hover{
+  border:1px solid white !important;
+  background-color: #004457 !important;
+  color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+}
+.paginatee{
+
+  margin-left: 30%;
+}
+.paginatee-text{
+  color: black !important;
+
+}
+.paginatee-text:hover{
+  background-color: #ab0000 !important;
+  color: white !important;
+}

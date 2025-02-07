@@ -47,7 +47,7 @@ const Latestblog = () => {
         </span>
         <h2 className="section-title mb-3">Latest Blogs & Articles</h2>
 
-        <div className="container my-4 mainexp ">
+        <div className="container my-4 justify-content-center">
           <div className="row">
             {cardData.map((card) => (
               <div key={card.id} className="col-12 col-md-4 mb-4">
@@ -55,11 +55,11 @@ const Latestblog = () => {
                   <div className="box-number text-dark">
                     <svg
                       width="30"
-                      height="40"
+                      height="50"
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke="#004d4d"
-                      stroke-width="2"
+                      stroke="black"
+                      stroke-width="1"
                     >
                       <path d="M7 17l9.2-9.2M17 17V7H7" />
                     </svg>

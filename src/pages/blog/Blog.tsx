@@ -1,10 +1,12 @@
 import React from "react";
+import Contacthero from "../../components/contacthero/Contacthero";
+import Blogmid from "../../components/blogmid/Blogmid";
 
 const Blog = () => {
     return (
-      <div className="container mx-auto p-4">
-        <h1 className="text-3xl font-bold mb-4">Blog</h1>
-        <p>Read our latest articles and updates.</p>
+      <div>
+        <Contacthero/>
+        <Blogmid/>
       </div>
     );
   };
