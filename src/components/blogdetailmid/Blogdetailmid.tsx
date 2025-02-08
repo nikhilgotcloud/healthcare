@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./blogmid-style.css";
+import "./blogdetail-style.css";
 import { Link } from "react-router-dom";
 
-const Blogmid = () => {
+const Blogdetailmid = () => {
   const cardData = [
     {
       id: 1,
@@ -115,7 +115,7 @@ const Blogmid = () => {
     transition: "all 1s ease",
   };
 
-  const fontstyle: React.CSSProperties = { fontSize: "14px" };
+  const fontstyle: React.CSSProperties = { fontSize: "16px" };
   const bgstyle: React.CSSProperties = { backgroundColor: "rgb(0, 73, 86)" };
   const txtstyle: React.CSSProperties = { color: "rgb(0, 73, 86)" };
   const baseStyles = {
@@ -154,122 +154,222 @@ const Blogmid = () => {
     <div className="container py-5">
       <div className="row">
         <div className="col-lg-1"></div>
-        {/* <!-- Main Blog Listing Column (8 columns wide) --> */}
+
         <div className="col-lg-6">
-          <span
-            className="badge badge-white mb-3 p-3 text-white shadow-lg"
-            style={headstyle}
-          >
-            BLOG
-          </span>
-          <h2 className="about-title my-3">Industry Resources</h2>
-          <p className="description mb-4">
-            Actionable Tips and Insights for Healthcare Providers Curated by
-            Experts
-          </p>
-          <div className="row">
-            <div className="col-lg-6"></div>
+          <img
+            src="./image/blog-detail2.png"
+            alt="New Era of Medical Billing and Management"
+            loading="lazy"
+            className="w-100 my-2"
+          />
+          <div className="blog-meta my-3">
+            <div className="meta-item">
+              <img
+                src="./image/latestblog/profie-icon.png"
+                alt=""
+                loading="lazy"
+              />
+              <span>Sarah Miller</span>
+            </div>
+            <div className="meta-item">
+              <img
+                src="./image/latestblog/calander-icon.png"
+                alt=""
+                loading="lazy"
+              />
+              <span>January 5, 2024</span>
+            </div>
+            <div className="meta-item">
+              <img
+                src="./image/latestblog/bookmark-icon.png"
+                alt=""
+                loading="lazy"
+                width="30px"
+                height="30px"
+              />
+              <span>Medical Billing</span>
+            </div>
           </div>
 
-          <div className="container">
-            {Array.from(
-              { length: Math.ceil(cardData.length / 2) },
-              (_, index) => (
-                <div className="row mb-4" key={index}>
-                  {cardData.slice(index * 2, index * 2 + 2).map((card) => (
-                    <div key={card.id} className="col-lg-6">
-                      <div className="why-feature ">
-                        <div className="box-number text-dark">
-                          <svg
-                            width="30"
-                            height="50"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="black"
-                            stroke-width="1"
-                          >
-                            <path d="M7 17l9.2-9.2M17 17V7H7" />
-                          </svg>
-                        </div>
-                        <div className="justify-content-center">
-                          <img
-                            src={card.image}
-                            alt=""
-                            className="blog-image "
-                          />
-                        </div>
-                        <div className="blog-content">
-                          <div className="blog-meta">
-                            <div className="meta-item">
-                              <img
-                                src="./image/latestblog/profie-icon.png"
-                                alt=""
-                                loading="lazy"
-                                className=""
-                              />
-                              <span>{card.name}</span>
-                            </div>
-                            <div className="meta-item">
-                              <img
-                                src="./image/latestblog/calander-icon.png"
-                                alt=""
-                                loading="lazy"
-                              />
-                              <span>{card.date}</span>
-                            </div>
-                            <div className="meta-item">
-                              <img
-                                src="./image/latestblog/bookmark-icon.png"
-                                alt=""
-                                loading="lazy"
-                                width="30px"
-                                height="30px"
-                              />
-                              <span>{card.category}</span>
-                            </div>
-                          </div>
-                          <Link to="/blogdetail" className="blog-title d-block">
-                            {card.title}
-                          </Link>
-                          <p>{card.description}</p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )
-            )}
+          <h4 className="blog-title d-block">
+            Introduction: Navigating the New Era of Medical Billing and
+            Management
+          </h4>
+          <p className="mb-3">
+            The landscape of medical billing and management services in the
+            USA is undergoing a profound transformation, driven by technological
+            innovation and regulatory shifts. These changes mark an essential
+            pivot from traditional practices, heralding a new era that promises
+            enhanced efficiency, accuracy, and patient satisfaction. Keeping
+            pace with these hospital trends is not just beneficial but essential
+            for healthcare providers. It ensures compliance, optimizes revenue
+            cycles, and aligns services with the evolving expectations of a
+            digitally empowered patient base. This blog delves into the recent
+            advancements shaping the future of medical billing and management
+            services, highlighting their pivotal role in modernizing hospital
+            billing systems and collections.
+          </p>
+          <h4 className="blog-title d-block">
+            Technological Advancements: Pioneering a New Frontier in Medical
+            Billing
+          </h4>
+          <p className="mb-3">
+            The world of medical billing is on the brink of a technological
+            revolution. Advancements in Augmented Reality, Edge Computing, and
+            Quantum Computing are not just transforming but pioneering new
+            frontiers in medical billing, redefining efficiency and accuracy in
+            hospital billing systems.
+          </p>
+          <div className="colored-card my-3 d-flex flex-column align-items-center justify-content-center p-4 shadow-lg text-center">
+            <img
+              src="./image/semicolon.png"
+              alt="infhealthcare"
+              loading="lazy"
+              className="mb-4"
+            />
+            <p className="my-3 text-white">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <p className="my-3 text-white">Lorem Ipsum</p>
+          </div>
+          <h4 className="blog-title d-block">
+            Augmented Reality and Virtual Reality: Enhancing Training and
+            Accuracy
+          </h4>
+          <p className="mb-3">
+            In the realm of medical billing and management services, Augmented
+            Reality (AR) and Virtual Reality (VR) are emerging as game-changers.
+            These technologies are revolutionizing training methodologies for
+            professionals in hospital medical billing. By simulating complex
+            billing scenarios, AR and VR offer immersive, hands-on experiences,
+            allowing practitioners to hone their skills in a controlled, yet
+            realistic environment. This innovative approach significantly
+            improves coding accuracy and billing efficiency, ultimately reducing
+            errors and enhancing the overall quality of hospital billing
+            services​​.
+          </p>
+          <ul className="services-list mb-3">
+            <li>
+              <span className="checkmark-icon"><img src="./image/homesection/group18.png" alt="" /></span>Strong safeguards against
+              unauthorized access and cyber threats.
+            </li>
+            <li>
+              <span className="checkmark-icon"><img src="./image/homesection/group18.png" alt="" /></span>Adherence to industry
+              regulations for data protection.
+            </li>
+            <li>
+              <span className="checkmark-icon"><img src="./image/homesection/group18.png" alt="" /></span>Proactive measures to
+              identify and mitigate potential risks.
+            </li>
+            <li>
+              <span className="checkmark-icon"><img src="./image/homesection/group18.png" alt="" /></span>Assured confidentiality
+              and meticulous handling of data.
+            </li>
+            <li>
+              <span className="checkmark-icon"><img src="./image/homesection/group18.png" alt="" /></span>Sets us apart as a
+              reliable and trusted partner.
+            </li>
+          </ul>
+          <h4 className="blog-title d-block">
+            Edge Computing: Real-time Processing for Enhanced Efficiency
+          </h4>
+          <p>
+            Edge computing is reshaping the efficiency of hospital billing
+            systems. By processing data closer to its source, edge computing
+            drastically reduces latency, allowing for quicker and more accurate
+            billing operations. This is especially critical in hospital billing
+            collections, where prompt and accurate billing is crucial for
+            maintaining cash flow and patient satisfaction. The integration of
+            edge computing into hospital billing systems ensures real-time
+            processing, thereby streamlining operations and enhancing the
+            overall efficiency of the medical billing process​​.
+          </p>
+          <div className="d-flex flex-column flex-md-row gap-3 my-3">
+            <img
+              src="./image/blog-detail3.png"
+              className="img-fluid rounded"
+              alt="infhealthcare"
+            />
+            <img
+              src="./image/blog-detail4.png"
+              className="img-fluid rounded"
+              alt="infhealthcare"
+            />
+          </div>
+          <h4 className="blog-title d-block">
+            Quantum Computing: Revolutionizing Medical Billing Analytics
+          </h4>
+          <p>
+            Quantum computing’s introduction into the field of medical billing
+            marks a significant leap forward. Its capability to process vast
+            amounts of data at unprecedented speeds is set to revolutionize
+            billing analytics. For hospital medical billing, this means more
+            efficient risk assessment, optimization of billing algorithms, and
+            enhanced decision-making processes. Quantum computing’s advanced
+            analytical capabilities can potentially transform every aspect of
+            medical billing, from patient billing inquiries to complex hospital
+            billing collection strategies.
+          </p>
+          <h4 className="blog-title d-block">
+            Security and Transparency in Billing: Safeguarding the Future of
+            Medical Billing and Management
+          </h4>
+          <p className="mb-4">
+            In the rapidly evolving landscape of medical billing services,
+            cybersecurity has emerged as a cornerstone for protecting sensitive
+            patient data and billing information. The increasing digitization of
+            hospital billing systems has made them prime targets for cyber
+            threats, underscoring the urgent need for robust security measures.
+            Protecting patient information is not just a legal obligation; it is
+            fundamental to maintaining trust and operational integrity in
+            hospital medical billing.
+          </p>
+          <div className="d-flex align-items-center gap-3">
+            <h5 className="mb-0">Tag Cloud</h5>
+            <Link
+              to="#"
+              className="btn btn-light btn-sm px-3 py-2 blog-tag rounded-pill"
+            >
+              Billing
+            </Link>
+            <Link
+              to="#"
+              className="btn btn-light btn-sm px-3 py-2 blog-tag rounded-pill"
+            >
+              Medical Billing
+            </Link>
           </div>
 
           <div className="d-flex justify-content-between align-items-center w-100 py-4">
+            {/* <!-- Previous Section --> */}
+            <div className="d-flex align-items-start">
+              <div
+                className="rounded-circle bg-teal-800 p-3 d-flex align-items-center justify-content-center"
+                style={bgstyle}
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="2"
+                >
+                  <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+              </div>
+              <div className="ms-3">
+                <div className="text-danger prev-mb" style={fontstyle}>
+                  Previous
+                </div>
+              </div>
+            </div>
             {/* <!-- Pagination --> */}
             <nav aria-label="Page navigation" className="mt-3 paginatee">
               <ul className="pagination justify-content-center align-items-center gap-2 m-0">
-                <li className="page-item">
-                  <Link
-                    className="page-link border-0 rounded-circle paginatee-text"
-                    to="/"
-                    aria-label="Previous"
-                  >
-                    <svg
-                      className="w-6 h-8 text-gray-800 dark:text-white"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke="black"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 12h14M5 12l4-4m-4 4 4 4"
-                      />
-                    </svg>
-                  </Link>
-                </li>
                 <li className="page-item">
                   <Link
                     className="page-link  border-0 rounded-circle  paginatee-text"
@@ -279,49 +379,57 @@ const Blogmid = () => {
                   </Link>
                 </li>
                 <li className="page-item">
-                  <Link className="page-link border-0 rounded-circle paginatee-text" to="#">
+                  <Link
+                    className="page-link border-0 rounded-circle paginatee-text"
+                    to="#"
+                  >
                     2
                   </Link>
                 </li>
                 <li className="page-item">
-                  <Link className="page-link border-0 rounded-circle paginatee-text" to="#">
+                  <Link
+                    className="page-link border-0 rounded-circle paginatee-text"
+                    to="#"
+                  >
                     3
                   </Link>
                 </li>
                 <li className="page-item">
-                  <Link className="page-link border-0 rounded-circle paginatee-text " to="#">
+                  <Link
+                    className="page-link border-0 rounded-circle paginatee-text "
+                    to="#"
+                  >
                     4
                   </Link>
                 </li>
-                <li className="page-item">
-                  <Link
-                    className="page-link border-0 border-0 rounded-circle paginatee-text"
-                    to="#"
-                    aria-label="Next"
-                  >
-                    <svg
-                      className="w-6 h-8 "
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke="black"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M19 12H5m14 0-4 4m4-4-4-4"
-                      />
-                    </svg>
-                  </Link>
-                </li>
               </ul>
-            </nav>
+            </nav>{" "}
+            {/* <!-- Next Section --> */}
+            <div className="d-flex align-items-end text-end">
+              <div className="me-3">
+                <div className="text-danger prev-mb" style={fontstyle}>
+                  Next
+                </div>
+              </div>
+              <div
+                className="rounded-circle bg-teal-800 p-3 d-flex align-items-center justify-content-center"
+                style={bgstyle}
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
+
         <div className="col-lg-1"></div>
         {/* <!-- Sidebar Column (4 columns wide) --> */}
         <div className="col-lg-3 mt-3">
@@ -471,4 +579,4 @@ const Blogmid = () => {
   );
 };
 
-export default Blogmid;
+export default Blogdetailmid;
