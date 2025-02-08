@@ -22,10 +22,10 @@ const Homeabout = () => {
               About Us
             </span>
             <h2 className="about-title mb-1">Who We Are</h2>
-            <p className="about-description text-dark mb-4">
+            <p className="about-description text-dark mb-4 upper_text">
               Efficient Revenue Cycle Solutions for Healthcare Providers
             </p>
-            <p className="about-description text-dark">
+            <p className="about-description text-dark bold_text">
               <b>Enhance Efficiency with Advanced Medical Billing Services</b>
             </p>
             <p className="mb-4 text-dark about_dis_text">
@@ -43,8 +43,7 @@ const Homeabout = () => {
                           <img src="image/iconArrow.svg" alt="Arrow Icon" loading="lazy" />
                         </button>
           </div>
-          <div className="col-md-1"></div>
-          <div className="col-md-4 ">
+          <div className="col-md-6 ">
             <div className="inside_image_about_box position-relative w-100 h-100">
             <img
               src="./image/Rectangle 20.png"

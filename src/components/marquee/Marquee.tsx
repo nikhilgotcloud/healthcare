@@ -6,7 +6,7 @@ const Marquee = () => {
   
   return (
     <div className="py-2 d-none d-lg-block">
-      <div className="container">
+      <div className="container header_containter">
         <div className="row align-items-center d-flex justify-content-between">
           <div className="col-12">
             <div className="contact-marquee-wrapper d-flex align-items-center justify-content-between">

@@ -15,9 +15,9 @@ const Homeservices = () => {
     lineHeight: "16px",
     fontWeight: 400,
     transition: "all 1s ease",
-    cursor:'pointer',
+    cursor: 'pointer',
   };
-  
+
   const svgStyles: React.CSSProperties = {
     userSelect: "none",
     width: "100%",
@@ -88,9 +88,9 @@ const Homeservices = () => {
   ];
 
   return (
-    <section className="service-section py-5">
+    <section className="service-section py-5 header_containter">
       <div className="container">
-        
+
         <div className="row">
           <div className="col-12 text-center mt-3">
             <span
@@ -106,7 +106,7 @@ const Homeservices = () => {
           </div>
         </div>
 
-       
+
         <div className="row g-4 p-3 justify-content-center">
           {servicesData.map((card) => {
             // Determine the grid classes based on card type
@@ -120,7 +120,7 @@ const Homeservices = () => {
             const containerClass =
               card.type === "card"
                 ? "service-card-container"
-                : "service-extendcard-container";
+                : "service-extendcard-container service-card-container";
 
             return (
               <div key={card.id} className={colClass}>
@@ -155,8 +155,8 @@ const Homeservices = () => {
                   </div>
                 </div> */}
                 <div className={containerClass}>
-                  <div className="card ">
-                    <div>
+                  <div className="card position-relative">
+                    <div className="image_box_main">
                       <img
                         src={card.image}
                         alt="Medical Consultation"
@@ -168,7 +168,7 @@ const Homeservices = () => {
                     <div className="card__wrapper mb-2">
                       <div className="card__subtitle ms-3 ">{card.description}</div>
                       <div className="card__icon">
-                        <svg
+                        {/* <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 256 256"
                           style={svgStyles}
@@ -211,9 +211,16 @@ const Homeservices = () => {
                               stroke-width="16"
                             ></line>
                           </g>
-                        </svg>
+                        </svg> */}
+
+                        <i className="fa-solid fa-arrow-up non_hover_icon"></i>
+                        <i className="fa-solid fa-arrow-up  hover_icon"></i>
+
                       </div>
                     </div>
+                    <img className="bg_crad_img"  src={ card.type === "card" ? './image/service_cut.png'   : './image/long_sub.png '}  alt="" />
+                    <img className="bg_crad_img mobile_view_bg d-none"  src="./image/service_cut.png"  alt="" />
+
                   </div>
                 </div>
               </div>
