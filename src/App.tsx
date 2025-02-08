@@ -9,6 +9,7 @@ import Servicedetail from './pages/servicedetail/Servicedetail';
 import Marquee from './components/marquee/Marquee';
 import HealthcareNavbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import Blogdetail from './pages/blogdetail/Blogdetail';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/servicedetail" element={<Servicedetail/>} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blogdetail" element={<Blogdetail />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer/>
