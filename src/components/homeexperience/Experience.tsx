@@ -38,17 +38,20 @@ const Expriencecards = () => {
       <div className="row">
         {cardData.map((card) => (
           <div key={card.id} className="col-12 col-md-6 col-lg-3 mb-4">
-            <div className="why-feature ">
+            <div className="why-feature new_feature  position-relative">
               <div className="box-number text-dark">{card.id}</div>
               <div className="box-icon justify-content-center mb-3">
                 <img src={card.image} alt="" className="card-image" />
               </div>
-              <div className="divider mb-3 w-75 mx-4"></div>
+              <div className="divider mb-3 w-100 mx-4"></div>
               <h3 className="fw-bold mb-3 count text-center card-title">{card.title}</h3>
               <h5 className="mb-2 text-center card-text">{card.text}</h5>
               <p className="text-muted mb-2 px-2 small text-center card-description pb-3">
               {card.description}
               </p>
+              <div className="bg_image">
+                <img src="./image/bg_card.svg" alt="" />
+              </div>
             </div>
           </div>
         ))}

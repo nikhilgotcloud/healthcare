@@ -109,4 +109,60 @@ height: 35px;
     bottom: -8px;
     left: 19px;
   }
+  .about-section {
+    padding: 0 !important;
+  }
+}
+
+@media(min-width:700px){
+  .about_text_sextion {
+    padding-top: 76px;
+    padding-right: 56px !important;
+  }
+  .about_text_sextion .about-us-butn {
+    height: 30px;
+    width: 90px;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    box-shadow: none !important;
+    margin-bottom: 28px !important;
+  }
+  .about_text_sextion .about-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #004466;
+    font-family: Koh Santepheap;
+    margin-bottom: 15px !important;
+  }
+  .about-description.bold_text {
+    margin-bottom: 7px !important;
+  }
+  .text-dark.about_dis_text {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 46px !important;
+  }
+  
+}
+.about-play-butn {
+  height: 50px;
+  width: 50px;
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.about-section {
+  margin-bottom: 73px;
 }
