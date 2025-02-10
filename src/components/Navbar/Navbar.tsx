@@ -43,11 +43,11 @@ const HealthcareNavbar: React.FC = () => {
           </button>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto menu-items ">
-              <NavLink className="nav-link" to="/">Home</NavLink>
-              <NavLink className="nav-link" to="about">About us</NavLink>
-              <NavLink className="nav-link" to="services">Services</NavLink>
-              <NavLink className="nav-link" to="blog">Blog</NavLink>
-              <NavLink className="nav-link" to="contact">Contact us</NavLink>
+              <NavLink className="nav-link" to="/">HOME</NavLink>
+              <NavLink className="nav-link" to="about">ABOUT US</NavLink>
+              <NavLink className="nav-link" to="services">SERVICES</NavLink>
+              <NavLink className="nav-link" to="blog">BLOG</NavLink>
+              <NavLink className="nav-link" to="contact">CONTACT US</NavLink>
 
             </Nav>
             <Form className="d-flex search-form ">
