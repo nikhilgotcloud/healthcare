@@ -1,96 +1,198 @@
 .carousel-container {
-    width: 100%;
-    max-width: 86vw;
-    height: 90vh;
-    margin: 0 auto;
-    position: relative;
-    margin-left: 100px;
-    margin-right: 100px;
-    /*  to maintain the  heaight according to figma*/
-    min-height: 880px;  
-    
-  }
+  width: 100%;
+  max-width: 86vw;
+  height: 90vh;
+  margin: 0 auto;
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
+  /*  to maintain the  heaight according to figma*/
+  min-height: 880px;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  border: 40px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius:40px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.8s ease-in-out;
+  z-index: -1;
+  -webkit-border-radius:40px;
+  -moz-border-radius:40px;
+  -ms-border-radius:40px;
+  -o-border-radius:40px;
+}
+
+.carousel-image.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.carousel-control {
+  background: white;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0.8;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.carousel-control:hover {
+  background: #ab0000;
+  color: #ab0000;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 2;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.control-icon {
+  color: black;
+  align-items: center;
   
-  .carousel-wrapper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    position: relative;
+}
+.control-icon:hover{
+  color: white;
+}
+.right-arrow:hover {
+  color: white;
+}
+
+.left-arrow {
+  left: -0.5px;
+}
+.left-arrow:hover{
+  color: #ab0000;
+  transition:all  0.8sec ease-in-out;
+  box-shadow: #ab01018a 0 0 4px 1px;
+}
+.right-arrow:hover{
+  color: #ab0000;
+  transition:all  0.8sec ease-in-out;
+  box-shadow: #ab01018a 0 0 4px 1px;
+  font-size: 20px; 
+  font-weight: 300;
+}
+
+.right-arrow {
+  right: -0.5px;
+}
+
+.carousel-control:focus {
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  .carousel-container {
+    min-height: 430px;
   }
+}
+.carousel-wrapper {
+  position: relative;
+}
+
+.carousel-image::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #00445761 0%, #004457e8 100%);
+  height: 100%;
+  z-index: 1;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+
+.carousel-text {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: white;
+  opacity: 1;
+  z-index: 2;
+}
+
+.carousel-text span {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 121.4%;
+  display: block
+}
+
+.carousel-text h1 {
+  font-size: 60px;
+ margin-top: 3vw;
+}
+
+.carousel-text p {
+  font-size: 20px;
+  margin-top: 1vw;
+
+}
+
+.carousel-footer {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
   
-  .carousel-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 40px;
+  width: 100%; 
+  margin-top: 6vw;
+}
+
+/* animation css */
+.animate__animated {
+  animation-duration: 2s;
+}
+
+.animate__fadeInRight {
+  animation-name: fadeInRight;
+}
+
+@keyframes fadeInRight {
+  from {
     opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.8s ease-in-out;
-    z-index: -1;
-    -webkit-border-radius:40px;
-    -moz-border-radius:40px;
-    -ms-border-radius:40px;
-    -o-border-radius:40px;
-}
-  
-  .carousel-image.active {
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
     opacity: 1;
-    z-index: 1;
+    transform: translate3d(0, 0, 0);
   }
-  
-  .carousel-control {
-    background: white;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    padding: 10px 15px;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 2;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
-.control-icon{
-color: black;
-align-items: center;
 
+.animate__fadeInUpBig {
+  animation-duration: 2s;
+  animation-delay: 0.2s; 
 }
-  
-  .left-arrow {
-    left: -0.5px;
-  }
-  
-  .right-arrow {
-    right: -0.5px;
-  }
-  
-  .carousel-control:focus {
-    outline: none;
-  }
-  
-/* 5 / feb / 25 -- prabh */
-  @media(max-width:767px){
-    .carousel-container {
-      min-height: 430px;
-    }
-  }
-  .carousel-wrapper{
-    position: relative;
-  }
-
-  .carousel-wrapper::after {
-    position: absolute;
-    content: "";
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: linear-gradient(90deg,#00445761 0%, #004457e8 100%);
-    height: 100%;
-    z-index: 1;
-    border-radius: 40px;
-  }
+.animate__pulse {
+  animation-duration: 1.5s;
+  animation-delay: 0.3s; 
+}
