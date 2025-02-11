@@ -7,7 +7,7 @@ const Contactapp = () => {
     <section className="appointment_form_new">
       <div className="container">
         <div className="bg shadow-lg">
-          <div className="row">
+          <div className="row mob_row">
             <div className="col-lg-6">
               <div className="testimonial-card h-100 ">
                 <button className="make_demo_btn ">GET IN TOUCH</button>
@@ -70,7 +70,7 @@ const Contactapp = () => {
               <div className="h-100 main_appoint_form">
                 <div className="row p-0 m-0">
                   <div className="col-12">
-                    <div className="badge appoint book-demo-butn text-white rounded-pill">
+                    <div className="badge appoint book-demo-butn text-white rounded -pill">
                       Book Demo
                     </div>
                     <h5>Make Appointment</h5>

@@ -7,7 +7,7 @@
 
 .appointment_form_new .main_appoint_form {
     /* background-image: url(../../assets/img/new_img/bg_form.png); */
-    padding: 100px 55px;
+    padding: 100px 18px;
     background-size: cover;
     background-position: center;
 }
@@ -23,6 +23,7 @@
     height: 30px;
     width: 105px;
     margin-bottom: 18px;
+    background-color: #004457;
 }
 
 .appoint_form_box {
@@ -30,7 +31,7 @@
 }
 
 .appoint_form_box .input {
-    height: 32px;
+    height: 34px;
     border-radius: 100px;
     margin-bottom: 16px;
     background-color: var(--bg-color);
@@ -46,11 +47,12 @@
 
 .appoint_form_box textarea.input {
     height: 54px;
+    resize: none;
 }
 
 .testimonial-card {
     color: white;
-    padding: 100px 55px;
+    padding: 128px 40px;
     border-radius: 10px;
     max-width: 600px;
     margin: 2rem auto;
@@ -142,4 +144,19 @@
     line-height: 20px;
     font-weight: 400;
     transition: all 1s ease;
+  }
+
+  .appoint_title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #004457;
+    font-family: Koh Santepheap;
+    margin-top: 23px;
+    margin-bottom: 10px;
+  }
+
+  @media(max-width:767px){
+    .appointment_form_new .mob_row{
+        flex-direction: column-reverse;
+    }
   }

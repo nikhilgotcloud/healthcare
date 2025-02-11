@@ -7,7 +7,7 @@ const AppointmentForm: React.FC = () => {
     <section className="appointment_form_new">
       <div className="container">
         <div className="bg shadow-lg">
-          <div className="row">
+          <div className="row mob_row">
             
             <div className="col-lg-6">
               <div className="testimonial-card h-100">
@@ -44,7 +44,8 @@ const AppointmentForm: React.FC = () => {
                     <div className="badge appoint book-demo-butn text-white rounded-pill">
                       Book Demo
                     </div>
-                    <h5>Make Appointment</h5>
+                    <h5 className="appoint_title">Book Your Free Demo</h5>
+
                     <p className="para">
                       Maximize Your Revenue Potential: Request a Demo Now!
                     </p>

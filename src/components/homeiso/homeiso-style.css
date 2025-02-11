@@ -126,3 +126,15 @@
     font-weight: 600;
     line-height: 24px;
   }
+
+  @media(max-width:767px){
+    .healthcare-section .row {
+      flex-direction: column-reverse;
+    }
+    .section-container .content-container {
+      padding-top: 20px;
+    }
+    .main-heading.mb-5 {
+      font-size: 25px !important;
+    }
+  }
