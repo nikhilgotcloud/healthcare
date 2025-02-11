@@ -1,0 +1,27 @@
+@keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animate__rotating {
+    animation-name: rotating;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+  }
+  
+  .btn:hover {
+    /* transform: scale(1.1); */
+    transition: transform 0.65s ease;
+    -webkit-transition: transform 0.65s ease;
+    -moz-transition: transform 0.65s ease;
+    -ms-transition: transform 0.65s ease;
+    -o-transition: transform 0.65s ease;
+}
+  
+   .rotating-text {
+    animation-duration: 15s;
+  }
