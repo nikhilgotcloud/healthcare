@@ -2,9 +2,13 @@
     margin: 135px 0;
     background-color: var(--bg-secondar-color);
     border-radius: 70px;
-    overflow: hidden;
+    overflow: visible !important;
+    box-shadow: none !important;
 }
 
+.appointment_form_new .bg .testimonial_bg {
+    border-radius: 60px 0 0 60px;
+  }
 .appointment_form_new .main_appoint_form {
     /* background-image: url(../../assets/img/new_img/bg_form.png); */
     padding: 100px 55px;
@@ -54,7 +58,7 @@
     border-radius: 10px;
     max-width: 600px;
     margin: 2rem auto;
-    
+
 }
 
 .star-rating i {
@@ -98,6 +102,95 @@
 
 .book-demo-butn {
     background-color: var(--secondary-color);
+}
+
+.appointment_form_new .bg {
+    background: transparent !important;
+}
+
+.testimonial_bg {
+    background-color: #004457;
+}
+
+.appointment_form_new .bg_main {
+    background: transparent !important;
+  }
+  .appointment_form_new .bg_main .bg_img {
+    position: absolute;
+    right: 12px;
+    top: 0;
+    z-index: -1;
+    bottom: 0;
+  object-fit: cover;
+  height: 100% !important;
+  }
+ 
+  .calender_bg {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    background-color: #fff;
+    top: 0px;
+    right: 16px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+@media(max-width:767px) {
+    .appointment_form_new .bg {
+        border-radius: 40px !important;
+    }
+
+    .main_appoint_form .col-12 {
+        padding: 0;
+    }
+
+    .main_appoint_form .appoint_form_box {
+        margin-top: 10px;
+    }
+
+    .main_appoint_form .appoint_form_box .input_box {
+        padding: 0;
+    }
+    .main_appoint_form .appoint_form_box .input_box textarea {
+        border-radius: 20px;
+      }
+      .main_appoint_form .appoint_form_box .btn_box .make_appoint_btn {
+        margin-left: 0;
+        margin-top: 10px !important;
+        margin-bottom: 0 !important;
+      }
+      .main_appoint_form .appoint_form_box .btn_box {
+        padding: 0;
+      }
+      .appointment_form_new .main_appoint_form {
+        padding-bottom: 47px !important;
+      }
+      .testimonial_bg .testimonial-card {
+        margin: 0;
+        margin-top: 20px;
+        padding-bottom: 70px;
+      }
+      .testimonial_bg .testimonial-card .star-rating {
+        margin-bottom: 15px;
+      }
+      .appointment_form_new .bg_main .bg_img{
+        height: 120% !important;
+        right: 1px !important;
+      }
+      .appointment_form_new .bg .testimonial_bg {
+        border-radius: 0px 0 20px 20px;
+      }
+      .appointment_form_new .bg_main{
+        overflow: hidden;
+        border-radius: 20px 0 0 0;
+      }
+      .calender_bg {
+      
+        top: 10px;
+      }
 }
 
 /* Responsive Styles */
