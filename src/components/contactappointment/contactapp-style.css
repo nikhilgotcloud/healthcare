@@ -129,6 +129,7 @@
         font-size: 0.8rem;
     }
 }
+
 .make_demo_btn {
     height: 40px;
     width: 160px;
@@ -144,19 +145,21 @@
     line-height: 20px;
     font-weight: 400;
     transition: all 1s ease;
-  }
+}
 
-  .appoint_title {
+.appoint_title {
     font-size: 32px;
     font-weight: 700;
     color: #004457;
     font-family: Koh Santepheap;
     margin-top: 23px;
     margin-bottom: 10px;
-  }
+}
 
-  @media(max-width:767px){
-    .appointment_form_new .mob_row{
+@media(max-width:767px) {
+    .appointment_form_new .mob_row {
         flex-direction: column-reverse;
+        padding-left: 12px;
+        padding-right: 12px;
     }
-  }
+}

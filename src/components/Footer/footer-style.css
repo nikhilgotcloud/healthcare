@@ -3,8 +3,8 @@
     color: white;
     padding: 4rem 0 2rem;
     border-radius: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    max-width: 1318px !important;
+    margin: auto;
 }
 
 .footer-logo {
@@ -196,4 +196,9 @@
   .socialIconStyle:hover{
     color: var(--bg-secondar-color);
     
+  }
+  @media(max-width:1400px){
+    .footer-section{
+      max-width: 95% !important;
+    }
   }
