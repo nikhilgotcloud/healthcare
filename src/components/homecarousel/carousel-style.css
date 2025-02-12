@@ -110,6 +110,18 @@
   .carousel-container {
     min-height: 430px;
   }
+  .carousel-text h1 {
+    font-size: 48px !important;
+    margin-top: 5vh !important;
+}
+.carousel-text p {
+  font-size: 20px !important;
+  
+}
+.carousel-footer{
+  margin-top: 7vh !important;
+}
+  
 }
 .carousel-wrapper {
   position: relative;
