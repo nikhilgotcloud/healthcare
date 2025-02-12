@@ -341,8 +341,9 @@ line {
 .service-card-container .card:hover .service-card-image {
   scale: 1.2;
   transition: all .53s ease;
-  height: 100%;
   width: 100% !important;
+  height: 100%px !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .image_box_main {

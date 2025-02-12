@@ -34,7 +34,7 @@ const CarouselComponent: React.FC = () => {
     if (isMobile) {
       const interval = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      }, 5000);
+      }, 6000);
 
       return () => clearInterval(interval); 
     }

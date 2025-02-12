@@ -155,12 +155,13 @@ const Homeservices = () => {
                   </div>
                 </div> */}
                 <div className={containerClass}>
-                  <div className="card position-relative">
+                  <div className="card position-relative" >
                     <div className="image_box_main">
                       <img
                         src={card.image}
                         alt="Medical Consultation"
                         className="service-card-image"
+                        
                       />
                     </div>
                     <h2 className="card__title px-3">{card.title}</h2>

@@ -1,101 +1,9 @@
-
 .healthcare-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
- 
-  .section-container {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-  }
-  
-  .image-container {
-    flex: 1;
-    position: relative;
-  }
-  
-  .shield-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .shield-image:hover {
-    transform: scale(0.9);
-    border-radius: 40px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
- 
-  .content-container {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  
-  .main-heading {
-    color: var(--secondary-color);
-    font-size: 2em;
-    font-weight: 500;
-    margin-bottom: 20px;
-    line-height: 1.2;
-  }
-  
-  /* Description */
-  .description {
-    color: #333;
-    margin-bottom: 20px;
-    line-height: 1.2;
-  }
-  
-  /* Services List */
-  .services-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .services-list li {
-    margin-bottom: 8px;
-    padding-left: 26px;
-    position: relative;
-    font-size: 14px;
-    color: #333;
-    line-height: 20px !important;
-    margin-bottom: 3px !important;
-  } 
-  
-  
-  .checkmark-icon {
-    position: absolute;
-    left: 0;
-    top: 0px !important;
-    width: 15px;
-    height: 15px;
-    /* background-image: url("./image/homesection/group18.png"); */
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .checkmark-icon img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-  }
-  .about-us-butn{
-  
-    border-radius: 100px;
-    border: 0;
-    color: #004457;
-    font-size: 18px;
-    line-height: 16px;
-    font-weight: 400;
-    transition: all 1s ease;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
 
   .section-container .content-container {
     padding-top: 50px;
@@ -138,3 +46,120 @@
       font-size: 25px !important;
     }
   }
+.section-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.image-container {
+  flex: 1;
+  position: relative;
+}
+
+.shield-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.shield-image:hover {
+  scale: 1.2;
+  transition: all 0.53s ease;
+  height: 100%;
+  width: 100% !important;
+  border-radius: 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.main-heading {
+  color: var(--secondary-color);
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+/* Description */
+.description {
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+/* Services List */
+.services-list {
+  list-style: none;
+  padding: 0;
+}
+
+.services-list li {
+  margin-bottom: 8px;
+  padding-left: 26px;
+  position: relative;
+  font-size: 14px;
+  color: #333;
+  line-height: 20px !important;
+  margin-bottom: 3px !important;
+}
+
+.checkmark-icon {
+  position: absolute;
+  left: 0;
+  top: 0px !important;
+  width: 15px;
+  height: 15px;
+  /* background-image: url("./image/homesection/group18.png"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.checkmark-icon img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.about-us-butn {
+  border-radius: 100px;
+  border: 0;
+  color: #004457;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 400;
+  transition: all 1s ease;
+}
+
+.section-container .content-container {
+  padding-top: 50px;
+}
+.section-container .content-container .about-us-butn {
+  font-size: 14px !important;
+  text-transform: uppercase !important;
+  padding: 7px 10px !important;
+  box-shadow: none !important;
+}
+.main-heading.mb-5 {
+  font-family: Koh Santepheap;
+  font-weight: 700;
+  font-size: 32px !important;
+  color: #004457 !important;
+  margin-bottom: 28px !important;
+}
+.description {
+  margin-bottom: 20px;
+  font-size: 14px !important;
+  font-weight: 500;
+  color: #0f0f0f !important;
+  line-height: 20px !important;
+}
+.services-heading.mb-2 {
+  font-size: 20px !important;
+  margin-top: 26px;
+  font-weight: 600;
+  line-height: 24px;
+}
