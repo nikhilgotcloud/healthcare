@@ -198,11 +198,11 @@ text-decoration-skip-ink: none;
   overflow: hidden;
   border-radius: 30px;
 }
-.why-feature:hover .blog-image{
+.lates_bog_section .why-feature:hover .blog-image{
   scale: 1;
   transition: all 0.5s ease;
 }
-.why-feature:hover .blog-image {
+.lates_bog_section .why-feature:hover .blog-image {
   scale: 1.2;
 }
 
@@ -215,10 +215,10 @@ text-decoration-skip-ink: none;
   transition: all .5s ease;
 
 }
-.why-feature{
+.lates_bog_section .why-feature{
   transition: all .5s ease;
 }
-.why-feature:hover {
+.lates_bog_section .why-feature:hover {
   box-shadow: #0000005e 0 0 10px 1px;
 }
 
@@ -235,7 +235,7 @@ text-decoration-skip-ink: none;
   font-size: 11px;
 }
 
-.why-feature:hover .blog-content {
+.lates_bog_section .why-feature:hover .blog-content {
   background-color: #fff;
  
 }
@@ -249,7 +249,7 @@ text-decoration-skip-ink: none;
   color:#AB0000
 }
 
-.why-feature .box-number {
+.lates_bog_section .why-feature .box-number {
   position: absolute;
   right: 0px;
   bottom: -33px;
@@ -262,7 +262,7 @@ text-decoration-skip-ink: none;
   align-items: center;
   overflow: hidden;
 }
-.why-feature .box-number i {
+.lates_bog_section .why-feature .box-number i {
   rotate: 45deg;
   position: absolute;
   transition: all .5s ease;
@@ -270,27 +270,27 @@ text-decoration-skip-ink: none;
 
 
 }
-.why-feature .box-number .hover_icon {
+.lates_bog_section .why-feature .box-number .hover_icon {
   transform: translate(0, 45px);
   font-size: 18px !important;
   color: #fff;
 }
 
-.why-feature:hover .box-number {
+.lates_bog_section .why-feature:hover .box-number {
   background-color: #ab0000 !important;
 }
 
-.why-feature:hover .box-number .non_hover_icon {
+.lates_bog_section .why-feature:hover .box-number .non_hover_icon {
   transform: translate(0, -45px);
 }
 
-.why-feature .box-number .hover_icon {
+.lates_bog_section .why-feature .box-number .hover_icon {
   transform: translate(0, 45px);
   font-size: 18px !important;
   color: #fff;
 }
 
-.why-feature:hover .box-number .hover_icon {
+.lates_bog_section .why-feature:hover .box-number .hover_icon {
   transform: translate(0, 0px);
 }
 
