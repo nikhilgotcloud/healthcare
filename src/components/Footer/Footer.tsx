@@ -101,11 +101,11 @@ const Footer = () => {
               Sign up for our mailing list to get latest updates and offers.
             </p>
 
-            <div className="newsletter-form">
+            <div className="newsletter-form ">
               <input
                 type="email"
                 placeholder="Enter your email here"
-                className="bg-white"
+                className="bg-white rounded-pill"
                 style={inputbg}
               />
               <button type="submit">Subscribe</button>
