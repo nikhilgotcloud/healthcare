@@ -7,21 +7,21 @@ const AppointmentForm: React.FC = () => {
     <section className="appointment_form_new">
       <div className="container">
         <div className="bg shadow-lg">
-          <div className="row">
-            
-            <div className="col-lg-6">
+          <div className="row mob_row">
+
+            <div className="col-lg-6 testimonial_bg">
               <div className="testimonial-card h-100">
-                
+
                 <div className="star-rating">
-                  <StarRating/>
+                  <StarRating />
                 </div>
 
-               
+
                 <div className="testimonial-text text-white mt-1">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                 </div>
 
-             
+
                 <div className="profile-section">
                   <img
                     src="./image/Frame 133.png"
@@ -37,20 +37,20 @@ const AppointmentForm: React.FC = () => {
             </div>
 
             {/* Right Section - Appointment Form */}
-            <div className="col-lg-6 bg-white">
+            <div className="col-lg-6 bg-white position-relative bg_main">
               <div className="h-100 main_appoint_form">
                 <div className="row p-0 m-0">
                   <div className="col-12">
                     <div className="badge appoint book-demo-butn text-white rounded-pill">
                       Book Demo
                     </div>
-                    <h5>Make Appointment</h5>
+                    <h5 className="appoint_title">Book Your Free Demo</h5>
+
                     <p className="para">
                       Maximize Your Revenue Potential: Request a Demo Now!
                     </p>
                   </div>
                 </div>
-
                 {/* Form */}
                 <form className="w-100 d-block" id="appointmentForm">
                   <div className="appoint_form_box">
@@ -121,6 +121,12 @@ const AppointmentForm: React.FC = () => {
                     </div>
                   </div>
                 </form>
+
+              </div>
+              <img className="bg_img" src="./image/contact_form_bg.png" alt="" />
+              <div className="calender_bg">
+                <img src="./image/calender.svg" alt="" />
+
 
               </div>
             </div>

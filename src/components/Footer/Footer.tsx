@@ -95,7 +95,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-lg-4 col-md-4 mb-4">
+          <div className="col-lg-4 col-md-4 mb-4 footer_section_end">
             <h3 className="footer-heading">Register Newsletter</h3>
             <p>
               Sign up for our mailing list to get latest updates and offers.
@@ -111,7 +111,8 @@ const Footer = () => {
               <button type="submit">Subscribe</button>
             </div>
 
-            <h3 className="footer-heading">Book Your Free Demo</h3>
+            <h3 className="footer-heading book_heading
+            ">Book Your Free Demo</h3>
             <button  className="demo-button rounded-pill">
               Request Demo
               <img src="image/iconArrow.svg" alt="" loading="lazy" />
@@ -122,20 +123,26 @@ const Footer = () => {
         <div className="contact-info bg-white">
           <Link to="#" className="contact-item text-dark">
             <img src="./image/footer-location.png" alt="Location" />
+            <span>
             600 BROADWAY, STE 200 #5035, ALBANY, NEW YORK 12207
-          </Link>
+            </span>
           <div className="navbar-divider"></div>
+          </Link>
           <Link to="tel:888-512-6265" className="contact-item text-dark">
             <img src="./image/footer-call.png" alt="Phone" />
+            <span>
             888-512-6265
-          </Link>
+            </span>
           <div className="navbar-divider"></div>
+          </Link>
           <Link
             to="mailto:info@infhealthcare.com"
             className="contact-item text-dark"
           >
             <img src="./image/footer-mail'.png" alt="Email" />
+            <span>
             info@infhealthcare.com
+            </span>
           </Link>
         </div>
 

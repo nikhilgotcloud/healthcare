@@ -5,6 +5,47 @@
   font-family: Arial, sans-serif;
 }
 
+  .section-container .content-container {
+    padding-top: 50px;
+  }
+  .section-container .content-container .about-us-butn {
+    font-size: 14px !important;
+    text-transform: uppercase !important;
+    padding: 7px 10px !important;
+    box-shadow: none !important;
+  }
+  .main-heading.mb-5 {
+    font-family: Koh Santepheap;
+    font-weight: 700;
+    font-size: 32px !important;
+    color: #004457 !important;
+    margin-bottom: 28px !important;
+  }
+  .description {
+    margin-bottom: 20px;
+    font-size: 14px !important;
+    font-weight: 500;
+    color: #0F0F0F !important;
+    line-height: 20px !important;
+  }
+  .services-heading.mb-2 {
+    font-size: 20px !important;
+    margin-top: 26px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  @media(max-width:767px){
+    .healthcare-section .row {
+      flex-direction: column-reverse;
+    }
+    .section-container .content-container {
+      padding-top: 20px;
+    }
+    .main-heading.mb-5 {
+      font-size: 25px !important;
+    }
+  }
 .section-container {
   display: flex;
   gap: 40px;
