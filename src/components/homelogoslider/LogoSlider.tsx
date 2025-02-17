@@ -60,7 +60,7 @@ const LogoSlider: React.FC = () => {
   return (
     <div className="container-fluid py-4">
       <div className="row justify-content-center">
-        <div className="col-12 col-md-10 col-lg-8">
+        <div className="col-12 col-md-10 col-lg-10">
           <div className="slider-container" ref={sliderRef}>
             <div className="slider">
               {logos.concat(logos).map((logo, index) => (
