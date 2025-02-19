@@ -25,3 +25,13 @@
    .rotating-text {
     animation-duration: 15s;
   }
+  .btn_revolve{
+    animation-duration: 7s !important;
+    
+  }
+@media(max-width:767px){
+  .rotate_btn_size{
+    width: 100px !important;
+    height: 100px !important;
+  }
+}

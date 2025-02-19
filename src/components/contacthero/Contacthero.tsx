@@ -85,7 +85,7 @@ const Contacthero: React.FC = () => {
           <div className="hero-content">
             <div className="col-lg-3">
               <span
-                className={`badge mb-3 text-white ${animate ? "animate__animated animate__pulse" : ""}`}
+                className={`badge mb-3 text-white  crausal_lorem ${animate ? "animate__animated animate__pulse" : ""}`}
                 style={headStyle}
               >
                 {currentContent.header}
