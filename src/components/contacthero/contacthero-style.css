@@ -1,11 +1,11 @@
 .hero-container {
   width: 100%;
-  max-width: 86vw;
+  max-width: 100%;
   height: 90vh;
   margin: 0 auto;
   position: relative;
-  margin-left: 100px;
-  margin-right: 100px;
+  /* margin-left: 100px; */
+  /* margin-right: 100px; */
   min-height: 880px;
 }
 
@@ -54,7 +54,7 @@
 .hero-content h1 {
   font-size: 60px;
   line-height: 75px;
-  width: 60%;
+  width: 100%;
   margin-top: 3vw;
   text-transform: capitalize;
 }
@@ -138,17 +138,17 @@
   .hero-image {
     border-radius: 20px;
   }
-  .carousel-text {
+.hero-content {
     position: absolute;
-    top: 47%;
+    top: 55%;
     left: 16px;
   }
-  .about-us-butn.crausal_lorem {
+.crausal_lorem {
     padding: 9px !important;
-    display: inline-block;
+    display: inline-block !important;
     margin-bottom: 0 !important;
   }
-  .carousel-text h1 {
+  .hero-content h1 {
     font-size: 40px !important;
     margin-top: 10px !important;
     width: 100% !important;
@@ -159,7 +159,7 @@
     flex-direction: column-reverse;
     align-items: flex-start !important;
   }
-  .carousel-text p {
+  .hero-content p {
     width: 100%;
     font-size: 18px !important;
   }

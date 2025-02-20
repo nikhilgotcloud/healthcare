@@ -44,8 +44,8 @@ const Aboutexp = () => {
     },
   ];
   return (
-    <div>
-      <div className="row">
+    <div className='about_page_card_section'>
+      <div className="row m-0 p-0">
         <div className="col-12 text-center mt-3">
           <span
             className="badge badge-white mb-3 p-3"
@@ -60,7 +60,7 @@ const Aboutexp = () => {
         </div>
       </div>
 
-      <div className="container my-2 mainexp  about_page_card_section">
+      <div className="container my-2 mainexp  ">
         <div className="row">
           {cardData.map((card) => (
             <div key={card.id} className="col-12 col-md-6 col-lg-3 mb-4 my-4">
@@ -76,7 +76,7 @@ const Aboutexp = () => {
                   {card.description}
                 </p>
                 <div className="bg_image">
-                <img src="./image/bg_card.svg" alt="" />
+                <img src="./image/long_box.png" alt="" />
               </div>
               </div>
             </div>
