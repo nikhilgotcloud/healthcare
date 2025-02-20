@@ -92,13 +92,13 @@ const sidecard:React.CSSProperties={borderRadius:'20%'}
 
   
   return (
-    <div className="container py-5">
+    <div className="container  service_box_deail">
       <div className="row">
-        <div className="col-lg-1"></div>
+        {/* <div className="col-lg-1"></div> */}
         {/* <!-- Main Blog Listing Column (8 columns wide) --> */}
-        <div className="col-lg-6">
+        <div className="col-lg-9">
           <span
-            className="badge badge-white mb-3 p-3 text-white shadow-lg"
+            className="badge service_badge badge-white mb-3 p-3 text-white shadow-lg"
             style={headstyle}
           >
             SERVICES
@@ -222,13 +222,13 @@ const sidecard:React.CSSProperties={borderRadius:'20%'}
             </div>
           </div>
         </div>
-        <div className="col-lg-1"></div>
+        {/* <div className="col-lg-1"></div> */}
         {/* <!-- Sidebar Column (4 columns wide) --> */}
         <div className="col-lg-3 mt-3">
           {/* <!-- Recent Articles Card --> */}
 
           {/* <!-- Categories Card --> */}
-          <div className="card border-0 shadow-sm  mb-5" >
+          <div className="card border-0 shadow-sm  mb-5 w-100" >
             <div className="card-header bg-white border-0 d-flex justify-content-between align-items-center rounded-lg  mt-4">
               <h5 className="mb-0">Our Service</h5>
               <Link to="#" className="text-decoration-none">
@@ -269,7 +269,7 @@ const sidecard:React.CSSProperties={borderRadius:'20%'}
           </div>
 
           {/* <!-- Tag Cloud Card --> */}
-          <div className="card border-0 shadow-sm">
+          <div className="card border-0 shadow-sm w-100">
             <div className="card-header bg-white border-0 d-flex justify-content-between align-items-center rounded-lg mt-4">
               <h5 className="mb-0">Book Your Free Demo</h5>
               <Link to="#" className="text-decoration-none">

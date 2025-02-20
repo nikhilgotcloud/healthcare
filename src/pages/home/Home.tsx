@@ -8,22 +8,27 @@ import Homeiso from "../../components/homeiso/Homeiso";
 import HomeHippa from "../../components/homeHIPPA/HomeHippa";
 import AppointmentForm from "../../components/contactsection/AppointmentForm";
 import Latestblog from "../../components/latestblog/Latestblog";
+import './home-style.css'
 
 
 const Home = () => {
   return (
     <div>
-      
+
       <CarouselComponent />
-      <Expriencecards />
-      <Homeabout />
+      <div className="home_expericecard">
+        <Expriencecards />
+      </div>
+      <div className="home_home_about">
+        <Homeabout />
+      </div>
       <Homeservices />
-      <LogoSlider/>
-      <Homeiso/>
-      <HomeHippa/>
-      <AppointmentForm/>
-      <Latestblog/>
-     
+      <LogoSlider />
+      <Homeiso />
+      <HomeHippa />
+      <AppointmentForm />
+      <Latestblog />
+
     </div>
   );
 };

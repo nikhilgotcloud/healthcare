@@ -13,7 +13,7 @@ const Services = () => {
        <Contacthero/>
        <Serviceinfo/>
        <Homeservices/>
-       <div className="mt-4"><Latestblog/></div>
+       <div className=" service_latest_blog"><Latestblog/></div>
        
       </div>
     );
