@@ -64,7 +64,7 @@ const Latestblog = () => {
                       <path d="M7 17l9.2-9.2M17 17V7H7" />
                     </svg>
                   </div>
-                  <div className="justify-content-center">
+                  <div className="justify-content-center blog-image-container">
                     <img src={card.image} alt="" className="blog-image " />
                   </div>
                   <div className="blog-content">

@@ -41,7 +41,7 @@
 }
 
 .appoint_form_box .input:hover {
-    border: 1px solid var(--primary-color);
+    border: 1px solid #ab0000 !important;
 }
 
 .appoint_form_box textarea.input {
