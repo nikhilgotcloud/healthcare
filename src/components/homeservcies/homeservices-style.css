@@ -400,5 +400,6 @@ line {
   }
   .service-section.py-5.header_containter {
     max-width: 100% !important;
+    border-radius: 0;
   }
 }

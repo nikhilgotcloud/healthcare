@@ -105,10 +105,21 @@
 .carousel-control:focus {
   outline: none;
 }
+.carousel-image.active img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+@media(min-width:767px){
+  .hero-container .hero-wrapper {
+    margin-top: 30px;
+  }
+}
 
 @media (max-width: 767px) {
   .carousel-container {
-    min-height: 430px;
+    min-height: 930px;
   }
   .carousel-text h1 {
     font-size: 48px !important;
@@ -121,13 +132,25 @@
 .carousel-footer{
   margin-top: 7vh !important;
 }
+.carousel-container{
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+}
   
+.carousel-container.py-3 {
+  padding: 0 !important;
+}
+.carousel-container img {
+  border-radius: 0 !important;
+  margin-top: -5px;
+}
 }
 .carousel-wrapper {
   position: relative;
 }
 
-.carousel-image::after {
+/* .carousel-image::after {
   position: absolute;
   content: "";
   left: 0;
@@ -139,7 +162,7 @@
   z-index: 1;
   border-radius: 40px;
   overflow: hidden;
-}
+} */
 
 
 .carousel-text {
@@ -186,6 +209,19 @@
 
 .animate__fadeInRight {
   animation-name: fadeInRight;
+}
+
+.carousel-control {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  font-size: 15px;
+}
+.left-arrow {
+  left: 17px !important;
+}
+.right-arrow {
+  right: 17px;
 }
 
 @keyframes fadeInRight {
