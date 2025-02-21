@@ -166,3 +166,33 @@ height: 35px;
 .about-section {
   margin-bottom: 73px;
 }
+.about-main{
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10% !important;
+  -webkit-border-radius: 10% !important;
+  -moz-border-radius: 10% !important;
+  -ms-border-radius: 10% !important;
+  -o-border-radius: 10% !important;
+}
+.about-main:hover{
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+}
+.about-image{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.about-image:hover{
+  scale: 1.04;
+  transition: all 0.53s ease;
+  height: 100%;
+  width: 100% !important;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import RotatingTextButton from "../rotatebtn/RotatingTextButton";
 import { useState, useEffect } from "react";
 import './contacthero-style.css'
@@ -9,6 +9,7 @@ interface HeroContent {
   header: string;
   detail: string;
   description: string;
+  showBackButton?: boolean;
 }
 
 type RouteContentMap = {
@@ -17,6 +18,7 @@ type RouteContentMap = {
 
 const Contacthero: React.FC = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [animate, setAnimate] = useState(true);
 
   const contentMap: RouteContentMap = {
@@ -52,7 +54,13 @@ const Contacthero: React.FC = () => {
     }
   };
 
-  const defaultContent = contentMap["/about"];
+  const defaultContent: HeroContent = {
+    image: "./image/404hero.png",
+    header: "Page Not Found",
+    detail: "Oops! This page does not exist.",
+    description: "The page you’re looking for might have been moved or deleted.",
+    showBackButton: true
+  };
   const currentContent = (location.pathname as keyof RouteContentMap) in contentMap
     ? contentMap[location.pathname as keyof RouteContentMap]
     : defaultContent;
@@ -76,6 +84,10 @@ const Contacthero: React.FC = () => {
     padding: "12px 24px",
     cursor: "pointer"
   };
+  const goBackHandler = () => {
+    navigate("/");
+  };
+  const btncolor = { backgroundColor: '#ab0000' }
 
   return (
     <div className="hero-container position-relative">
@@ -100,8 +112,18 @@ const Contacthero: React.FC = () => {
               </div>
               <p className={`${animate ? "animate__animated animate__fadeInUpBig" : ""}`}>
                 <b>{currentContent.description}</b>
-              </p>
+              </p> 
+              
             </div>
+            {currentContent.showBackButton && (
+              <span
+                className={`badge m-5 w-50 text-white make_appoint_btn  ${animate ? "animate__animated animate__pulse" : ""}`}
+                style={headStyle}
+                onClick={goBackHandler}
+              >
+                Go Back
+              </span>
+              )}
           </div>
         </div>
       </div>
