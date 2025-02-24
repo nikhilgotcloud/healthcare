@@ -45,12 +45,15 @@ const Homeabout = () => {
           </div>
           <div className="col-md-6 ">
             <div className="inside_image_about_box position-relative w-100 h-100">
-            <img
+              <div className="w-100 h-100 about-main">
+              <img
               src="./image/Rectangle 20.png"
               alt="Healthcare professional discussing billing with a client"
               className="about-image img-fluid"
               loading="lazy"
             />
+              </div>
+            
             <button type="button" className="btn bg-white shadow-lg rounded-circle about-play-butn py-2">
               <img
                 src="./image/Mask group.png"
