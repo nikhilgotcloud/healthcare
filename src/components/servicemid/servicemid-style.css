@@ -186,6 +186,69 @@ text-decoration-skip-ink: none;
   font-weight: 700 !important;
 }
 
+.service_box_deail .card {
+  position: relative;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.service_box_deail .card .card-header {
+  background: transparent !important;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 !important;
+}
+.service_box_deail .card .card-body {
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.service_box_deail .card .bg_image_detail {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+.service_box_deail .card {
+  position: relative;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 30px 15px !important;
+}
+.service_box_deail .side_up_icon {
+  position: absolute;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 2px;
+}
+
+.service_box_deail .second_card .side_up_icon{
+  top: -2px;
+}
+.service_box_deail .card-body .badge {
+  padding: 12px 9px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+.service_box_deail .card-body .badge i {
+  transform: rotate(-45deg);
+}
 @media(max-width:700px){
   .why-feature {
     max-width: 275px;
