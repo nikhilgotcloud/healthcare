@@ -145,6 +145,7 @@ text-decoration-skip-ink: none;
   width: 100%;
   min-height: 290px;
   z-index: -1;
+  height: 100%;
 }
 
 .why-feature .card-text {

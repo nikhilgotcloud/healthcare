@@ -88,7 +88,7 @@ const Homeservices = () => {
   ];
 
   return (
-    <section className="service-section py-5 header_containter">
+    <section className="service-section padding_section py-5 header_containter">
       <div className="container">
 
         <div className="row">

@@ -382,6 +382,9 @@ line {
   text-transform: uppercase !important;
 }
 
+.service-section.padding_section {
+  padding-bottom: 80px !important;
+}
 @media(max-width:700px) {
   .service-section.py-5 {
     margin: 50px 0 !important;

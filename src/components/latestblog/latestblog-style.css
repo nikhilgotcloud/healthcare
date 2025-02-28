@@ -347,4 +347,10 @@ text-decoration-skip-ink: none;
     height: 17px;
     width: 17px;
   }
+  .lates_bog_section {
+    margin-top: 50px;
+    margin-bottom: 50px !important;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }

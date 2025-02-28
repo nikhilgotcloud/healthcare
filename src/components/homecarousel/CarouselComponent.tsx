@@ -90,7 +90,7 @@ const CarouselComponent: React.FC = () => {
             <div className="carousel-text">
               <div className="col-lg-3">
               <span
-                className={`badge mb-3 text-white about-us-butn p-3 ${
+                className={`badge mb-3 text-white about-us-butn p-3 crausal_lorem  ${
                   index === currentIndex && animate ? "animate__animated animate__pulse" : ""
                 }`}
                 style={headStyle}
@@ -105,7 +105,7 @@ const CarouselComponent: React.FC = () => {
               <div className="carousel-footer">
                 <div className="animate__animated animated__fadeIn"> <RotatingTextButton/></div>
                
-                <p className={`${index === currentIndex && animate ? "animate__animated animate__fadeInUpBig " : ""}`}>
+                <p className={`${index === currentIndex && animate ? "animate__animated animate__fadeInUpBig " : ""} footer_text`}>
                 
                   <b>{image.description}</b>
                 </p>

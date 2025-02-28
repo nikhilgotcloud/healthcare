@@ -90,29 +90,34 @@ const Contacthero: React.FC = () => {
   const btncolor = { backgroundColor: '#ab0000' }
 
   return (
-    <div className="hero-container position-relative">
-      <div className="hero-wrapper">
-        <div className="hero-image">
-          <img src={currentContent.image} alt="Hero" />
-          <div className="hero-content">
-            <div className="col-lg-3">
-              <span
-                className={`badge mb-3 text-white ${animate ? "animate__animated animate__pulse" : ""}`}
-                style={headStyle}
-              >
-                {currentContent.header}
-              </span>
-            </div>
-            <h1 className={`${animate ? "animate__animated animate__fadeInRight" : ""}`}>
-              <b>{currentContent.detail}</b>
-            </h1>
-            <div className="hero-footer">
-              <div className="animate__animated animate__fadeIn">
-                <RotatingTextButton />
+    <div className="header_containter container">
+      <div className="hero-container  position-relative">
+        <div className="hero-wrapper">
+          <div className="hero-image">
+            <img src={currentContent.image} alt="Hero" />
+            <div className="hero-content">
+              <div className="col-lg-3">
+                <span
+                  className={`badge mb-3 text-white  crausal_lorem ${animate ? "animate__animated animate__pulse" : ""}`}
+                  style={headStyle}
+                >
+                  {currentContent.header}
+                </span>
               </div>
-              <p className={`${animate ? "animate__animated animate__fadeInUpBig" : ""}`}>
+              <h1 className={`${animate ? "animate__animated animate__fadeInRight" : ""}`}>
+                <b>{currentContent.detail}</b>
+              </h1>
+              <div className="hero-footer">
+                <div className="animate__animated animate__fadeIn">
+                  <RotatingTextButton />
+                </div>
+                <p className={`${animate ? "animate__animated animate__fadeInUpBig" : ""}`}>
+                  <b>{currentContent.description}</b>
+                </p>
+              </div>
+              {/* <p className={`${animate ? "animate__animated animate__fadeInUpBig" : ""}`}>
                 <b>{currentContent.description}</b>
-              </p> 
+              </p>  */}
               
             </div>
             {currentContent.showBackButton && (
