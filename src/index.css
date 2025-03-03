@@ -43,6 +43,14 @@ code {
   margin: auto !important; 
   
 }
+
+@media(min-width:1400px){
+  .container{
+    padding: 0;
+  }
+}
+
+
 @media(max-width:1400px){
   .container,.header_containter,.sicky_container{
     max-width: 95% !important;

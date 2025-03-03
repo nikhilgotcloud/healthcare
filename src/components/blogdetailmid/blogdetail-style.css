@@ -204,3 +204,20 @@ text-decoration-skip-ink: none;
 .prev-mb{
     margin-bottom: 0.8rem;
 }
+.blog-title + p {
+  margin-bottom: 44px !important;
+}
+.colored-card {
+  margin-bottom: 40px !important;
+  box-shadow: none !important;
+}
+.services-list .checkmark-icon img {
+  height: 15px;
+  width: 15px !important;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+.services-list li {
+  padding-left: 32px !important;
+  line-height: 10px !important;
+}

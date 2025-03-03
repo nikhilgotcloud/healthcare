@@ -108,7 +108,7 @@
 .blog-image:hover {
   scale: 1.2;
   transition: all 0.53s ease;
-  height: 332px;
+  /* height: 332px; */
   width: 100% !important;
   border-radius: 40px;
  
@@ -157,7 +157,7 @@ text-decoration-skip-ink: none;
 .blog-meta {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     margin-bottom: 1rem;
     font-size: 0.9rem;
 }
@@ -165,7 +165,7 @@ text-decoration-skip-ink: none;
 .meta-item {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 4px;
     color: #666;
 }
 
@@ -226,16 +226,18 @@ text-decoration-skip-ink: none;
 }
 
 .lates_bog_section .why-feature .blog-content {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 50px;
   margin-top: -35px;
   border-radius: 20px;
   transition: all .5s ease;
+  height: 100%;
 
 }
 .lates_bog_section .why-feature{
   transition: all .5s ease;
+  overflow: hidden;
 }
 .lates_bog_section .why-feature:hover {
   box-shadow: #0000005e 0 0 10px 1px;
@@ -251,7 +253,7 @@ text-decoration-skip-ink: none;
 }
 .lates_bog_section .why-feature .blog-content .meta-item span {
   color: #000;
-  font-size: 11px;
+  font-size: 10px;
 }
 
 .lates_bog_section .why-feature:hover .blog-content {
@@ -353,4 +355,7 @@ text-decoration-skip-ink: none;
     padding-left: 16px;
     padding-right: 16px;
   }
+}
+.lates_bog_section .why-feature{
+  padding: 0 !important;
 }

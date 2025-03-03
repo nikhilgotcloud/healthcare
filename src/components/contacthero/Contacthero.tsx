@@ -13,7 +13,7 @@ interface HeroContent {
 }
 
 type RouteContentMap = {
-  [key in "/contact" | "/about" | "/services" | "/servicedetail" | "/blogdetail"]: HeroContent;
+  [key in "/contact" | "/about" | "/services" | "/servicedetail" | "/blogdetail"| "/blog"]: HeroContent;
 }
 
 const Contacthero: React.FC = () => {
@@ -51,6 +51,12 @@ const Contacthero: React.FC = () => {
       header: "Blog Insights",
       detail: "Latest Updates",
       description: "Stay informed with our latest articles and industry insights"
+    },
+    "/blog": {
+      image: "./image/blog-detail.png",
+      header: "Blog Insights",
+      detail: "Latest Updates",
+      description: "Stay informed with our latest articles and industry insights"
     }
   };
 
@@ -66,6 +72,7 @@ const Contacthero: React.FC = () => {
     : defaultContent;
 
   useEffect(() => {
+    console.log(location)
     setAnimate(false);
     const timeout = setTimeout(() => {
       setAnimate(true);

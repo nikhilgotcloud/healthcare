@@ -196,3 +196,6 @@ height: 35px;
   -ms-border-radius: 10%;
   -o-border-radius: 10%;
 }
+.about-description.bold_text {
+  font-size: 18px;
+}
