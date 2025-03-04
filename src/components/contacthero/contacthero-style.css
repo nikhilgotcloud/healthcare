@@ -136,7 +136,8 @@
   }
 
   .hero-image {
-    border-radius: 20px;
+    /* border-radius: 20px; */
+    border-radius: 30px;
   }
 .hero-content {
     position: absolute;

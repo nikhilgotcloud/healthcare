@@ -332,6 +332,7 @@ text-decoration-skip-ink: none;
 @media(max-width:767px){
   .hero-container{
     min-height: 928px;
+    margin-top: -4px !important;
   }
   .hero-content {
     top: 42% !important;
@@ -370,7 +371,7 @@ text-decoration-skip-ink: none;
 .service_box_deail .row.mb-4 {
   margin-bottom: 0 !important;
 }
-.denial-service-head {
+.service_box_deail .denial-service-head {
   text-align: center;
   margin-bottom: 18px !important;
 }
