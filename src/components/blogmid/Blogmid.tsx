@@ -251,11 +251,11 @@ const Blogmid = () => {
               )
             )}
 
-            <div className="d-flex justify-content-between align-items-center w-100 py-4">
+            <div className="d-flex justify-content-between align-items-center w-100 ">
               {/* <!-- Pagination --> */}
-              <nav aria-label="Page navigation" className="mt-3 paginatee">
+              <nav aria-label="Page navigation" className="mt-3 paginatee w-100">
                 <ul className="pagination justify-content-center align-items-center gap-2 m-0">
-                  <li className="page-item">
+                  <li className="page-item left_btn  pagi_btn">
                     <Link
                       className="page-link border-0 rounded-circle paginatee-text"
                       to="/"
@@ -303,7 +303,7 @@ const Blogmid = () => {
                       4
                     </Link>
                   </li>
-                  <li className="page-item">
+                  <li className="page-item pagi_btn right_btn">
                     <Link
                       className="page-link border-0 border-0 rounded-circle paginatee-text"
                       to="#"
@@ -334,7 +334,7 @@ const Blogmid = () => {
           </div>
         </div>
         {/* <!-- Sidebar Column (4 columns wide) --> */}
-        <div className="col-lg-3 mt-3">
+        <div className="col-lg-3 mt-3 right_section_blog">
           {/* <!-- Recent Articles Card --> */}
           <div className="card border-0 shadow-sm  mb-5 bhjhg">
             <div className="side_up_icon icon_one">

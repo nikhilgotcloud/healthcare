@@ -346,9 +346,9 @@ const Blogdetailmid = () => {
 
           <div className="d-flex justify-content-between align-items-center w-100 py-4">
             {/* <!-- Previous Section --> */}
-            <div className="d-flex align-items-start">
+            <div className="d-flex align-items-center">
               <div
-                className="rounded-circle bg-teal-800 p-3 d-flex align-items-center justify-content-center"
+                className="rounded-circle btn_pagi bg-teal-800 p-3 d-flex align-items-center justify-content-center"
                 style={bgstyle}
               >
                 <svg
@@ -406,14 +406,14 @@ const Blogdetailmid = () => {
               </ul>
             </nav>{" "}
             {/* <!-- Next Section --> */}
-            <div className="d-flex align-items-end text-end">
+            <div className="d-flex align-items-center text-end">
               <div className="me-3">
                 <div className="text-danger prev-mb" style={fontstyle}>
                   Next
                 </div>
               </div>
               <div
-                className="rounded-circle bg-teal-800 p-3 d-flex align-items-center justify-content-center"
+                className="rounded-circle btn_pagi right bg-teal-800 p-3 d-flex align-items-center justify-content-center"
                 style={bgstyle}
               >
                 <svg

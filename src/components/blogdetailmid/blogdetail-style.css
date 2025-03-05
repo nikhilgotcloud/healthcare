@@ -221,3 +221,15 @@ text-decoration-skip-ink: none;
   padding-left: 32px !important;
   line-height: 10px !important;
 }
+.text-danger.prev-mb {
+  margin-bottom: 0;
+}
+.btn_pagi svg {
+  transform: rotate(45deg);
+}
+.btn_pagi.right svg {
+  transform: rotate(-45deg);
+}
+
+
+
