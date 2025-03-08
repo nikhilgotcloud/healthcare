@@ -22,7 +22,7 @@
   -o-border-radius: 8% !important;
 }
 .image-container:hover{
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.7) !important;
 }
 
 .shield-image {

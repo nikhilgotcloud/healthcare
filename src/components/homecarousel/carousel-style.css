@@ -255,6 +255,12 @@
   padding: 9px !important;
 }
 
+.carousel-container > .carousel-control {
+  height: 48px;
+  width: 48px;
+  font-size: 19px;
+  color: #000000ad;
+}
 @media(max-width:767px){
   .carousel-text {
     position: absolute;

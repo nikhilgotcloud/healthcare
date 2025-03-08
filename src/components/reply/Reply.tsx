@@ -37,7 +37,7 @@ const Reply = () => {
                               data-callback="onRecaptchaSuccess">
                            </div>
                         </div>
-                        <div className="col-12  mt-1 mb-4">
+                        <div className="col-12  mt-1 mb-4 check_main">
                            <input type="checkbox" className="form-check-input ms-2 border-1 border-dark" id="saveInfo" />
                            <label className="form-check-label ms-2" htmlFor="saveInfo">Save my name, email, and website in this browser for the next time I comment.</label>
                         </div>

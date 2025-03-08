@@ -10,3 +10,6 @@
     height: 17px !important;
     width: 17px !important;
   }
+  .home_expericecard .bg_image img {
+    min-height: 290px;
+  }

@@ -186,3 +186,8 @@ text-decoration-skip-ink: none;
     right: -2px;
   }
 }
+.why-feature:hover .box-number {
+  background-color: #ab0000 !important;
+  color: #fff !important;
+  transition: all .5s ease
+}
