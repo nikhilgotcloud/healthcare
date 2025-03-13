@@ -24,7 +24,9 @@ const Home = () => {
       </div>
       <Homeservices />
       <LogoSlider />
+      <div className="home_service_section">
       <Homeiso />
+      </div>
       <HomeHippa />
       <AppointmentForm />
       <Latestblog />

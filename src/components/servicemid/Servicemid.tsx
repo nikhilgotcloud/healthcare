@@ -97,53 +97,60 @@ const Servicemid = () => {
         {/* <div className="col-lg-1"></div> */}
         {/* <!-- Main Blog Listing Column (8 columns wide) --> */}
         <div className="col-lg-9">
-          <span
-            className="badge service_badge badge-white mb-3 p-3 text-white shadow-lg"
-            style={headstyle}
-          >
-            SERVICES
-          </span>
-          <h2 className="about-title my-3">Denial Management Services</h2>
-          <p className="description mb-4">
-            Prevent Denials and Focus on Revenue Maximization
-          </p>
+          <div className="row">
+            <div className="upper_text col-12">
+              <span
+                className="badge service_badge badge-white mb-3 p-3 text-white shadow-lg"
+                style={headstyle}
+              >
+                SERVICES
+              </span>
+              <h2 className="about-title my-3">Denial Management Services</h2>
+              <p className="description mb-4">
+                Prevent Denials and Focus on Revenue Maximization
+              </p>
+            </div>
+          </div>
+
           <div className="row">
             <div className="col-lg-6"></div>
           </div>
 
-          <div className="container">
-            {Array.from(
-              { length: Math.ceil(cardData.length / 2) },
-              (_, index) => (
-                <div className="row mb-4" key={index}>
-                  {cardData.slice(index * 2, index * 2 + 2).map((card) => (
-                    <div key={card.id} className="col-lg-6">
-                      <div className="why-feature ">
-                        <div className="box-number text-dark">{card.id}</div>
-                        <div className="box-icon justify-content-center mb-3">
-                          <img
-                            src={card.image}
-                            alt=""
-                            className="card-image"
-                            width={100}
-                            height={100}
-                          />
-                        </div>
-                        <div className="divider mb-3 w-75 mx-5"></div>
-
-                        <p className="text-muted mb-2 px-2 small text-center card-description py-2">
-                          {card.description}
-                        </p>
+          {Array.from(
+            { length: Math.ceil(cardData.length / 2) },
+            (_, index) => (
+              <div className="row mb-4" key={index}>
+                {cardData.slice(index * 2, index * 2 + 2).map((card) => (
+                  <div key={card.id} className="col-lg-6">
+                    <div className="why-feature ">
+                      <div className="box-number text-dark">{card.id}</div>
+                      <div className="box-icon justify-content-center mb-3">
+                        <img
+                          src={card.image}
+                          alt=""
+                          className="card-image"
+                          width={100}
+                          height={100}
+                        />
                       </div>
+                      <div className="divider mb-3 w-75 mx-5"></div>
+                      <h6 className="heading_card">
+                        {card.title
+                        }
+                      </h6>
+                      <p className="text-muted mb-2 px-2 small text-center card-description py-2">
+                        {card.description}
+                      </p>
+                      <img className="bg_image" src="./image/bg_svg_service_Detail.svg" alt="" />
                     </div>
-                  ))}
-                </div>
-              )
-            )}
-          </div>
+                  </div>
+                ))}
+              </div>
+            )
+          )}
 
           <div className="row my-2">
-            <div className="col-lg-7 me-1">
+            <div className="col-lg-8 ">
               <p className="mb-1 mt-4 denial-service-head">
                 Denial Management Services: <br />
                 Unlocking Your Revenue Potential
@@ -158,67 +165,58 @@ const Servicemid = () => {
               </p>
             </div>
 
-            <div className="col-lg-2">
+            <div className="col-lg-4">
               <img
                 src="./image/denial-s1.png"
                 alt="DenialManagementservice"
                 loading="lazy"
+                className="w-100 bottom_slider_image"
               />
             </div>
           </div>
           <div className="d-flex justify-content-between align-items-center w-100 py-4">
-            {/* <!-- Previous Section --> */}
-            <div className="d-flex align-items-start">
-              <div
-                className="rounded-circle bg-teal-800 p-3 d-flex align-items-center justify-content-center"
-                style={bgstyle}
-              >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="white"
-                  stroke-width="2"
+            <div className="prev_nav nav_box">
+              <div className="d-flex align-items-center">
+                <div
+                  className="rounded-circle bg-teal-800 p-3 d-flex align-items-center justify-content-center"
+                  style={bgstyle}
                 >
-                  <path d="M19 12H5M12 19l-7-7 7-7" />
-                </svg>
+                  <i className="fa-solid fa-arrow-left"></i>
+                </div>
+                <div className="ms-3">
+                  <div className="text-danger mb-1" style={fontstyle}>
+                    Previous
+                  </div>
+
+                </div>
               </div>
-              <div className="ms-3">
-                <div className="text-danger mb-1" style={fontstyle}>
-                  Previous
-                </div>
-                <div className="text-teal-800 fw-medium" style={txtstyle}>
-                  Revenue Cycle Management
-                </div>
+              <div className="text-teal-800 fw-medium" style={txtstyle}>
+                Revenue Cycle Management
               </div>
             </div>
+            {/* <!-- Previous Section --> */}
+
+
 
             {/* <!-- Next Section --> */}
-            <div className="d-flex align-items-end text-end">
+            <div className="prev_nav nav_box">
+            <div className="d-flex align-items-center justify-content-end text-end">
               <div className="me-3">
                 <div className="text-danger mb-1" style={fontstyle}>
                   Next
                 </div>
-                <div className="text-teal-800 fw-medium" style={txtstyle}>
-                  Medical Billing
-                </div>
+               
               </div>
               <div
                 className="rounded-circle bg-teal-800 p-3 d-flex align-items-center justify-content-center"
                 style={bgstyle}
               >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="white"
-                  stroke-width="2"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
+              <i className="fa-solid fa-arrow-right"></i>
               </div>
+            </div>
+            <div className="text-teal-800 fw-medium" style={txtstyle}>
+                  Medical Billing
+                </div>
             </div>
           </div>
         </div>
@@ -281,7 +279,7 @@ const Servicemid = () => {
           {/* <!-- Tag Cloud Card --> */}
           <div className="card second_card border-0 shadow-sm w-100">
             <div className="side_up_icon">
-              
+
               <img src="./image/calender_new.svg" alt="" />
 
             </div>

@@ -384,6 +384,7 @@ line {
 
 .service-section.padding_section {
   padding-bottom: 80px !important;
+  padding-top: 80px !important;
 }
 @media(max-width:700px) {
   .service-section.py-5 {
@@ -403,6 +404,6 @@ line {
   }
   .service-section.py-5.header_containter {
     max-width: 100% !important;
-    border-radius: 0;
+    /* border-radius: 0; */
   }
 }

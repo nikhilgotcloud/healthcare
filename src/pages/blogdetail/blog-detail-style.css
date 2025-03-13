@@ -1,0 +1,31 @@
+.main_blog_detail li {
+    margin-bottom: 3px !important;
+    line-height: 19px !important;
+    font-size: 14px !important;
+  }
+  .main_blog_detail li .checkmark-icon {
+    height: auto !important;
+    width: auto !important;
+  }
+  .main_blog_detail li .checkmark-icon img {
+    margin-top: 7px !important;
+  }
+  .main_blog_detail .blog-title.d-block + p {
+    margin-bottom: 30px !important;
+  }
+  .main_blog_detail .services-list {
+    margin-bottom: 35px !important;
+  }
+  .main_blog_detail p {
+    font-size: 14px !important;
+  }
+  .main_blog_detail .colored-card {
+    box-shadow: none !important;
+    margin-bottom: 36px !important;
+  }
+  .main_blog_detail .colored-card p {
+    font-size: 20px;
+  }
+  .main_blog_detail .blog_page_card {
+    margin-bottom: 40px !important;
+  }

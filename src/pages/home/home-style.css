@@ -4,3 +4,12 @@
   .home_home_about .about-section {
     margin-bottom: 80px !important;
   }
+  .home_service_section .services-list li .checkmark-icon.mb-1 img {
+    margin-left: 0;
+    margin-top: 8px;
+    height: 17px !important;
+    width: 17px !important;
+  }
+  .home_expericecard .bg_image img {
+    min-height: 290px;
+  }

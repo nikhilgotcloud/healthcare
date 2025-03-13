@@ -35,17 +35,7 @@
     line-height: 24px;
   }
 
-  @media(max-width:767px){
-    .healthcare-section .row {
-      flex-direction: column-reverse;
-    }
-    .section-container .content-container {
-      padding-top: 20px;
-    }
-    .main-heading.mb-5 {
-      font-size: 25px !important;
-    }
-  }
+
 .section-container {
   display: flex;
   gap: 40px;
@@ -68,7 +58,7 @@
 
 .shield-image {
   width: 100%;
-  height: auto;
+  height: 100% !important;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
@@ -171,4 +161,31 @@
   margin-top: 26px;
   font-weight: 600;
   line-height: 24px;
+}
+
+
+.home_service_section .services-list li {
+  line-height: 29px !important;
+  margin: 0 !important;
+  padding-left: 23px !important;
+}
+
+.home_service_section .services-list .checkmark-icon.mb-1 {
+  height: auto !important;
+  width: auto !important;
+} 
+
+@media(max-width:767px){
+  .healthcare-section .row {
+    flex-direction: column-reverse;
+  }
+  .section-container .content-container {
+    padding-top: 20px;
+  }
+  .main-heading.mb-5 {
+    font-size: 25px !important;
+  }
+  .home_service_section .services-list li {
+    line-height: 22px !important;
+  }
 }

@@ -75,3 +75,16 @@
     opacity: 1;
   }
   
+  .slider_box {
+    padding-top: 72px;
+    padding-bottom: 33px;
+  }
+
+  @media(max-width:767px){
+    .slide{
+      flex: 0 0 77%;
+    }
+    .overlay{
+      width: 100%;
+    }
+  }

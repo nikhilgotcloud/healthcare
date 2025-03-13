@@ -58,24 +58,26 @@ const LogoSlider: React.FC = () => {
   };
 
   return (
-    <div className="container-fluid py-4">
-      <div className="row justify-content-center">
-        <div className="col-12 col-md-10 col-lg-10">
-          <div className="slider-container" ref={sliderRef}>
-            <div className="slider">
-              {logos.concat(logos).map((logo, index) => (
-                <div
-                  key={index}
-                  className="slide"
-                  onMouseEnter={pauseScroll}
-                  onMouseLeave={resumeScroll}
-                >
-                  <img src={logo.src} alt={logo.name} className="logo-img" loading="lazy" />
-                  <div className="overlay">
-                    <p className="brand-name">{logo.name}</p>
+    <div className="slider_box">
+      <div className="container-fluid py-4 ">
+        <div className="row justify-content-center">
+          <div className="col-12 col-md-10 col-lg-10">
+            <div className="slider-container" ref={sliderRef}>
+              <div className="slider">
+                {logos.concat(logos).map((logo, index) => (
+                  <div
+                    key={index}
+                    className="slide"
+                    onMouseEnter={pauseScroll}
+                    onMouseLeave={resumeScroll}
+                  >
+                    <img src={logo.src} alt={logo.name} className="logo-img" loading="lazy" />
+                    <div className="overlay">
+                      <p className="brand-name">{logo.name}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
