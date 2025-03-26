@@ -71,6 +71,7 @@ const CarouselComponent: React.FC = () => {
     cursor: "pointer",
   };
   return (
+    <div className="header_containter">
     <div className="carousel-container position-relative d-flex align-items-center py-3 m-auto">
       <button
         className="carousel-control left-arrow position-absolute d-none d-md-block"
@@ -121,6 +122,7 @@ const CarouselComponent: React.FC = () => {
         <i className="fa-solid fa-arrow-right control-icon"></i>
       </button>
       
+    </div>
     </div>
 
   );

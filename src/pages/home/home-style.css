@@ -13,3 +13,7 @@
   .home_expericecard .bg_image img {
     min-height: 290px;
   }
+  .home_expericecard .why-feature {
+    max-width: 250px;
+    margin: auto;
+  }
