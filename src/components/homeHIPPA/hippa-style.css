@@ -14,6 +14,15 @@
 .image-container {
   flex: 1;
   position: relative;
+  overflow: hidden;
+  border-radius: 8% !important;
+  -webkit-border-radius: 8% !important;
+  -moz-border-radius: 8% !important;
+  -ms-border-radius: 8% !important;
+  -o-border-radius: 8% !important;
+}
+.image-container:hover{
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.7) !important;
 }
 
 .shield-image {
@@ -107,9 +116,51 @@
 }
 
 .hippa-list li img {
-  width: 40px;
-  height: 40px;
+    width: 50px;
+    height: 50px;
 }
+
+.hippa-list li b {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+.hipp_section {
+  margin-top: 50px;
+}
+.hipp_section .main-heading {
+  font-weight: 700;
+  font-family: Koh Santepheap;
+  font-size: 32px;
+  color: #004457;
+  margin-top: 10px;
+}
+.hipp_section .description {
+  font-size: 14px !important;
+  color: #0F0F0F !important;
+  margin-bottom: 35px !important;
+}
+.hipp_section .services-heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0F0F0F;
+  margin-bottom: 16px;
+}
+.hippa-list li b {
+  font-size: 14px !important;
+  margin-bottom: 0 !important;
+}
+@media(max-width:767px){
+  .hipp_section .row {
+    flex-direction: column;
+  }
+  .hipp_section .main-heading {
+    font-size: 26px;
+  }
+}
+  /* width: 40px;
+  height: 40px;
+} */
 
 .hippa-list li b {
   display: block;

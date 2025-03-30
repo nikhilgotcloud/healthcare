@@ -12,3 +12,9 @@
     font-size: 32px;
     font-weight: bold
 }
+.section-reply {
+    margin-bottom: 50px;
+  }
+  .check_main {
+    margin-bottom: 52px !important;
+  }

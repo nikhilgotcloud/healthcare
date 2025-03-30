@@ -34,7 +34,7 @@
  .menu-items .nav-link{
     cursor: pointer;
     border-bottom: 5px;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 16.8px;
     color: #000;
 }
@@ -170,7 +170,7 @@
   .sicky_container {
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 11;
   }
 
 
@@ -188,6 +188,29 @@
     background: transparent;
     border: 0;
     display: none;
+  }
+
+  @media(max-width:1100px){
+    .contact-marquee-wrapper {
+      padding-left: 0;
+    }
+    .marquee-font {
+      font-size: 13px;
+    }
+    .social-icons {
+        gap: 2px;
+    }
+    .make_appoint_btn{
+      width: 162px;
+      font-size: 13px;
+    }
+    .navbar-divider {
+      margin: 0 14px;
+    }
+  }
+
+  @media(max-width:1020px){
+   
   }
 
   @media(max-width:992px){
@@ -293,6 +316,8 @@
     }
   }
 
+
+
   @media(max-width:1100px) and (min-width:992px){
     .logo {
       width: 129px;
@@ -317,6 +342,10 @@
     }
     .sicky_container.container .healthcare-navbar {
       margin-top: 0 !important;
+    }
+    .bg_transparent.sicky_container.container .healthcare-navbar {
+      border-radius: 25px;
+      min-height: 94px;
     }
   }
 

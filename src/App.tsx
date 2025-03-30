@@ -10,6 +10,7 @@ import Marquee from './components/marquee/Marquee';
 import HealthcareNavbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Blogdetail from './pages/blogdetail/Blogdetail';
+import Notfound from './pages/notfound/Notfound';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blogdetail" element={<Blogdetail />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Notfound />}/>
         </Routes>
         <Footer/>
       </div>

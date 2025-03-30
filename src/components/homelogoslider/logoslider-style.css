@@ -34,7 +34,7 @@
     position: absolute;
     bottom: -100%;
     left: 0;
-    width: 90%;
+    width: 80%;
     height: 100%;
     background: rgba(0, 75, 90, 0.8);
     display: flex;
@@ -75,3 +75,16 @@
     opacity: 1;
   }
   
+  .slider_box {
+    padding-top: 72px;
+    padding-bottom: 33px;
+  }
+
+  @media(max-width:767px){
+    .slide{
+      flex: 0 0 77%;
+    }
+    .overlay{
+      width: 100%;
+    }
+  }
