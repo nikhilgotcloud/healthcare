@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import RotatingTextButton from "../rotatebtn/RotatingTextButton";
 import { useState, useEffect } from "react";
 import './contacthero-style.css'
@@ -9,14 +9,16 @@ interface HeroContent {
   header: string;
   detail: string;
   description: string;
+  showBackButton?: boolean;
 }
 
 type RouteContentMap = {
-  [key in "/contact" | "/about" | "/services" | "/servicedetail" | "/blogdetail"]: HeroContent;
+  [key in "/contact" | "/about" | "/services" | "/servicedetail" | "/blogdetail"| "/blog"]: HeroContent;
 }
 
 const Contacthero: React.FC = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [animate, setAnimate] = useState(true);
 
   const contentMap: RouteContentMap = {
@@ -49,15 +51,28 @@ const Contacthero: React.FC = () => {
       header: "Blog Insights",
       detail: "Latest Updates",
       description: "Stay informed with our latest articles and industry insights"
+    },
+    "/blog": {
+      image: "./image/blog-detail.png",
+      header: "Blog Insights",
+      detail: "Latest Updates",
+      description: "Stay informed with our latest articles and industry insights"
     }
   };
 
-  const defaultContent = contentMap["/about"];
+  const defaultContent: HeroContent = {
+    image: "./image/404hero.png",
+    header: "Page Not Found",
+    detail: "Oops! This page does not exist.",
+    description: "The page you’re looking for might have been moved or deleted.",
+    showBackButton: true
+  };
   const currentContent = (location.pathname as keyof RouteContentMap) in contentMap
     ? contentMap[location.pathname as keyof RouteContentMap]
     : defaultContent;
 
   useEffect(() => {
+    console.log(location)
     setAnimate(false);
     const timeout = setTimeout(() => {
       setAnimate(true);
@@ -76,32 +91,51 @@ const Contacthero: React.FC = () => {
     padding: "12px 24px",
     cursor: "pointer"
   };
+  const goBackHandler = () => {
+    navigate("/");
+  };
+  const btncolor = { backgroundColor: '#ab0000' }
 
   return (
-    <div className="hero-container position-relative">
-      <div className="hero-wrapper">
-        <div className="hero-image">
-          <img src={currentContent.image} alt="Hero" />
-          <div className="hero-content">
-            <div className="col-lg-3">
-              <span
-                className={`badge mb-3 text-white ${animate ? "animate__animated animate__pulse" : ""}`}
-                style={headStyle}
-              >
-                {currentContent.header}
-              </span>
-            </div>
-            <h1 className={`${animate ? "animate__animated animate__fadeInRight" : ""}`}>
-              <b>{currentContent.detail}</b>
-            </h1>
-            <div className="hero-footer">
-              <div className="animate__animated animate__fadeIn">
-                <RotatingTextButton />
+    <div className="header_containter container">
+      <div className="hero-container  position-relative">
+        <div className="hero-wrapper">
+          <div className="hero-image">
+            <img src={currentContent.image} alt="Hero" />
+            <div className="hero-content">
+              <div className="col-lg-3">
+                <span
+                  className={`badge mb-3 text-white  crausal_lorem ${animate ? "animate__animated animate__pulse" : ""}`}
+                  style={headStyle}
+                >
+                  {currentContent.header}
+                </span>
               </div>
-              <p className={`${animate ? "animate__animated animate__fadeInUpBig" : ""}`}>
+              <h1 className={`${animate ? "animate__animated animate__fadeInRight" : ""}`}>
+                <b>{currentContent.detail}</b>
+              </h1>
+              <div className="hero-footer">
+                <div className="animate__animated animate__fadeIn">
+                  <RotatingTextButton />
+                </div>
+                <p className={`${animate ? "animate__animated animate__fadeInUpBig" : ""}`}>
+                  <b>{currentContent.description}</b>
+                </p>
+              </div>
+              {/* <p className={`${animate ? "animate__animated animate__fadeInUpBig" : ""}`}>
                 <b>{currentContent.description}</b>
-              </p>
+              </p>  */}
+              
             </div>
+            {currentContent.showBackButton && (
+              <span
+                className={`badge m-5 w-50 text-white make_appoint_btn  ${animate ? "animate__animated animate__pulse" : ""}`}
+                style={headStyle}
+                onClick={goBackHandler}
+              >
+                Go Back
+              </span>
+              )}
           </div>
         </div>
       </div>

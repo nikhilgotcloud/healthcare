@@ -1,0 +1,10 @@
+.service_page .services-list li {
+    text-align: left;
+    margin-bottom: 25px !important;
+    padding-left: 70px !important;
+    line-height: 20px !important;
+  }
+  .service_page .services-list li .checkmark-icon img {
+    height: 100% !important;
+    width: 100% !important;
+  }

@@ -4,9 +4,9 @@ import './rotatebtn-style.css'
 
 const RotatingTextButton = () => {
   return (
-    <div className="position-relative d-flex justify-content-center align-items-center" style={{ width: '150px', height: '150px' }}>
+    <div className="position-relative  d-flex justify-content-center align-items-center rotate_btn_size" style={{ width: '150px', height: '150px' }}>
       {/* Rotating text container */}
-      <div className="position-absolute w-100 h-100 animate__animated animate__infinite animate__slower animate__rotating">
+      <div className="position-absolute btn_revolve w-100 h-100 animate__animated animate__infinite animate__slower animate__rotating">
         <svg viewBox="0 0 100 100" width="100%" height="100%">
           <defs>
             <path
@@ -24,7 +24,7 @@ const RotatingTextButton = () => {
 
       {/* Center button */}
       <button
-        className="carousel-control right-arrow position-relative"
+        className="carousel-control  position-relative"
         
       >
         <i className="fa-solid fa-arrow-right control-icon"></i>

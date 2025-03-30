@@ -14,6 +14,15 @@
 .image-container {
   flex: 1;
   position: relative;
+  overflow: hidden;
+  border-radius: 8% !important;
+  -webkit-border-radius: 8% !important;
+  -moz-border-radius: 8% !important;
+  -ms-border-radius: 8% !important;
+  -o-border-radius: 8% !important;
+}
+.image-container:hover{
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.7) !important;
 }
 
 .shield-image {

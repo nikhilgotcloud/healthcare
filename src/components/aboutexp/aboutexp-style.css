@@ -134,3 +134,48 @@ text-decoration-skip-ink: none;
     margin-left: 70%;
     margin-top: 10%;
 }
+
+.about_page_card_section {
+  margin-top: 90px;
+}
+.about_page_card_section .badge.badge-white {
+  font-size: 14px !important;
+  padding: 11px 14px !important;
+}
+.about_page_card_section .about-us-title {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: Koh Santepheap;
+}
+.about_page_card_section .my-2.mainexp {
+  margin-top: 37px !important;
+}
+.about_page_card_section .card-description {
+  margin: 0 !important;
+  width: 100%;
+}
+.about_page_card_section .new_feature .box-icon{
+  padding-bottom: 8px;
+}
+.about_page_card_section .why-feature.new_feature .divider {
+  margin-bottom: 10px !important;
+}
+.about_page_card_section .why-feature .card-text {
+  margin-bottom: 0 !important;
+}
+.about_page_card_section  .why-feature.new_feature .box-number {
+  top: -5px;
+  right: -6px;
+}
+
+.row{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+@media(max-width:767px){
+  .container, .header_containter, .sicky_container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}

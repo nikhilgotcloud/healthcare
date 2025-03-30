@@ -143,8 +143,11 @@ text-decoration-skip-ink: none;
   left: 0;
   right: 0;
   width: 100%;
-  min-height: 290px;
+  /* min-height: 290px; */
+  min-height: 380px;
+
   z-index: -1;
+  height: 100%;
 }
 
 .why-feature .card-text {
@@ -182,4 +185,9 @@ text-decoration-skip-ink: none;
     top: -3px;
     right: -2px;
   }
+}
+.why-feature:hover .box-number {
+  background-color: #ab0000 !important;
+  color: #fff !important;
+  transition: all .5s ease
 }
