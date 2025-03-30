@@ -253,3 +253,8 @@ width: 80px !important;
 .about-main:hover + .about-play-butn .svg_2{
   display: block;
 }
+@media(max-width:767px){
+  .home_expericecard .why-feature{
+    margin: 8px auto !important ;
+  }
+}

@@ -111,6 +111,8 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  object-fit: contain;
+
   border-radius: 40px;
 }
 @media(min-width:767px){
@@ -225,10 +227,10 @@
   font-size: 15px;
 }
 .left-arrow {
-  left: 17px !important;
+  left: 38px !important;
 }
 .right-arrow {
-  right: 17px;
+  right: 38px;
 }
 
 @keyframes fadeInRight {
@@ -286,5 +288,65 @@
   .carousel-text p {
     width: 100%;
     font-size: 18px !important;
+  }
+}
+
+/* @media(max-width:1600px){
+.carousel-container > .carousel-control.left-arrow {
+  margin-left: 14px;
+}
+.carousel-container > .carousel-control.right-arrow {
+  margin-right: 14px;
+}
+} */
+
+/* @media(min-width:1560px){
+  .carousel-container > .carousel-control.left-arrow {
+    margin-left: 24px;
+  }
+  .carousel-container > .carousel-control.right-arrow {
+    margin-right: 24px;
+  }
+} */
+
+@media(max-width:1500px){
+  .left-arrow {
+    left: 11px !important;
+  }
+  .right-arrow{
+    right: 11px;
+  }
+}
+@media(max-width:1560px) and (min-width:1500px){
+  .left-arrow {
+    left: 20px !important;
+  }
+  .right-arrow{
+    right: 20px;
+  }
+}
+@media(max-width:1300px){
+  .carousel-container > .carousel-control {
+    height: 40px;
+    width: 40px;
+}
+}
+
+@media(max-width:1150px){
+  .left-arrow {
+    left: 10px !important;
+  }
+  .right-arrow{
+    right: 10px;
+  }
+  .carousel-container > .carousel-control {
+    height: 32px;
+    width: 32px;
+}
+}
+
+@media(max-width:767px){
+  .carousel-image img {
+    object-fit: cover;
   }
 }
