@@ -8,7 +8,7 @@ const Contactapp = () => {
       <div className="container">
         <div className="bg shadow-lg">
           <div className="row mob_row">
-            <div className="col-lg-6">
+            <div className="col-lg-6 testimonial_bg">
               <div className="testimonial-card h-100 ">
                 <button className="make_demo_btn ">GET IN TOUCH</button>
                 <h2 className="text-white my-2">Let's Talk</h2>
@@ -16,64 +16,59 @@ const Contactapp = () => {
                   Reach out today to experience personalized service and
                   optimized financial outcomes.
                 </p>
-                <div className="info-item d-flex align-items-center mb-4">
-                  <div className="icon-wrapper">
-                    <img
-                      src="./image/call-bg.png"
-                      alt="Phone Icon"
-                      className="contact-icon"
-                    />
+                <div className="w-100 item_box_new">
+                  <div className="info-item d-flex align-items-center mb-4">
+                    <div className="icon-wrapper">
+                    <i className="fa-solid fa-phone"></i>
+                    </div>
+                    <Link
+                      to="tel:888-512-6265"
+                      className="text-white text-decoration-none ms-2"
+                    >
+                      888-512-6265
+                    </Link>
+                  </div>{" "}
+                  <br />
+                  <div className="info-item d-flex align-items-center mb-4">
+                    <div className="icon-wrapper">
+                    <i className="fa-solid fa-envelope"></i>
+                    </div>
+                    <Link
+                      to="mailto:info@infhealthcare.com"
+                      className="text-white text-decoration-none ms-2"
+                    >
+                      info@infhealthcare.com
+                    </Link>
+                  </div>{" "}
+                  <br />
+                  <div className="info-item d-flex align-items-center">
+                    <div className="icon-wrapper">
+                      {/* <img
+                        src="./image/location-bg.png"
+                        alt="Location Icon"
+                        className="contact-icon"
+                      /> */}
+                      <i className="fa-solid fa-location-dot"></i>
+                    </div>
+                    <address className="text-white mb-0 ms-2">
+                      600 BROADWAY, STE 200 #5035,
+                      <br />
+                      ALBANY, NEW YORK 12207
+                    </address>
                   </div>
-                  <Link
-                    to="tel:888-512-6265"
-                    className="text-white text-decoration-none ms-2"
-                  >
-                    888-512-6265
-                  </Link>
-                </div>{" "}
-                <br />
-                <div className="info-item d-flex align-items-center mb-4">
-                  <div className="icon-wrapper">
-                    <img
-                      src="./image/mail-bg.png"
-                      alt="Email Icon"
-                      className="contact-icon"
-                    />
-                  </div>
-                  <Link
-                    to="mailto:info@infhealthcare.com"
-                    className="text-white text-decoration-none ms-2"
-                  >
-                    info@infhealthcare.com
-                  </Link>
-                </div>{" "}
-                <br />
-                <div className="info-item d-flex align-items-center">
-                  <div className="icon-wrapper">
-                    <img
-                      src="./image/location-bg.png"
-                      alt="Location Icon"
-                      className="contact-icon"
-                    />
-                  </div>
-                  <address className="text-white mb-0 ms-2">
-                    600 BROADWAY, STE 200 #5035,
-                    <br />
-                    ALBANY, NEW YORK 12207
-                  </address>
                 </div>
               </div>
             </div>
 
             {/* Right Section - Appointment Form */}
-            <div className="col-lg-6 bg-white">
+            <div className="col-lg-6 bg-white bg-white position-relative bg_main">
               <div className="h-100 main_appoint_form">
                 <div className="row p-0 m-0">
                   <div className="col-12">
                     <div className="badge appoint book-demo-butn text-white rounded -pill">
                       Book Demo
                     </div>
-                    <h5>Make Appointment</h5>
+                    <h5 className="appoint_title ">Book Your Free Demo</h5>
                     <p className="para">
                       Maximize Your Revenue Potential: Request a Demo Now!
                     </p>
@@ -145,7 +140,7 @@ const Contactapp = () => {
                       </div>
                       <div className="col-md-12 btn_box">
                         <button className="make_appoint_btn">
-                          Make an Appointment{" "}
+                        Request Demo{" "}
                           <img
                             src="image/iconArrow.svg"
                             alt="Arrow Icon"
@@ -156,6 +151,8 @@ const Contactapp = () => {
                     </div>
                   </div>
                 </form>
+                <img className="bg_img" alt="" src="./image/contact_form_bg.png" />
+                <div className="calender_bg"><img alt="" src="./image/calender.svg" /></div>
               </div>
             </div>
           </div>
