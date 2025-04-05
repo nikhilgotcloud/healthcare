@@ -114,12 +114,12 @@ const Homeservices = () => {
             // For extended cards: desktop -> 2 per row (col-lg-6)
             const colClass =
               card.type === "card"
-                ? "col-12 col-md-6 col-lg-4"
-                : "col-12 col-md-6 col-lg-6";
+                ? "col-12  col-md-6 col-xl-4"
+                : "col-12 col-md-6 col-xl-6";
 
             const containerClass =
               card.type === "card"
-                ? "service-card-container"
+                ? "service-card-container bottom_btn"
                 : "service-extendcard-container service-card-container";
 
             return (

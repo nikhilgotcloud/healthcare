@@ -63,7 +63,7 @@ const Aboutexp = () => {
       <div className="container my-2 mainexp  ">
         <div className="row">
           {cardData.map((card) => (
-            <div key={card.id} className="col-12 col-md-6 col-lg-3 mb-4 my-4">
+            <div key={card.id} className="col-12 col-md-6 col-xl-3 mb-4 my-4">
               <div className="why-feature new_feature  position-relative">
                 <div className="box-number text-dark">{card.id}</div>
                 <div className="box-icon justify-content-center mb-3">

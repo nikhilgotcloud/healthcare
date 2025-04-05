@@ -159,7 +159,7 @@ const Blogmid = () => {
         <div className="col-lg-9 p-0">
           <div className="lates_bog_section">
             <span
-              className="badge badge-white mb-3 p-3 text-white shadow-lg"
+              className="badge badge-white mb-3 p-3 text-white shadow-lg new_blog"
               style={headstyle}
             >
               BLOG
@@ -448,7 +448,7 @@ const Blogmid = () => {
           </div>
 
           {/* <!-- Tag Cloud Card --> */}
-          <div className="card border-0 shadow-sm mb-4">
+          <div className="card border-0 shadow-sm mb-4 tag_cloud">
             <div className="side_up_icon icon_three">
               {/* <svg
                 className="w-6 h-6 text-gray-800 dark:text-white"
@@ -488,7 +488,9 @@ const Blogmid = () => {
                 ))}
               </div>
             </div>
-            <img className="bg_image_detail" src="./image/blog_small_card.svg" alt="" />
+            <img className="bg_image_detail d-xl-block d-none" src="./image/blog_small_card.svg" alt="" />
+            <img className="bg_image_detail d-xl-none d-block" alt="" src="./image/detail_side.png"></img>
+
           </div>
         </div>
       </div>

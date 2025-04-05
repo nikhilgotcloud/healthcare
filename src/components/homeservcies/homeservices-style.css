@@ -399,11 +399,53 @@ line {
     display: block !important;
   }
   .service-card-container .card .card__icon {
-    right: -8px;
-    bottom: -30px;
+    /* right: -8px;
+    bottom: -30px; */
+    right: -3px;
+    bottom: -31px;
   }
   .service-section.py-5.header_containter {
     max-width: 100% !important;
     /* border-radius: 0; */
   }
+}
+
+
+@media(max-width:1200px) and (min-width:992px){
+  .service-card-container.bottom_btn .card .card__icon {
+    position: absolute;
+    right: 11px;
+    bottom: -32px;
+  }
+  .service-extendcard-container .card__icon {
+    /* right: -12px !important; */
+    bottom: -29px !important;
+  }
+}
+@media(max-width:1150px) and (min-width:992px){
+ 
+  .service-extendcard-container .card__icon {
+    right: -10px !important;
+  }
+}
+@media(max-width:992px){
+  
+  .service-extendcard-container  {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service-extendcard-container.service-card-container .bg_crad_img {
+    display: none;
+  }
+  .service-extendcard-container.service-card-container .bg_crad_img.mobile_view_bg {
+    display: block !important;
+  }
+}
+
+.service-card-container.bottom_btn {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
 }
