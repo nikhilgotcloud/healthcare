@@ -27,7 +27,9 @@ const Home = () => {
       <div className="home_service_section">
       <Homeiso />
       </div>
+      <div className="home_service_section">
       <HomeHippa />
+      </div>
       <AppointmentForm />
       <Latestblog />
 
