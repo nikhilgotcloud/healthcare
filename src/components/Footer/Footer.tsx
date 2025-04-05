@@ -1,11 +1,63 @@
-import React from "react";
+import React, {useState} from "react";
 import "./footer-style.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Footer = () => {
   const inputbg= {color: 'rgb(49, 49, 49)'}
+  const [email, setEmail] = useState<string>("");
+  const [error, setError] = useState<string>("");
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!email.trim()) {
+      setError("Please enter an email Id to subscribe");
+      return;
+    }
+
+    try {
+      const response = await axios.post(
+        "https://trusty-amusement-fb0d575893.strapiapp.com/api/newsletters",
+        {
+          data: {
+            Email: email,
+          },
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      if (response.status === 200 || response.status === 201) {
+        toast.success("Successfully subscribed to newsletter!");
+        setEmail("");
+        setError("");
+      }
+    } catch (err) {
+      const errorMsg = (err as any)?.response?.data?.error?.message || "Failed to subscribe. Please try again.";
+      toast.error(errorMsg);
+      console.error("Newsletter subscription error:", err);
+    }
+  };
+
   return (
     <footer className="footer-section mb-3 px-3">
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
       <div className="container">
         <div className="row">
           <div className="col-lg-4 mb-4">
@@ -107,10 +159,16 @@ const Footer = () => {
                 placeholder="Enter your email here"
                 className="bg-white rounded-pill"
                 style={inputbg}
+                value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+              setError("");
+            }}
               />
-              <button type="submit">Subscribe</button>
+              <button type="submit" onClick={handleNewsletterSubmit} >Subscribe</button>
+              
             </div>
-
+            {error && <span style={{ color: "white", display: "block", marginTop:"-3%" }}>{error}</span>}
             <h3 className="footer-heading book_heading
             ">Book Your Free Demo</h3>
             <button  className="demo-button rounded-pill">
