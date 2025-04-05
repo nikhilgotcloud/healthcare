@@ -319,10 +319,10 @@
 }
 @media(max-width:1560px) and (min-width:1500px){
   .left-arrow {
-    left: 20px !important;
+    left: 28px !important;
   }
   .right-arrow{
-    right: 20px;
+    right: 28px;
   }
 }
 @media(max-width:1300px){

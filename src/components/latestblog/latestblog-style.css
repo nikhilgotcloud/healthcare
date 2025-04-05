@@ -265,6 +265,13 @@ text-decoration-skip-ink: none;
   font-weight: 600;
   color: #004457;
   line-height: 25px;
+  overflow:
+hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient:
+vertical;
 }
 .lates_bog_section .why-feature:hover .blog-content .blog-title {
   color:#AB0000

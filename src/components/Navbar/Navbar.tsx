@@ -80,7 +80,7 @@ const HealthcareNavbar: React.FC = () => {
         </div>
         <div className="offcanvas-body">
           <Nav className="me-auto menu-items ">
-            <NavLink className="nav-link" to="/">Home</NavLink>
+            <NavLink className="nav-link" to="/" >Home</NavLink>
             <NavLink className="nav-link" to="about">About us</NavLink>
             <NavLink className="nav-link" to="services">Services</NavLink>
             <NavLink className="nav-link" to="blog">Blog</NavLink>

@@ -328,3 +328,6 @@
       }
       
   }
+  .newsletter-form {
+    display: inline-block;
+  }

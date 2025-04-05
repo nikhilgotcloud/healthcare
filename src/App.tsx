@@ -17,18 +17,18 @@ const App = () => {
     <Router>
       <div>
         <Marquee />
-              <HealthcareNavbar />
+        <HealthcareNavbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/servicedetail" element={<Servicedetail/>} />
+          <Route path="/servicedetail" element={<Servicedetail />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blogdetail" element={<Blogdetail />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Notfound />}/>
+          <Route path="*" element={<Notfound />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </div>
     </Router>
   );

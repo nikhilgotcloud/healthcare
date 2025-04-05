@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import '../blogmid/blogmid-style.css'
 import "../latestblog/latestblog-style.css"
 
+
 const Blogdetailmid = () => {
   const cardData = [
     {
@@ -344,9 +345,9 @@ const Blogdetailmid = () => {
             </Link>
           </div>
 
-          <div className="d-flex justify-content-between align-items-center w-100 py-4">
+          <div className="d-flex justify-content-between align-items-center w-100 py-4 all_in">
             {/* <!-- Previous Section --> */}
-            <div className="d-flex align-items-center">
+            <div className="d-flex align-items-center nex_btn">
               <div
                 className="rounded-circle btn_pagi bg-teal-800 p-3 d-flex align-items-center justify-content-center"
                 style={bgstyle}
@@ -406,7 +407,7 @@ const Blogdetailmid = () => {
               </ul>
             </nav>{" "}
             {/* <!-- Next Section --> */}
-            <div className="d-flex align-items-center text-end">
+            <div className="d-flex align-items-center text-end nex_btn reverse_nx">
               <div className="me-3">
                 <div className="text-danger prev-mb" style={fontstyle}>
                   Next
@@ -623,19 +624,23 @@ const Blogdetailmid = () => {
                 </svg>
               </Link> */}
             </div>
-            <div className="card-body mb-4 bg-white">
+            <div className="card-body mb-4 bg-white tag_cloud">
               <div className="d-flex flex-wrap gap-3">
                 {tags.map((tag, index) => (
                   <Link
                     key={index}
                     to="#"
-                    className="btn btn-light btn-sm px-3 py-2 blog-tag rounded-pill"
+                    className="btn btn-light btn-sm  blog-tag rounded-pill"
                   >
                     {tag}
                   </Link>
                 ))}
               </div>
-              <img className="bg_image_detail" src="./image/blog_small_card.svg" alt="" />
+              {/* <img className="bg_image_detail" src="./image/blog_small_card.svg" alt="" /> */}
+              <img className="bg_image_detail d-xl-block d-none" src="./image/blog_small_card.svg" alt="" />
+            <img className="bg_image_detail d-xl-none d-block" alt="" src="./image/detail_side.png"></img>
+
+              
 
             </div>
           </div>
