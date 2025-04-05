@@ -17,3 +17,11 @@
     max-width: 250px;
     margin: auto;
   }
+  @media(max-width:767px){
+    .home_service_section .content-container.h-100 {
+      text-align: left;
+    }
+    .home_service_section .content-container.h-100 .services-list {
+      margin-bottom: 26px;
+    }
+  }
