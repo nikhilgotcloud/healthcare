@@ -20,7 +20,7 @@ const Serviceinfo: React.FC = () => {
           <div className="col-md-6 ">
             <div className="image-container h-100">
               <img
-                src="./image/service-info.png"
+                src="/image/service-info.png"
                 alt="INFHealthcare medical services"
                 className="shield-image"
                 loading="lazy"
@@ -42,14 +42,14 @@ const Serviceinfo: React.FC = () => {
 
           <ul className="services-list mt-5">
             <li>
-              <span className="checkmark-icon mb-1"><img src="./image/service_list_icon.svg" alt="" /></span> With our in-depth knowledge of denial management, payer policies, and industry regulations.
+              <span className="checkmark-icon mb-1"><img src="/image/service_list_icon.svg" alt="" /></span> With our in-depth knowledge of denial management, payer policies, and industry regulations.
             </li>
             <li>
-              <span className="checkmark-icon mb-1"><img src="./image/service_list_icon.svg" alt="" /></span>With our in-depth knowledge of denial management, payer policies, and industry regulations
+              <span className="checkmark-icon mb-1"><img src="/image/service_list_icon.svg" alt="" /></span>With our in-depth knowledge of denial management, payer policies, and industry regulations
 
             </li>
             <li>
-              <span className="checkmark-icon mb-1"><img src="./image/service_list_icon.svg" alt="" /></span>With our in-depth knowledge of denial management, payer policies, and industry regulations
+              <span className="checkmark-icon mb-1"><img src="/image/service_list_icon.svg" alt="" /></span>With our in-depth knowledge of denial management, payer policies, and industry regulations
             </li>
 
           </ul>

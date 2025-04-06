@@ -24,7 +24,7 @@ const AppointmentForm: React.FC = () => {
 
                 <div className="profile-section">
                   <img
-                    src="./image/Frame 133.png"
+                    src="/image/Frame 133.png"
                     alt="Dr. Blanco Smith"
                     className="profile-image"
                   />
@@ -123,9 +123,9 @@ const AppointmentForm: React.FC = () => {
                 </form>
 
               </div>
-              <img className="bg_img" src="./image/contact_form_bg.png" alt="" />
+              <img className="bg_img" src="/image/contact_form_bg.png" alt="" />
               <div className="calender_bg">
-                <img src="./image/calender.svg" alt="" />
+                <img src="/image/calender.svg" alt="" />
 
 
               </div>

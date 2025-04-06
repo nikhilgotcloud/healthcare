@@ -9,7 +9,7 @@ const Blogdetailmid = () => {
   const cardData = [
     {
       id: 1,
-      image: "./image/latestblog/Vector16.png",
+      image: "/image/latestblog/Vector16.png",
       title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
       name: "Sarah Miller",
       date: "January 5, 2024",
@@ -19,7 +19,7 @@ const Blogdetailmid = () => {
     },
     {
       id: 2,
-      image: "./image/latestblog/Vector16.png",
+      image: "/image/latestblog/Vector16.png",
       title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
       name: "Sarah Miller",
       date: "January 5, 2024",
@@ -29,7 +29,7 @@ const Blogdetailmid = () => {
     },
     {
       id: 3,
-      image: "./image/latestblog/Vector16.png",
+      image: "/image/latestblog/Vector16.png",
       title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
       name: "Sarah Miller",
       date: "January 5, 2024",
@@ -39,7 +39,7 @@ const Blogdetailmid = () => {
     },
     {
       id: 4,
-      image: "./image/latestblog/Vector16.png",
+      image: "/image/latestblog/Vector16.png",
       title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
       name: "Sarah Miller",
       date: "January 5, 2024",
@@ -49,7 +49,7 @@ const Blogdetailmid = () => {
     },
     {
       id: 5,
-      image: "./image/latestblog/Vector16.png",
+      image: "/image/latestblog/Vector16.png",
       title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
       name: "Sarah Miller",
       date: "January 5, 2024",
@@ -59,7 +59,7 @@ const Blogdetailmid = () => {
     },
     {
       id: 6,
-      image: "./image/latestblog/Vector16.png",
+      image: "/image/latestblog/Vector16.png",
       title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
       name: "Sarah Miller",
       date: "January 5, 2024",
@@ -69,7 +69,7 @@ const Blogdetailmid = () => {
     },
     {
       id: 7,
-      image: "./image/latestblog/Vector16.png",
+      image: "/image/latestblog/Vector16.png",
       title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
       name: "Sarah Miller",
       date: "January 5, 2024",
@@ -79,7 +79,7 @@ const Blogdetailmid = () => {
     },
     {
       id: 8,
-      image: "./image/latestblog/Vector16.png",
+      image: "/image/latestblog/Vector16.png",
       title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
       name: "Sarah Miller",
       date: "January 5, 2024",
@@ -159,7 +159,7 @@ const Blogdetailmid = () => {
 
         <div className="col-lg-9">
           <img
-            src="./image/blog-detail2.png"
+            src="/image/blog-detail2.png"
             alt="New Era of Medical Billing and Management"
             loading="lazy"
             className="w-100 my-2"
@@ -167,7 +167,7 @@ const Blogdetailmid = () => {
           <div className="blog-meta my-3">
             <div className="meta-item">
               <img
-                src="./image/latestblog/profie-icon.png"
+                src="/image/latestblog/profie-icon.png"
                 alt=""
                 loading="lazy"
               />
@@ -175,7 +175,7 @@ const Blogdetailmid = () => {
             </div>
             <div className="meta-item">
               <img
-                src="./image/latestblog/calander-icon.png"
+                src="/image/latestblog/calander-icon.png"
                 alt=""
                 loading="lazy"
               />
@@ -183,7 +183,7 @@ const Blogdetailmid = () => {
             </div>
             <div className="meta-item">
               <img
-                src="./image/latestblog/bookmark-icon.png"
+                src="/image/latestblog/bookmark-icon.png"
                 alt=""
                 loading="lazy"
                 width="30px"
@@ -224,7 +224,7 @@ const Blogdetailmid = () => {
           </p>
           <div className="colored-card my-3 d-flex flex-column align-items-center justify-content-center p-4 shadow-lg text-center">
             <img
-              src="./image/semicolon.png"
+              src="/image/semicolon.png"
               alt="infhealthcare"
               loading="lazy"
               className="mb-4"
@@ -255,23 +255,23 @@ const Blogdetailmid = () => {
           </p>
           <ul className="services-list mb-3">
             <li>
-              <span className="checkmark-icon"><img src="./image/homesection/group18.png" alt="" /></span>Strong safeguards against
+              <span className="checkmark-icon"><img src="/image/homesection/group18.png" alt="" /></span>Strong safeguards against
               unauthorized access and cyber threats.
             </li>
             <li>
-              <span className="checkmark-icon"><img src="./image/homesection/group18.png" alt="" /></span>Adherence to industry
+              <span className="checkmark-icon"><img src="/image/homesection/group18.png" alt="" /></span>Adherence to industry
               regulations for data protection.
             </li>
             <li>
-              <span className="checkmark-icon"><img src="./image/homesection/group18.png" alt="" /></span>Proactive measures to
+              <span className="checkmark-icon"><img src="/image/homesection/group18.png" alt="" /></span>Proactive measures to
               identify and mitigate potential risks.
             </li>
             <li>
-              <span className="checkmark-icon"><img src="./image/homesection/group18.png" alt="" /></span>Assured confidentiality
+              <span className="checkmark-icon"><img src="/image/homesection/group18.png" alt="" /></span>Assured confidentiality
               and meticulous handling of data.
             </li>
             <li>
-              <span className="checkmark-icon"><img src="./image/homesection/group18.png" alt="" /></span>Sets us apart as a
+              <span className="checkmark-icon"><img src="/image/homesection/group18.png" alt="" /></span>Sets us apart as a
               reliable and trusted partner.
             </li>
           </ul>
@@ -291,12 +291,12 @@ const Blogdetailmid = () => {
           </p>
           <div className="d-flex flex-column flex-md-row gap-3 my-3">
             <img
-              src="./image/blog-detail3.png"
+              src="/image/blog-detail3.png"
               className="img-fluid rounded"
               alt="infhealthcare"
             />
             <img
-              src="./image/blog-detail4.png"
+              src="/image/blog-detail4.png"
               className="img-fluid rounded"
               alt="infhealthcare"
             />
@@ -455,7 +455,7 @@ const Blogdetailmid = () => {
                   d="M12 8v4l3 3M3.22302 14C4.13247 18.008 7.71683 21 12 21c4.9706 0 9-4.0294 9-9 0-4.97056-4.0294-9-9-9-3.72916 0-6.92858 2.26806-8.29409 5.5M7 9H3V5"
                 />
               </svg> */}
-                <img src="./image/blog_clock_icon.svg" alt="" />
+                <img src="/image/blog_clock_icon.svg" alt="" />
               </div>
               <h5 className="mb-0">Recent Article</h5>
               {/* <Link to="#" className="text-decoration-none">
@@ -482,7 +482,7 @@ const Blogdetailmid = () => {
               <div className="card-body px-4 pt-2 bg-white">
                 <div className="mb-3">
                   <img
-                    src="./image/blog-side.png"
+                    src="/image/blog-side.png"
                     className="rounded-4 w-100 mb-3"
                     alt="Medical staff meeting"
                   />
@@ -499,7 +499,7 @@ const Blogdetailmid = () => {
 
                 <div>
                   <img
-                    src="./image/blog-side2.png"
+                    src="/image/blog-side2.png"
                     className="rounded-4 w-100 mb-3"
                     alt="Medical documentation"
                   />
@@ -513,7 +513,7 @@ const Blogdetailmid = () => {
                 </div>
               </div>
             </div>
-            <img className="bg_image_detail" alt="" src="./image/detail_side.png"></img>
+            <img className="bg_image_detail" alt="" src="/image/detail_side.png"></img>
 
           </div>
 
@@ -576,7 +576,7 @@ const Blogdetailmid = () => {
                 </div>
               ))}
             </div>
-            <img className="bg_image_detail" alt="" src="./image/detail_side.png"></img>
+            <img className="bg_image_detail" alt="" src="/image/detail_side.png"></img>
 
           </div>
 
@@ -601,7 +601,7 @@ const Blogdetailmid = () => {
                   d="M14 17h6m-3 3v-6M4.857 4h4.286c.473 0 .857.384.857.857v4.286a.857.857 0 0 1-.857.857H4.857A.857.857 0 0 1 4 9.143V4.857C4 4.384 4.384 4 4.857 4Zm10 0h4.286c.473 0 .857.384.857.857v4.286a.857.857 0 0 1-.857.857h-4.286A.857.857 0 0 1 14 9.143V4.857c0-.473.384-.857.857-.857Zm-10 10h4.286c.473 0 .857.384.857.857v4.286a.857.857 0 0 1-.857.857H4.857A.857.857 0 0 1 4 19.143v-4.286c0-.473.384-.857.857-.857Z"
                 />
               </svg> */}
-                <img src="./image/menu_icon.svg" alt="" />
+                <img src="/image/menu_icon.svg" alt="" />
               </div>
               <h5 className="mb-0">Tag Cloud</h5>
               {/* <Link to="#" className="text-decoration-none">
@@ -636,9 +636,9 @@ const Blogdetailmid = () => {
                   </Link>
                 ))}
               </div>
-              {/* <img className="bg_image_detail" src="./image/blog_small_card.svg" alt="" /> */}
-              <img className="bg_image_detail d-xl-block d-none" src="./image/blog_small_card.svg" alt="" />
-            <img className="bg_image_detail d-xl-none d-block" alt="" src="./image/detail_side.png"></img>
+              {/* <img className="bg_image_detail" src="/image/blog_small_card.svg" alt="" /> */}
+              <img className="bg_image_detail d-xl-block d-none" src="/image/blog_small_card.svg" alt="" />
+            <img className="bg_image_detail d-xl-none d-block" alt="" src="/image/detail_side.png"></img>
 
               
 

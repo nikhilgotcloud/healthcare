@@ -9,7 +9,7 @@ const Blogmid = () => {
   const cardData = [
     {
       id: 1,
-      image: "./image/latestblog/Vector16.png",
+      image: "/image/latestblog/Vector16.png",
       title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
       name: "Sarah Miller",
       date: "January 5, 2024",
@@ -19,7 +19,7 @@ const Blogmid = () => {
     },
     {
       id: 2,
-      image: "./image/latestblog/Vector16.png",
+      image: "/image/latestblog/Vector16.png",
       title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
       name: "Sarah Miller",
       date: "January 5, 2024",
@@ -29,7 +29,7 @@ const Blogmid = () => {
     },
     {
       id: 3,
-      image: "./image/latestblog/Vector16.png",
+      image: "/image/latestblog/Vector16.png",
       title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
       name: "Sarah Miller",
       date: "January 5, 2024",
@@ -39,7 +39,7 @@ const Blogmid = () => {
     },
     {
       id: 4,
-      image: "./image/latestblog/Vector16.png",
+      image: "/image/latestblog/Vector16.png",
       title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
       name: "Sarah Miller",
       date: "January 5, 2024",
@@ -49,7 +49,7 @@ const Blogmid = () => {
     },
     {
       id: 5,
-      image: "./image/latestblog/Vector16.png",
+      image: "/image/latestblog/Vector16.png",
       title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
       name: "Sarah Miller",
       date: "January 5, 2024",
@@ -59,7 +59,7 @@ const Blogmid = () => {
     },
     {
       id: 6,
-      image: "./image/latestblog/Vector16.png",
+      image: "/image/latestblog/Vector16.png",
       title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
       name: "Sarah Miller",
       date: "January 5, 2024",
@@ -69,7 +69,7 @@ const Blogmid = () => {
     },
     {
       id: 7,
-      image: "./image/latestblog/Vector16.png",
+      image: "/image/latestblog/Vector16.png",
       title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
       name: "Sarah Miller",
       date: "January 5, 2024",
@@ -79,7 +79,7 @@ const Blogmid = () => {
     },
     {
       id: 8,
-      image: "./image/latestblog/Vector16.png",
+      image: "/image/latestblog/Vector16.png",
       title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
       name: "Sarah Miller",
       date: "January 5, 2024",
@@ -234,7 +234,7 @@ const Blogmid = () => {
                               <div className="blog-meta">
                                 <div className="meta-item">
                                   <img
-                                    src="./image/blog_per_icon.svg"
+                                    src="/image/blog_per_icon.svg"
                                     alt=""
                                     loading="lazy"
                                     className=""
@@ -243,7 +243,7 @@ const Blogmid = () => {
                                 </div>
                                 <div className="meta-item">
                                   <img
-                                    src="./image/blog_cal.svg"
+                                    src="/image/blog_cal.svg"
                                     alt=""
                                     loading="lazy"
                                   />
@@ -251,7 +251,7 @@ const Blogmid = () => {
                                 </div>
                                 <div className="meta-item">
                                   <img
-                                    src="./image/comment_blog.svg"
+                                    src="/image/comment_blog.svg"
                                     alt=""
                                     loading="lazy"
                                   />
@@ -260,7 +260,7 @@ const Blogmid = () => {
 
                                 <div className="meta-item">
                                   <img
-                                    src="./image/bookmark_blog_new.svg"
+                                    src="/image/bookmark_blog_new.svg"
                                     alt=""
                                     loading="lazy"
                                     width="30px"
@@ -279,7 +279,7 @@ const Blogmid = () => {
                             </div>
                             <img
                               className="bg_img"
-                              src="./image/blog_card_bg.svg"
+                              src="/image/blog_card_bg.svg"
                               alt=""
                             />
                           </div>
@@ -414,7 +414,7 @@ const Blogmid = () => {
                   d="M12 8v4l3 3M3.22302 14C4.13247 18.008 7.71683 21 12 21c4.9706 0 9-4.0294 9-9 0-4.97056-4.0294-9-9-9-3.72916 0-6.92858 2.26806-8.29409 5.5M7 9H3V5"
                 />
               </svg> */}
-              <img src="./image/blog_clock_icon.svg" alt="" />
+              <img src="/image/blog_clock_icon.svg" alt="" />
             </div>
             <div className="card-header bg-white border-0 d-flex justify-content-between align-items-center rounded-lg  mt-4">
               <h5 className="mb-0">Recent Article</h5>
@@ -426,7 +426,7 @@ const Blogmid = () => {
               <div className="card-body px-4 pt-2 bg-white">
                 <div className="mb-3">
                   <img
-                    src="./image/blog-side.png"
+                    src="/image/blog-side.png"
                     className="rounded-4 w-100 mb-3"
                     alt="Medical staff meeting"
                   />
@@ -443,7 +443,7 @@ const Blogmid = () => {
 
                 <div>
                   <img
-                    src="./image/blog-side2.png"
+                    src="/image/blog-side2.png"
                     className="rounded-4 w-100 mb-3"
                     alt="Medical documentation"
                   />
@@ -460,7 +460,7 @@ const Blogmid = () => {
             <img
               className="bg_image_detail"
               alt=""
-              src="./image/detail_side.png"
+              src="/image/detail_side.png"
             ></img>
           </div>
 
@@ -533,7 +533,7 @@ const Blogmid = () => {
             <img
               className="bg_image_detail"
               alt=""
-              src="./image/detail_side.png"
+              src="/image/detail_side.png"
             ></img>
           </div>
 
@@ -557,7 +557,7 @@ const Blogmid = () => {
                   d="M14 17h6m-3 3v-6M4.857 4h4.286c.473 0 .857.384.857.857v4.286a.857.857 0 0 1-.857.857H4.857A.857.857 0 0 1 4 9.143V4.857C4 4.384 4.384 4 4.857 4Zm10 0h4.286c.473 0 .857.384.857.857v4.286a.857.857 0 0 1-.857.857h-4.286A.857.857 0 0 1 14 9.143V4.857c0-.473.384-.857.857-.857Zm-10 10h4.286c.473 0 .857.384.857.857v4.286a.857.857 0 0 1-.857.857H4.857A.857.857 0 0 1 4 19.143v-4.286c0-.473.384-.857.857-.857Z"
                 />
               </svg> */}
-              <img src="./image/menu_icon.svg" alt="" />
+              <img src="/image/menu_icon.svg" alt="" />
             </div>
             <div className="card-header bg-white border-0 d-flex justify-content-between align-items-center rounded-lg mt-4">
               <h5 className="mb-0">Tag Cloud</h5>
@@ -578,8 +578,8 @@ const Blogmid = () => {
                 ))}
               </div>
             </div>
-            <img className="bg_image_detail d-xl-block d-none" src="./image/blog_small_card.svg" alt="" />
-            <img className="bg_image_detail d-xl-none d-block" alt="" src="./image/detail_side.png"></img>
+            <img className="bg_image_detail d-xl-block d-none" src="/image/blog_small_card.svg" alt="" />
+            <img className="bg_image_detail d-xl-none d-block" alt="" src="/image/detail_side.png"></img>
 
           </div>
         </div>

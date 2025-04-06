@@ -62,7 +62,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-4 mb-4">
             <img
-              src="./image/INF-healthcare-logo.png"
+              src="/image/INF-healthcare-logo.png"
               alt="INF Healthcare"
               className="footer-logo"
               loading="lazy"
@@ -74,13 +74,13 @@ const Footer = () => {
             </p>
             <div className="certification-badges">
               <img
-                src="./image/hippa-certified.png"
+                src="/image/hippa-certified.png"
                 alt="HIPAA Compliant"
                 loading="lazy"
               />
               <div className="footer-divider"></div>
               <img
-                src="./image/iso-certfied.png"
+                src="/image/iso-certfied.png"
                 alt="ISO 27000 Certified"
                 loading="lazy"
               />
@@ -180,14 +180,14 @@ const Footer = () => {
 
         <div className="contact-info bg-white">
           <Link to="#" className="contact-item text-dark">
-            <img src="./image/footer-location.png" alt="Location" />
+            <img src="/image/footer-location.png" alt="Location" />
             <span>
             600 BROADWAY, STE 200 #5035, ALBANY, NEW YORK 12207
             </span>
           <div className="navbar-divider"></div>
           </Link>
           <Link to="tel:888-512-6265" className="contact-item text-dark">
-            <img src="./image/footer-call.png" alt="Phone" />
+            <img src="/image/footer-call.png" alt="Phone" />
             <span>
             888-512-6265
             </span>
@@ -197,7 +197,7 @@ const Footer = () => {
             to="mailto:info@infhealthcare.com"
             className="contact-item text-dark"
           >
-            <img src="./image/footer-mail'.png" alt="Email" />
+            <img src="/image/footer-mail'.png" alt="Email" />
             <span>
             info@infhealthcare.com
             </span>

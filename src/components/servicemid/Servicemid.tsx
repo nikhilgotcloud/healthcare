@@ -1,36 +1,36 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Service } from "../../types/services.interface";
 import "./servicemid-style.css";
 import { useParams, Link, useNavigate } from "react-router-dom";
 
 const Servicemid = () => {
- 
+
   const cardData = [
     {
       id: 1,
-      image: "./image/denial-card1.png",
+      image: "/image/denial-card1.png",
       title: "Identifying Key Denial Reasons",
       description:
         "At INF Healthcare, our denial management experts meticulously analyze and identify the key reasons behind claim denials. By understanding the root causes, we develop effective strategies to minimize denials, optimize revenue, and improve financial performance for healthcare providers.",
     },
     {
       id: 2,
-      image: "./image/denial-card2.png",
+      image: "/image/denial-card2.png",
       title: "Categorizing Denials",
       description:
         "With our expert Denial Management Services, we categorize denials based on common patterns and trends. Through this classification, our team gains valuable insights that enable implementation of targeted solutions to streamline processes and ensure maximum reimbursement for healthcare organizations.",
     },
     {
       id: 3,
-      image: "./image/denial-card3.png",
+      image: "/image/denial-card3.png",
       title: "Establishing Tracking Mechanisms",
       description:
         "To optimize denial management for healthcare providers we establish a robust tracking mechanism that monitors the entire claims process. From submission to adjudication, we track each claim, identify bottlenecks, and implement proactive measures. This allows us to mitigate denials, reduce revenue leakage, and enhance financial outcomes.",
     },
     {
       id: 4,
-      image: "./image/denial-card4.png",
+      image: "/image/denial-card4.png",
       title: "Monitoring and Preventing",
       description:
         "The scope of our denial management services includes closely tracking claim status and payment patterns. This proactive approach enables us to identify potential risks in real-time, apply corrective actions promptly, and prevent denials from occurring. We empower healthcare providers to achieve sustainable financial performance and revenue optimization.",
@@ -46,7 +46,7 @@ const Servicemid = () => {
   //   "HME Billing",
   //   "Medical Virtual Assistant",
   // ];
-  
+
   const sidecard: React.CSSProperties = { borderRadius: '20%' }
   const headstyle: React.CSSProperties = {
     backgroundColor: "#004457",
@@ -73,12 +73,12 @@ const Servicemid = () => {
     color: isHovered ? 'white' : '#004457',
     backgroundColor: isHovered ? '#004457' : 'white',
   });
-  const disabledBgStyle: React.CSSProperties = { backgroundColor: "#ccc" }; 
-  const disabledTxtStyle: React.CSSProperties = { color: "#999" }; 
+  const disabledBgStyle: React.CSSProperties = { backgroundColor: "#ccc" };
+  const disabledTxtStyle: React.CSSProperties = { color: "#999" };
   const disabledContainerStyle: React.CSSProperties = { cursor: "not-allowed" };
- 
-  
-  const { slug } = useParams<{ slug: string }>(); 
+
+
+  const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const [service, setService] = useState<Service | null>(null);
   const [servicesList, setServicesList] = useState<Service[]>([]);
@@ -105,7 +105,7 @@ const Servicemid = () => {
       [index]: false
     }));
   };
-  
+
 
   useEffect(() => {
     const fetchServices = async () => {
@@ -138,8 +138,8 @@ const Servicemid = () => {
 
   if (loading) {
     return <div className="spinner-border text-info" role="status">
-    <span className="sr-only">Loading...</span>
-  </div>;
+      <span className="sr-only">Loading...</span>
+    </div>;
   }
 
   if (error || !service) {
@@ -147,32 +147,32 @@ const Servicemid = () => {
       <h2 className="about-title my-3">{error}. We are facing some issue with our server . Please try again after some time</h2></div>;
   }
 
-const renderServiceDescription = () => {
-  return service.service_description.map((item, index) => {
-    if (item.type === "heading" && item.level === 3) {
-      return (
-        <h3 key={index} className="about-title my-3">
-          {item.children.map((child) => child.text).join("")}
-        </h3>
-      );
-    } else if (item.type === "paragraph") {
-      return (
-        <p key={index} className="denial-service-para">
-          {item.children.map((child) => child.text).join("")}
-        </p>
-      );
-    }
-    return null;
-  });
-};
+  const renderServiceDescription = () => {
+    return service.service_description.map((item, index) => {
+      if (item.type === "heading" && item.level === 3) {
+        return (
+          <h3 key={index} className="about-title my-3">
+            {item.children.map((child) => child.text).join("")}
+          </h3>
+        );
+      } else if (item.type === "paragraph") {
+        return (
+          <p key={index} className="denial-service-para">
+            {item.children.map((child) => child.text).join("")}
+          </p>
+        );
+      }
+      return null;
+    });
+  };
 
-const currentIndex = servicesList.findIndex((s) => s.slug === slug);
+  const currentIndex = servicesList.findIndex((s) => s.slug === slug);
   const prevService = currentIndex > 0 ? servicesList[currentIndex - 1] : null;
   const nextService =
     currentIndex < servicesList.length - 1 ? servicesList[currentIndex + 1] : null;
 
   return (
-    <div className="container  service_box_deail">
+    <div className="container  service_box_deail only_service_detail">
       <div className="row">
         {/* <div className="col-lg-1"></div> */}
         {/* <!-- Main Blog Listing Column (8 columns wide) --> */}
@@ -206,11 +206,11 @@ const currentIndex = servicesList.findIndex((s) => s.slug === slug);
                     const displayId = rowIndex * 2 + cardIndex + 1; // Generate 1, 2, 3, 4
                     return (
                       <div key={card.id} className="col-lg-6">
-                        <div className="why-feature ">
+                        <div className="why-feature new_featureService">
                           <div className="box-number text-dark">{displayId}</div> {/* Use 1, 2, 3, 4 */}
                           <div className="box-icon justify-content-center mb-3">
                             <img
-                              src={service.img_two[0]?.url || "./image/default.png"}
+                              src={service.img_two[0]?.url || "/image/default.png"}
                               alt={card.subtitle}
                               className="card-image"
                               width={100}
@@ -222,11 +222,11 @@ const currentIndex = servicesList.findIndex((s) => s.slug === slug);
                           <p className="text-muted mb-2 px-2 small text-center card-description py-2">
                             {card.description}
                           </p>
-                      <img className="bg_image" src="./image/bg_svg_service_Detail.svg" alt="" />
-                    </div>
-                  </div>
-                );
-              })}
+                          <img className="bg_image" src="/image/bg_svg_service_Detail.svg" alt="" />
+                        </div>
+                      </div>
+                    );
+                  })}
               </div>
             )
           )}
@@ -236,8 +236,8 @@ const currentIndex = servicesList.findIndex((s) => s.slug === slug);
 
             <div className="col-lg-4">
               <img
-               src={service.img_two[0]?.url || "./image/default.png"}
-               alt={service.subtitle}
+                src={service.img_two[0]?.url || "/image/default.png"}
+                alt={service.subtitle}
                 loading="lazy"
                 className="w-100 bottom_slider_image"
               />
@@ -367,41 +367,41 @@ const currentIndex = servicesList.findIndex((s) => s.slug === slug);
               </Link> */}
             </div>
             <div className="card-body bg-white mb-4">
-  {servicesList.map((serviceItem, index) => (
-    <div key={index} className="d-flex mb-2">
-     
-        <span
-          className="badge badge-pill blog-category-badge p-3 rounded-pill"
-          style={{
-            ...getStyles(hoverStates[index]),
-            backgroundColor: serviceItem.slug === slug ? "#004457" : getStyles(hoverStates[index]).backgroundColor,
-            color: serviceItem.slug === slug ? "white" : getStyles(hoverStates[index]).color,
-          }}
-          onMouseEnter={() => handleMouseEnter(index)}
-          onMouseLeave={() => handleMouseLeave(index)}
-          onClick={() => handleCategoryClick(serviceItem.slug)}
-  role="button"
-  tabIndex={0}
-  onKeyDown={(e) => {
-    if (e.key === "Enter" || e.key === " ") {
-      handleCategoryClick(serviceItem.slug);
-    }
-  }}
-        >
-          {serviceItem.title} <i className="fa-solid fa-arrow-right-long"></i>
-        </span>
-   
-    </div>
-  ))}
-</div>
-            <img className="bg_image_detail" src="./image/detail_side.png" alt="" />
+              {servicesList.map((serviceItem, index) => (
+                <div key={index} className="d-flex mb-2">
+
+                  <span
+                    className="badge badge-pill blog-category-badge p-3 rounded-pill"
+                    style={{
+                      ...getStyles(hoverStates[index]),
+                      backgroundColor: serviceItem.slug === slug ? "#004457" : getStyles(hoverStates[index]).backgroundColor,
+                      color: serviceItem.slug === slug ? "white" : getStyles(hoverStates[index]).color,
+                    }}
+                    onMouseEnter={() => handleMouseEnter(index)}
+                    onMouseLeave={() => handleMouseLeave(index)}
+                    onClick={() => handleCategoryClick(serviceItem.slug)}
+                    role="button"
+                    tabIndex={0}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        handleCategoryClick(serviceItem.slug);
+                      }
+                    }}
+                  >
+                    {serviceItem.title} <i className="fa-solid fa-arrow-right-long"></i>
+                  </span>
+
+                </div>
+              ))}
+            </div>
+            <img className="bg_image_detail" src="/image/detail_side.png" alt="" />
           </div>
 
           {/* <!-- Tag Cloud Card --> */}
           <div className="card second_card border-0 shadow-sm w-100">
             <div className="side_up_icon">
 
-              <img src="./image/calender_new.svg" alt="" />
+              <img src="/image/calender_new.svg" alt="" />
 
             </div>
             <div className="card-header bg-white border-0 d-flex justify-content-between align-items-center rounded-lg mt-4">
@@ -481,7 +481,7 @@ const currentIndex = servicesList.findIndex((s) => s.slug === slug);
                     <textarea
                       className="form-control input form-bg"
                       id="message"
-                      defaultValue="Type Your Message"
+                    // defaultValue="Type Your Message"
                     />
                   </div>
                   <div className="col-md-12 input_box">
@@ -501,7 +501,7 @@ const currentIndex = servicesList.findIndex((s) => s.slug === slug);
                 </div>
               </div>
             </form>
-            <img className="bg_image_detail" src="./image/detail_side.png" alt="" />
+            <img className="bg_image_detail" src="/image/detail_side.png" alt="" />
 
           </div>
         </div>

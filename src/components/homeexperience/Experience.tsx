@@ -5,32 +5,32 @@ const Expriencecards = () => {
   const cardData = [
     {
       id: 1,
-      staticImage: "./image/experience/group0.svg",
-      gifImage: "./image/Time.mp4",
+      staticImage: "/image/experience/group0.svg",
+      gifImage: "/image/Time.mp4",
       title: "5+",
       text: "Years In Business",
       description: "Lorem Ipsum is simply dummy text of",
     },
     {
       id: 2,
-      staticImage: "./image/experience/group1_static.svg",
-      gifImage: "./image/experience/group1.svg",
+      staticImage: "/image/experience/group1.svg",
+      gifImage: "/image/experience/group1.svg",
       title: "130+",
       text: "Total Projects",
       description: "Lorem Ipsum is simply dummy text of",
     },
     {
       id: 3,
-      staticImage: "./image/experience/group2_static.svg",
-      gifImage: "./image/experience/group2.svg",
+      staticImage: "/image/experience/group2.svg",
+      gifImage: "/image/experience/group2.svg",
       title: "65+",
       text: "Happy Clients",
       description: "Lorem Ipsum is simply dummy text of",
     },
     {
       id: 4,
-      staticImage: "./image/experience/group3_static.svg",
-      gifImage: "./image/experience/group3.svg",
+      staticImage: "/image/experience/group3.svg",
+      gifImage: "/image/experience/group3.svg",
       title: "45+",
       text: "Google Reviews",
       description: "Lorem Ipsum is simply dummy text of",
@@ -71,7 +71,7 @@ const Expriencecards = () => {
                 {card.description}
               </p>
               <div className="bg_image">
-                <img src="./image/bg_card.svg" alt="" />
+                <img src="/image/bg_card.svg" alt="" />
               </div>
             </div>
           </div>

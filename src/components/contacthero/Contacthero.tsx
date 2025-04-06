@@ -27,31 +27,31 @@ const Contacthero: React.FC<ContactheroProps> = ({ slug }) => {
 
   const contentMap: RouteContentMap = {
     "/contact": {
-      image: "./image/contacthero.png",
+      image: "/image/contacthero.png",
       header: "Contact Us Today",
       detail: "Get in Touch With Our Experts",
       description: "We're here to help and answer any questions you might have",
     },
     "/about": {
-      image: "./image/abouthero.png",
+      image: "/image/abouthero.png",
       header: "About Our Company",
       detail: "Discover Our Story",
       description: "Learn about our mission, values, and commitment to excellence",
     },
     "/services": {
-      image: "./image/serviceshero.png",
+      image: "/image/serviceshero.png",
       header: "Our Services",
       detail: "Comprehensive Solutions",
       description: "Explore our range of professional services tailored to your needs",
     },
     "/blogdetail": {
-      image: "./image/blog-detail.png",
+      image: "/image/blog-detail.png",
       header: "Blog Insights",
       detail: "Latest Updates",
       description: "Stay informed with our latest articles and industry insights",
     },
     "/blog": {
-      image: "./image/blog-detail.png",
+      image: "/image/blog-detail.png",
       header: "Blog Insights",
       detail: "Latest Updates",
       description: "Stay informed with our latest articles and industry insights",
@@ -59,14 +59,14 @@ const Contacthero: React.FC<ContactheroProps> = ({ slug }) => {
   };
 
   const serviceDetailContent: HeroContent = {
-    image: "./image/serviceshero.png",
+    image: "/image/serviceshero.png",
     header: "Service Details",
     detail: "In-Depth Information",
     description: "Detailed insights into our specialized services",
   };
 
   const defaultContent: HeroContent = {
-    image: "./image/404hero.png",
+    image: "/image/404hero.png",
     header: "Page Not Found",
     detail: "Oops! This page does not exist.",
     description: "The page you’re looking for might have been moved or deleted.",

@@ -84,14 +84,14 @@ const Homeservices = () => {
             // Last 2 cards: 2 per row (col-lg-6)
             const isExtendedCard = index >= services.length - 2; // Last 2 cards are extended
             const colClass = isExtendedCard
-            ? "col-12  col-md-6 col-xl-4"
-            : "col-12 col-md-6 col-xl-6";
+            ? "col-12 col-md-6 col-xl-6"
+            : "col-12  col-md-6 col-xl-4 ";
 
             const containerClass = isExtendedCard
-              ? "service-extendcard-container service-card-container"
-              : "service-card-container";
-              // ? "service-card-container bottom_btn"
-              // : "service-extendcard-container service-card-container";
+              // ? "service-extendcard-container service-card-container"
+              // : "service-card-container";
+              ? " service-extendcard-container service-card-container"
+              : "service-card-container bottom_btn";
               
 
               
@@ -122,14 +122,14 @@ const Homeservices = () => {
                       className="bg_crad_img"
                       src={
                         isExtendedCard
-                          ? "./image/long_sub.png"
-                          : "./image/service_cut.png"
+                          ? "/image/long_sub.png"
+                          : "/image/service_cut.png"
                       }
                       alt=""
                     />
                     <img
                       className="bg_crad_img mobile_view_bg d-none"
-                      src="./image/service_cut.png"
+                      src="/image/service_cut.png"
                       alt=""
                     />
                   </div>

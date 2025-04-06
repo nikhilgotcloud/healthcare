@@ -29,7 +29,7 @@ const HealthcareNavbar: React.FC = () => {
 
           <Navbar.Brand href="#home" className="brand">
             <img
-              src=".\image\INF-healthcare-logo.png"
+              src="\image\INF-healthcare-logo.png"
               alt="INF Healthcare Logo"
               className="logo"
 
@@ -65,7 +65,7 @@ const HealthcareNavbar: React.FC = () => {
             <div className="navbar-divider d-none d-lg-block "></div>
             <button className="make_appoint_btn d-flex p-2" style={btncolor}>
               Make an Appointment{" "}
-              <img src="image/iconArrow.svg" alt="Arrow Icon" loading="lazy" />
+              <img src="/image/iconArrow.svg" alt="Arrow Icon" loading="lazy" />
             </button>
           </Navbar.Collapse>
         </Navbar>
