@@ -139,7 +139,14 @@ text-decoration-skip-ink: none;
     margin-top: 10%;
 }
 
+.prev_nav.nav_box a {
+  text-decoration: none !important; /* Remove the underline */
+}
 
+/* Optional: Ensure the text color matches your design */
+.prev_nav.nav_box a .text-teal-800 {
+  color: rgb(0, 73, 86); /* Matches txtstyle */
+}
 .denial-service-head{
   font-size: 20px;
   font-weight: 600;

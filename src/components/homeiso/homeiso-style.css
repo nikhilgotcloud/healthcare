@@ -54,6 +54,8 @@
 }
 .image-container:hover{
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+  overflow: hidden; 
+  border-radius: 40px;
 }
 
 .shield-image {
@@ -64,12 +66,12 @@
 }
 
 .shield-image:hover {
-  scale: 1.2;
+  transform: scale(1.2); 
   transition: all 0.53s ease;
   height: 100%;
   width: 100% !important;
   border-radius: 40px;
- 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .content-container {

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./homeservices-style.css";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { Service } from "../../types/services.interface"; // Adjust the path to your interface file
 
 const Homeservices = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  const [services, setServices] = useState<Service[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
 
   const arrowstyles = { width: "40px", height: "40px" };
   const headStyle: React.CSSProperties = {
@@ -15,7 +19,7 @@ const Homeservices = () => {
     lineHeight: "16px",
     fontWeight: 400,
     transition: "all 1s ease",
-    cursor: 'pointer',
+    cursor: "pointer",
   };
 
   const svgStyles: React.CSSProperties = {
@@ -28,69 +32,36 @@ const Homeservices = () => {
     cursor: "auto",
   };
 
-  const servicesData = [
-    {
-      id: 1,
-      title: "Denial Management",
-      image: "./image/services/denial-managment.png",
-      description: "Lorem Ipsum is simply dummy text of",
-      type: "card",
-    },
-    {
-      id: 2,
-      title: "Hospital Billing",
-      image: "./image/services/hospital-billing.png",
-      description: "Lorem Ipsum is simply dummy text of",
-      type: "card",
-    },
-    {
-      id: 3,
-      title: "Revenue Cycle",
-      image: "./image/services/denial-managment.png",
-      description: "Lorem Ipsum is simply dummy text of",
-      type: "card",
-    },
-    {
-      id: 4,
-      title: "Medical Billing",
-      image: "./image/services/medical-billing.png",
-      description: "Lorem Ipsum is simply dummy text of",
-      type: "card",
-    },
-    {
-      id: 5,
-      title: "Virtual Assistant",
-      image: "./image/services/medical-virtual-assistant.png",
-      description: "Lorem Ipsum is simply dummy text of",
-      type: "card",
-    },
-    {
-      id: 6,
-      title: "Physician Billing",
-      image: "./image/services/physician Billing.png",
-      description: "Lorem Ipsum is simply dummy text of",
-      type: "card",
-    },
-    {
-      id: 7,
-      title: "HME Billing",
-      image: "./image/services/hme-billing.png",
-      description: "Lorem Ipsum is simply dummy text of",
-      type: "extendcard",
-    },
-    {
-      id: 8,
-      title: "DME Billing",
-      image: "./image/services/dme-billing.png",
-      description: "Lorem Ipsum is simply dummy text of",
-      type: "extendcard",
-    },
-  ];
+  useEffect(() => {
+    const fetchServices = async () => {
+      try {
+        const response = await axios.get(
+          "https://trusty-amusement-fb0d575893.strapiapp.com/api/services?populate=*"
+        );
+        setServices(response.data.data); 
+        setLoading(false);
+      } catch (err) {
+        setError("Failed to fetch services");
+        setLoading(false);
+      }
+    };
+
+    fetchServices();
+  }, []); 
+
+  if (loading) {
+    return <div className="spinner-border text-info d-flex justify-content-center" role="status">
+    <span className="sr-only">Loading...</span>
+  </div>;
+  }
+
+  if (error) {
+    return <div>{error}</div>;
+  }
 
   return (
     <section className="service-section padding_section py-5 header_containter">
       <div className="container">
-
         <div className="row">
           <div className="col-12 text-center mt-3">
             <span
@@ -106,122 +77,61 @@ const Homeservices = () => {
           </div>
         </div>
 
-
         <div className="row g-4 p-3 justify-content-center">
-          {servicesData.map((card) => {
-            // Determine the grid classes based on card type
-            // For standard cards: desktop -> 3 per row (col-lg-4)
-            // For extended cards: desktop -> 2 per row (col-lg-6)
-            const colClass =
-              card.type === "card"
-                ? "col-12  col-md-6 col-xl-4"
-                : "col-12 col-md-6 col-xl-6";
+          {services.map((service, index) => {
+            // Determine the grid classes based on position
+            // First 6 cards: 3 per row (col-lg-4)
+            // Last 2 cards: 2 per row (col-lg-6)
+            const isExtendedCard = index >= services.length - 2; // Last 2 cards are extended
+            const colClass = isExtendedCard
+            ? "col-12  col-md-6 col-xl-4"
+            : "col-12 col-md-6 col-xl-6";
 
-            const containerClass =
-              card.type === "card"
-                ? "service-card-container bottom_btn"
-                : "service-extendcard-container service-card-container";
+            const containerClass = isExtendedCard
+              ? "service-extendcard-container service-card-container"
+              : "service-card-container";
+              // ? "service-card-container bottom_btn"
+              // : "service-extendcard-container service-card-container";
+              
+
+              
 
             return (
-              <div key={card.id} className={colClass}>
-                {/* <div className={containerClass}>
-                  <img
-                    src={card.image}
-                    alt="Medical Consultation"
-                    className="service-card-image"
-                  />
-                  <div className="service-content-area">
-                    <div className="service-row-custom">
-                      <div className="service-info-column">
-                        <h2 className="service-title">{card.title}</h2>
-                        <p>{card.description}</p>
-                      </div>
-                      <div className="service-icon-column">
-                        <div className="service-circle">
-                          <div className="service-circle-icon" style={arrowstyles}>
-                            <svg
-                              className="service-arrow-icon"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                            >
-                              <path d="M7 17L17 7M17 7H7M17 7V17" />
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
+              <div key={service.id} className={colClass}>
                 <div className={containerClass}>
-                  <div className="card position-relative" >
+                  <div className="card position-relative">
                     <div className="image_box_main">
                       <img
-                        src={card.image}
-                        alt="Medical Consultation"
+                        src={service.cover_img.url} 
+                        alt={service.title}
                         className="service-card-image"
-                        
                       />
                     </div>
-                    <h2 className="card__title px-3">{card.title}</h2>
+                    <h2 className="card__title px-3">{service.title}</h2>
 
                     <div className="card__wrapper mb-2">
-                      <div className="card__subtitle ms-3 ">{card.description}</div>
-                      <div className="card__icon">
-                        {/* <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 256 256"
-                          style={svgStyles}
-                          color="rgb(224, 223, 220)"
-                          onClick={() => navigate("/servicedetail")}
-                        >
-                          <g color="rgb(224, 223, 220)">
-                            <circle
-                              cx="128"
-                              cy="128"
-                              r="96"
-                              opacity="0.2"
-                            ></circle>
-                            <circle
-                              cx="128"
-                              cy="128"
-                              r="96"
-                              fill="none"
-                              stroke="rgb(224, 223, 220)"
-                              stroke-miterlimit="10"
-                              stroke-width="16"
-                            ></circle>
-                            <polyline
-                              points="134.1 161.9 168 128 134.1 94.1"
-                              fill="none"
-                              stroke="rgb(224, 223, 220)"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="16"
-                            ></polyline>
-                            <line
-                              x1="88"
-                              y1="128"
-                              x2="168"
-                              y2="128"
-                              fill="none"
-                              stroke="rgb(224, 223, 220)"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="16"
-                            ></line>
-                          </g>
-                        </svg> */}
-
+                      <div className="card__subtitle ms-3 w-75">
+                        {service.subtitle} 
+                      </div>
+                      <div className="card__icon" onClick={()=>navigate(`/services/${service.slug}`)}>
                         <i className="fa-solid fa-arrow-up non_hover_icon"></i>
-                        <i className="fa-solid fa-arrow-up  hover_icon"></i>
-
+                        <i className="fa-solid fa-arrow-up hover_icon"></i>
                       </div>
                     </div>
-                    <img className="bg_crad_img"  src={ card.type === "card" ? './image/service_cut.png'   : './image/long_sub.png '}  alt="" />
-                    <img className="bg_crad_img mobile_view_bg d-none"  src="./image/service_cut.png"  alt="" />
-
+                    <img
+                      className="bg_crad_img"
+                      src={
+                        isExtendedCard
+                          ? "./image/long_sub.png"
+                          : "./image/service_cut.png"
+                      }
+                      alt=""
+                    />
+                    <img
+                      className="bg_crad_img mobile_view_bg d-none"
+                      src="./image/service_cut.png"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
