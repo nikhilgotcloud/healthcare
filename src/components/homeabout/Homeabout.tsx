@@ -47,13 +47,13 @@ const Homeabout = () => {
             <div className="inside_image_about_box position-relative w-100 h-100">
               <div className="w-100 h-100 about-main">
                 <img
-                  src="./image/Rectangle 20.png"
+                  src="/image/Rectangle 20.png"
                   alt="Healthcare professional discussing billing with a client"
                   className="about-image img-fluid about_image_1"
                   loading="lazy"
                 />
                 <img
-                  src="./image/about_img_2.png"
+                  src="/image/about_img_2.png"
                   alt="Healthcare professional discussing billing with a client"
                   className="about-image img-fluid about_image_2"
                   loading="lazy"
@@ -62,7 +62,7 @@ const Homeabout = () => {
 
               <button type="button" className="btn bg-white shadow-lg rounded-circle about-play-butn py-2">
                 {/* <img
-                src="./image/Mask group.png"
+                src="/image/Mask group.png"
                 alt="INF-Healthcare"
                 loading="lazy"
               /> */}

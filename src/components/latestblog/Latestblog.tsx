@@ -15,7 +15,7 @@ const Latestblog = () => {
   const cardData = [
     {
       id: 1,
-      image: "./image/latestblog/Vector16.png",
+      image: "/image/latestblog/Vector16.png",
       title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
       name: "Sarah Miller",
       date: "January 5, 2024",
@@ -23,7 +23,7 @@ const Latestblog = () => {
     },
     {
       id: 2,
-      image: "./image/latestblog/Vector16.png",
+      image: "/image/latestblog/Vector16.png",
       title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
       name: "Sarah Miller",
       date: "January 5, 2024",
@@ -31,7 +31,7 @@ const Latestblog = () => {
     },
     {
       id: 3,
-      image: "./image/latestblog/Vector16.png",
+      image: "/image/latestblog/Vector16.png",
       title: "The 2024 Outlook: Innovations Shaping Medical Billing and ",
       name: "Sarah Miller",
       date: "January 5, 2024",
@@ -76,7 +76,7 @@ const Latestblog = () => {
                       <div className="blog-meta">
                         <div className="meta-item">
                           <img
-                            src="./image/person_blog.svg"
+                            src="/image/person_blog.svg"
                             alt=""
                             loading="lazy"
                             className=""
@@ -85,7 +85,7 @@ const Latestblog = () => {
                         </div>
                         <div className="meta-item">
                           <img
-                            src="./image/calender_blog.svg"
+                            src="/image/calender_blog.svg"
                             alt=""
                             loading="lazy"
                           />
@@ -93,7 +93,7 @@ const Latestblog = () => {
                         </div>
                         <div className="meta-item">
                           <img
-                            src="./image/bookmark_blog.svg"
+                            src="/image/bookmark_blog.svg"
                             alt=""
                             loading="lazy"
                             width="30px"

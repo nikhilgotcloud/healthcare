@@ -43,7 +43,7 @@ const HomeHippa: React.FC = () => {
               <ul className="hippa-list">
                 <li>
                   <span className="hippa-1-icon me-3">
-                    <img src="./image/homesection/hippa-1.png" alt="" />
+                    <img src="/image/homesection/hippa-1.png" alt="" />
                   </span>
                   <div className="image_text">
                     <b>Robust Data Security</b>
@@ -53,7 +53,7 @@ const HomeHippa: React.FC = () => {
                 </li>
                 <li>
                   <span className="hippa-2-icon me-3">
-                    <img src="./image/homesection/hippa-2.png" alt="" />
+                    <img src="/image/homesection/hippa-2.png" alt="" />
                   </span>
                   <div className="image_text">
                     <b>Privacy Safeguards</b>
@@ -63,7 +63,7 @@ const HomeHippa: React.FC = () => {
                 </li>
                 <li>
                   <span className="hippa-3-icon me-3">
-                    <img src="./image/homesection/hippa-3.png" alt="" />
+                    <img src="/image/homesection/hippa-3.png" alt="" />
                   </span>
                   <div className="image_text">
                     <b>Risk Assessment and Mitigation</b>
@@ -73,7 +73,7 @@ const HomeHippa: React.FC = () => {
                 </li>
                 <li>
                   <span className="hippa-4-icon me-3">
-                    <img src="./image/homesection/hippa-4.png" alt="" />
+                    <img src="/image/homesection/hippa-4.png" alt="" />
                   </span>
                   <div className="image_text">
                     <b>Training and Education</b>
@@ -88,7 +88,7 @@ const HomeHippa: React.FC = () => {
           <div className="col-md-6">
             <div className="image-container">
               <img
-                src="./image/homesection/hippa.png"
+                src="/image/homesection/hippa.png"
                 alt="Hippa-Compliance"
                 className="shield-image"
                 loading="lazy"

@@ -1,13 +1,19 @@
 .carousel-container {
-  width: 100%;
-  max-width: 86vw;
+  /* width: 100%;
+  max-width: 90vw;
   height: 90vh;
   margin: 0 auto;
   position: relative;
   margin-left: 100px;
   margin-right: 100px;
-  /*  to maintain the  heaight according to figma*/
+  min-height: 880px; */
+  height: 90vh;
+  margin:
+0 100px;
+  max-width: 86vw;
   min-height: 880px;
+  position: relative;
+  width: 100%;
 }
 
 .carousel-wrapper {

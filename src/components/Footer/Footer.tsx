@@ -1,16 +1,68 @@
-import React from "react";
+import React, {useState} from "react";
 import "./footer-style.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Footer = () => {
   const inputbg= {color: 'rgb(49, 49, 49)'}
+  const [email, setEmail] = useState<string>("");
+  const [error, setError] = useState<string>("");
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!email.trim()) {
+      setError("Please enter an email Id to subscribe");
+      return;
+    }
+
+    try {
+      const response = await axios.post(
+        "https://trusty-amusement-fb0d575893.strapiapp.com/api/newsletters",
+        {
+          data: {
+            Email: email,
+          },
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      if (response.status === 200 || response.status === 201) {
+        toast.success("Successfully subscribed to newsletter!");
+        setEmail("");
+        setError("");
+      }
+    } catch (err) {
+      const errorMsg = (err as any)?.response?.data?.error?.message || "Failed to subscribe. Please try again.";
+      toast.error(errorMsg);
+      console.error("Newsletter subscription error:", err);
+    }
+  };
+
   return (
     <footer className="footer-section mb-3 px-3">
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
       <div className="container">
         <div className="row">
           <div className="col-lg-4 mb-4">
             <img
-              src="./image/INF-healthcare-logo.png"
+              src="/image/INF-healthcare-logo.png"
               alt="INF Healthcare"
               className="footer-logo"
               loading="lazy"
@@ -22,13 +74,13 @@ const Footer = () => {
             </p>
             <div className="certification-badges">
               <img
-                src="./image/hippa-certified.png"
+                src="/image/hippa-certified.png"
                 alt="HIPAA Compliant"
                 loading="lazy"
               />
               <div className="footer-divider"></div>
               <img
-                src="./image/iso-certfied.png"
+                src="/image/iso-certfied.png"
                 alt="ISO 27000 Certified"
                 loading="lazy"
               />
@@ -101,16 +153,22 @@ const Footer = () => {
               Sign up for our mailing list to get latest updates and offers.
             </p>
 
-            <div className="newsletter-form">
+            <div className="newsletter-form ">
               <input
                 type="email"
                 placeholder="Enter your email here"
-                className="bg-white"
+                className="bg-white rounded-pill"
                 style={inputbg}
+                value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+              setError("");
+            }}
               />
-              <button type="submit">Subscribe</button>
+              <button type="submit" onClick={handleNewsletterSubmit} >Subscribe</button>
+              
             </div>
-
+            {error && <span style={{ color: "white", display: "block", marginTop:"-3%" }}>{error}</span>}
             <h3 className="footer-heading book_heading
             ">Book Your Free Demo</h3>
             <button  className="demo-button rounded-pill">
@@ -122,14 +180,14 @@ const Footer = () => {
 
         <div className="contact-info bg-white">
           <Link to="#" className="contact-item text-dark">
-            <img src="./image/footer-location.png" alt="Location" />
+            <img src="/image/footer-location.png" alt="Location" />
             <span>
             600 BROADWAY, STE 200 #5035, ALBANY, NEW YORK 12207
             </span>
           <div className="navbar-divider"></div>
           </Link>
           <Link to="tel:888-512-6265" className="contact-item text-dark">
-            <img src="./image/footer-call.png" alt="Phone" />
+            <img src="/image/footer-call.png" alt="Phone" />
             <span>
             888-512-6265
             </span>
@@ -139,7 +197,7 @@ const Footer = () => {
             to="mailto:info@infhealthcare.com"
             className="contact-item text-dark"
           >
-            <img src="./image/footer-mail'.png" alt="Email" />
+            <img src="/image/footer-mail'.png" alt="Email" />
             <span>
             info@infhealthcare.com
             </span>

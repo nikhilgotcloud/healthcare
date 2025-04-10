@@ -5,21 +5,21 @@ import RotatingTextButton from "../rotatebtn/RotatingTextButton";
 const CarouselComponent: React.FC = () => {
   const images = [
     {
-      src: "./image/hero-slider/hero-1.png",
+      src: "/image/hero-slider/hero-1.png",
       header: "Lorem Ipsum is sumply dun",
       detail: "Lorem Ipsum is sumply dummy text",
       description:
         "Lorem Ipsum is simply dummy text of the printing  is simply dummy text of the printing",
     },
     {
-      src: "./image/hero-slider/hero-2.png",
+      src: "/image/hero-slider/hero-2.png",
       header: "Lorem Ipsum is sumply dun",
       detail: "Lorem Ipsum is sumply dummy text",
       description:
         "Lorem Ipsum is simply dummy text of the printing  is simply dummy text of the printing",
     },
     {
-      src: "./image/hero-slider/hero-1.png",
+      src: "/image/hero-slider/hero-1.png",
       header: "Lorem Ipsum is sumply dun",
       detail: "Lorem Ipsum is sumply dummy text",
       description:

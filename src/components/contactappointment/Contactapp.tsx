@@ -44,7 +44,7 @@ const Contactapp = () => {
                   <div className="info-item d-flex align-items-center">
                     <div className="icon-wrapper">
                       {/* <img
-                        src="./image/location-bg.png"
+                        src="/image/location-bg.png"
                         alt="Location Icon"
                         className="contact-icon"
                       /> */}
@@ -151,8 +151,8 @@ const Contactapp = () => {
                     </div>
                   </div>
                 </form>
-                <img className="bg_img" alt="" src="./image/contact_form_bg.png" />
-                <div className="calender_bg"><img alt="" src="./image/calender.svg" /></div>
+                <img className="bg_img" alt="" src="/image/contact_form_bg.png" />
+                <div className="calender_bg"><img alt="" src="/image/calender.svg" /></div>
               </div>
             </div>
           </div>

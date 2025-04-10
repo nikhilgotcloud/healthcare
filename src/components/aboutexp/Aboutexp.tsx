@@ -16,28 +16,28 @@ const Aboutexp = () => {
   const cardData = [
     {
       id: 1,
-      image: "./image/experience/group0.svg",
+      image: "/image/experience/group0.svg",
 
       text: "Rapid Scalability",
       description: "Our services are designed to accommodate your growing needs, ensuring seamless scalability without compromising quality or efficiency. As your practice expands, we adapt to support your increasing demands, delivering uninterrupted billing and coding solutions.",
     },
     {
       id: 2,
-      image: "./image/experience/group1.svg",
+      image: "/image/experience/group1.svg",
 
       text: "Better Results",
       description: "We are committed to achieving exceptional results for our clients. With our expertise and industry knowledge, we optimize your revenue cycle, improve collections, and minimize denials, ultimately enhancing your financial performance and maximizing profitability.",
     },
     {
       id: 3,
-      image: "./image/experience/group2.svg",
+      image: "/image/experience/group2.svg",
 
       text: "Transparency",
       description: "We believe in open and honest communication. We provide transparent reporting, giving you real-time insights into your revenue cycle, claims status, and financial performance. You can trust us to keep you informed and updated throughout the billing process.",
     },
     {
       id: 4,
-      image: "./image/experience/group3.svg",
+      image: "/image/experience/group3.svg",
 
       text: "High-Quality Services",
       description: "Our team consistently delivers high-quality services. From accurate coding to timely claim submissions, we prioritize precision and compliance. You can rely on us to handle your medical billing and coding with meticulous attention to detail, ensuring the highest quality standards.",
@@ -76,7 +76,7 @@ const Aboutexp = () => {
                   {card.description}
                 </p>
                 <div className="bg_image">
-                <img src="./image/long_box.png" alt="" />
+                <img src="/image/long_box.png" alt="" />
               </div>
               </div>
             </div>

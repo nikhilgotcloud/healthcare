@@ -134,7 +134,22 @@
   .hero-footer {
     margin-top: 7vh !important;
   }
+/* Ensure the Link doesn't interfere with the styling */
+.header-link {
+  text-decoration: none !important; /* Remove underline */
+  color: inherit !important; /* Inherit color from the span */
+}
 
+/* Ensure the span inside the Link behaves as before */
+.header-link .badge {
+  display: inline-block; /* Match the original display */
+}
+
+/* Ensure hover effects are applied correctly (if any) */
+.header-link:hover .badge {
+  background-color: #ab0000 !important; /* Maintain the original background color */
+  color: white !important; /* Maintain the original text color */
+}
   .hero-image {
     /* border-radius: 20px; */
     border-radius: 30px;
