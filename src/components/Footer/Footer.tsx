@@ -121,28 +121,28 @@ const Footer = () => {
             <h3 className="footer-heading">Links</h3>
             <ul className="footer-links">
               <li>
-                <Link to="#">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="#">About</Link>
+                <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="#">Services</Link>
+                <Link to="/services">Services</Link>
               </li>
               <li>
-                <Link to="#">Blog</Link>
+                <Link to="/blog">Blog</Link>
               </li>
               <li>
-                <Link to="#">Contact Us</Link>
+                <Link to="/contact">Contact Us</Link>
               </li>
               <li>
-                <Link to="#">Terms and Conditions</Link>
+                <Link to="/terms-and-conditions">Terms and Conditions</Link>
               </li>
               <li>
-                <Link to="#">Privacy Policy</Link>
+                <Link to="/privacy-policy">Privacy Policy</Link>
               </li>
               <li>
-                <Link to="#">Cookies Policy</Link>
+                <Link to="/cookies-policy">Cookies Policy</Link>
               </li>
             </ul>
           </div>

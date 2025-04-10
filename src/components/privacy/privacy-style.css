@@ -1,0 +1,124 @@
+.healthcare-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.section-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.content-wrapper {
+  width: 100%;
+}
+
+.privacy-section {
+  margin-bottom: 40px;
+}
+
+.privacy-heading {
+  color: #004457 !important;
+  font-family: "Koh Santepheap", sans-serif !important;
+  font-size: 32px !important;
+  font-weight: 700;
+  margin-bottom: 28px !important;
+}
+
+.privacy-description {
+  color: #0f0f0f !important;
+  font-size: 14px !important;
+  font-weight: 500;
+  line-height: 20px !important;
+  margin: 0;
+}
+
+.privacy-description ul.services-list {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0;
+}
+
+.privacy-description ul.services-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  position: relative; /* Ensure proper positioning */
+}
+
+.privacy-description ul.services-list .checkmark-icon {
+  margin-right: 10px;
+  display: inline-flex; /* Ensure proper alignment */
+}
+
+/* Remove any default bullets or dots */
+.privacy-description ul.services-list li::before {
+  content: none; /* Ensure no default bullets */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .healthcare-section {
+    padding: 15px;
+  }
+
+  .privacy-heading {
+    font-size: 28px !important;
+  }
+
+  .privacy-description {
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .healthcare-section {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .section-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .privacy-heading {
+    font-size: 24px !important;
+  }
+
+  .privacy-description {
+    font-size: 12px !important;
+    text-align: left;
+  }
+
+  .privacy-description ul.services-list li {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .privacy-description ul.services-list .checkmark-icon {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .healthcare-section {
+    padding: 5px;
+  }
+
+  .privacy-heading {
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .privacy-description {
+    font-size: 11px !important;
+    line-height: 18px !important;
+  }
+}
+
+/* Ensure Koh Santepheap font is available */
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@400;700&display=swap');
