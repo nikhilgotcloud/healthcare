@@ -13,7 +13,7 @@ interface HeroContent {
 
 // Update RouteContentMap to exclude /services/:slug since we'll handle it dynamically
 type RouteContentMap = {
-  [key in "/contact" | "/about" | "/services" | "/blogdetail" | "/blog"]: HeroContent;
+  [key in "/contact" | "/about" | "/services" | "/blogdetail" | "/blog" |"/terms-and-conditions" | "/privacy-policy" | "/cookies-policy"]: HeroContent;
 }
 
 interface ContactheroProps {
@@ -55,6 +55,24 @@ const Contacthero: React.FC<ContactheroProps> = ({ slug }) => {
       header: "Blog Insights",
       detail: "Latest Updates",
       description: "Stay informed with our latest articles and industry insights",
+    },
+    "/terms-and-conditions": {
+      image: "/image/blog-detail.png",
+      header: "Terms and Conditions",
+      detail: "Our Usage Agreement",
+      description: "Review the terms governing your use of our services and website",
+    },
+    "/privacy-policy": {
+      image: "/image/blog-detail.png",
+      header: "Privacy Policy",
+      detail: "Your Data, Our Commitment",
+      description: "Learn how we collect, use, and protect your personal information",
+    },
+    "/cookies-policy": {
+      image: "/image/blog-detail.png",
+      header: "Cookies Policy",
+      detail: "Understanding Cookie Usage",
+      description: "Find out how we use cookies to enhance your browsing experience",
     },
   };
 
