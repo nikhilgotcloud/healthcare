@@ -232,15 +232,15 @@ text-decoration-skip-ink: none;
   margin-top: -35px;
   border-radius: 20px;
   transition: all .5s ease;
-  height: 100%;
+  /* height: 100%; */
 
 }
 .lates_bog_section .why-feature{
-  transition: all .5s ease;
-  overflow: hidden;
+  transition: all 1s ease;
+  /* overflow: hidden; */
 }
 .lates_bog_section .why-feature:hover {
-  box-shadow: #0000005e 0 0 10px 1px;
+  /* box-shadow: #0000005e 0 0 10px 1px; */
 }
 
 .lates_bog_section .why-feature .blog-content .blog-meta{
@@ -263,7 +263,8 @@ text-decoration-skip-ink: none;
 .lates_bog_section .why-feature .blog-content .blog-title {
   font-size: 20px;
   font-weight: 600;
-  color: #004457;
+  color:#AB0000;
+
   line-height: 25px;
   overflow:
 hidden;
@@ -274,15 +275,18 @@ hidden;
 vertical;
 }
 .lates_bog_section .why-feature:hover .blog-content .blog-title {
-  color:#AB0000
+  color: #004457;
+
 }
+
 
 .lates_bog_section .why-feature .box-number {
   position: absolute;
-  right: 0px;
+  right: -3px;
+  top: -2px;
   bottom: -33px;
-  height: 50px;
-  width: 50px;
+  height: 50px !important;
+  width: 50px !important;
   background-color: #fff;
   border-radius: 100px;
   display: flex;
@@ -295,9 +299,10 @@ vertical;
   position: absolute;
   transition: all .5s ease;
   font-size: 18px !important;
-
-
 }
+
+
+
 .lates_bog_section .why-feature .box-number .hover_icon {
   transform: translate(0, 45px);
   font-size: 18px !important;
@@ -365,4 +370,41 @@ vertical;
 }
 .lates_bog_section .why-feature{
   padding: 0 !important;
+}
+
+.why-feature.cutPieceRight::after{
+  content: url("../../../public/image/right_side_cut.svg");
+  top: -1px;
+  display: block;
+  right: -1px;
+  width: 85px;
+  position: absolute;
+  z-index: 1;
+  transition: all .5s ease;
+}
+.lates_bog_section .bottom_home.why-feature:hover {
+  box-shadow: #0000005e 0 30px 26px -23px !important;
+}
+.lates_bog_section .bottom_home.why-feature:hover::before {
+  content: "";
+  bottom: -3px;
+  height: calc(100% - 296px);
+  background: #00000024;
+  width: 100%;
+  position: absolute;
+  border-radius: 0 0 24px 24px;
+  left: -2px;
+  right: -2px;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.why-feature.cutPieceRight.bottom_home .box-number.text-dark  i {
+  animation : goDown45 .6s linear;
+  color: #000 !important;
+
+}
+.why-feature.cutPieceRight.bottom_home:hover .box-number.text-dark i {
+  animation: goUp45 .6s linear;
+  color: #fff !important;
 }

@@ -3,3 +3,39 @@
         padding-bottom: 72px;
       }
 }
+
+.mainexp {
+  margin-left: auto;
+  margin-right: auto;
+}
+.about_usSec_ex .why-feature .card-description {
+  max-width: 100%;
+  width: 100%;
+}
+.about_usSec_ex .why-feature .divider.mb-3.w-100.mx-4 {
+  width: 75% !important;
+  margin: auto !important;
+}
+.about_usSec_ex .why-feature .box-icon {
+  margin-bottom: 0 !important;
+  padding-bottom: 9px !important;
+}
+
+.about_page_card_section {
+  margin-top: 90px;
+}
+.about_page_card_section .badge.badge-white {
+  font-size: 14px !important;
+  padding: 11px 14px !important;
+}
+.about_page_card_section .about-us-title {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: Koh Santepheap;
+}
+.about_usSec_ex .mainexp {
+  margin-top: 37px !important;
+}
+.about_usSec_ex .why-feature:hover .card-text {
+  color: #ab0000;
+}

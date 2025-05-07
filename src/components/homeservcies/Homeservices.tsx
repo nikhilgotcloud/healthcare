@@ -38,16 +38,90 @@ const Homeservices = () => {
         const response = await axios.get(
           "https://trusty-amusement-fb0d575893.strapiapp.com/api/services?populate=*"
         );
+        console.log(response)
         setServices(response.data.data); 
         setLoading(false);
       } catch (err) {
         setError("Failed to fetch services");
         setLoading(false);
+        console.log("my name is khan ")
+
       }
     };
 
     fetchServices();
   }, []); 
+  
+
+  const staticData = [
+    {
+      id : 1,
+      cover_img : {url : "./image/services/denial-managment copy.png"},
+      title : "Denial Management",
+      subtitle  :"Lorem Ipsum is simply dummy text of",
+      slug : 1 ,
+
+    },
+    {
+      id : 2,
+      cover_img : {url : "./image/services/hospital-billing.png"},
+      title : "Hospital Billing",
+      subtitle  :"Lorem Ipsum is simply dummy text of",
+      slug : 1 ,
+      
+    },
+    {
+      id : 3,
+      cover_img : {url : "./image/services/hme-billing.png"},
+      title : "Revenue Cycle Management",
+      subtitle  :"Lorem Ipsum is simply dummy text of",
+      slug : 1 ,
+      
+    },
+    {
+      id : 4,
+      cover_img : {url : "./image/services/dme-billing.png"},
+      title : "Medical Billing",
+      subtitle  :"Lorem Ipsum is simply dummy text of",
+      slug : 1 ,
+      
+    },
+  
+    {
+      id : 5,
+      cover_img : {url : "./image/services/medical-virtual-assistant.png"},
+      title : "Medical Virtual Assistant",
+      subtitle  :"Lorem Ipsum is simply dummy text of",
+      slug : 1 ,
+      
+    },
+  
+    {
+      id : 6,
+      cover_img : {url : "./image/services/physician Billing.png"},
+      title : "Physician Billing",
+      subtitle  :"Lorem Ipsum is simply dummy text of",
+      slug : 1 ,
+      
+    },
+    {
+      id : 7,
+      cover_img :  {url : "./image/services/hme-billing.png"},
+      title : "HME Billing",
+      subtitle  :"Lorem Ipsum is simply dummy text of",
+      slug : 1 ,
+      
+    },
+    {
+      id : 8,
+      cover_img :  {url : "./image/services/dme-billing.png"}, 
+      title : "DME Billing",
+      subtitle  :"Lorem Ipsum is simply dummy text of",
+      slug : 1 ,
+      
+    },
+  ]
+ 
 
   if (loading) {
     return <div className="spinner-border text-info d-flex justify-content-center" role="status">
@@ -55,9 +129,9 @@ const Homeservices = () => {
   </div>;
   }
 
-  if (error) {
-    return <div>{error}</div>;
-  }
+  // if (error) {
+  //   return <div>{error}</div>;
+  // }
 
   return (
     <section className="service-section padding_section py-5 header_containter">
@@ -78,25 +152,29 @@ const Homeservices = () => {
         </div>
 
         <div className="row g-4 p-3 justify-content-center">
-          {services.map((service, index) => {
+          
+        {/* {staticData.map((service, index) => { */}
+          {staticData.map((service, index) => {
+            
             // Determine the grid classes based on position
             // First 6 cards: 3 per row (col-lg-4)
             // Last 2 cards: 2 per row (col-lg-6)
-            const isExtendedCard = index >= services.length - 2; // Last 2 cards are extended
+            const isExtendedCard = index <= staticData.length - 3; // Last 2 cards are extended
             const colClass = isExtendedCard
-            ? "col-12 col-md-6 col-xl-6"
-            : "col-12  col-md-6 col-xl-4 ";
+            ? " col-12  col-md-6 col-xl-4 "
+            : " col-12 col-md-6 col-xl-6  ";
 
             const containerClass = isExtendedCard
               // ? "service-extendcard-container service-card-container"
               // : "service-card-container";
-              ? " service-extendcard-container service-card-container"
-              : "service-card-container bottom_btn";
+              ? "  service-card-container bottom_btn service_cutPiece_bottom"
+              : " service-extendcard-container service-card-container service_cutPiece_bottom";
               
 
               
 
             return (
+             
               <div key={service.id} className={colClass}>
                 <div className={containerClass}>
                   <div className="card position-relative">
@@ -113,17 +191,19 @@ const Homeservices = () => {
                       <div className="card__subtitle ms-3 w-75">
                         {service.subtitle} 
                       </div>
-                      <div className="card__icon" onClick={()=>navigate(`/services/${service.slug}`)}>
-                        <i className="fa-solid fa-arrow-up non_hover_icon"></i>
-                        <i className="fa-solid fa-arrow-up hover_icon"></i>
+                      <div className="card__icon new_btn_animation" onClick={()=>navigate(`/services/${service.slug}`)}>
+                        {/* <i className="fa-solid fa-arrow-up non_hover_icon"></i> */}
+                        {/* <i className="fa-solid fa-arrow-up hover_icon"></i> */}
+                        <i className="fa-solid fa-arrow-up "></i>
+
                       </div>
                     </div>
                     <img
                       className="bg_crad_img"
                       src={
                         isExtendedCard
-                          ? "/image/long_sub.png"
-                          : "/image/service_cut.png"
+                          ? " /image/service_cut.png"
+                          : " /image/long_sub.png"
                       }
                       alt=""
                     />

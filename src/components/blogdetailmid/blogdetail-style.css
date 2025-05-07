@@ -278,3 +278,33 @@ vertical;
   } 
   
 }
+.right_section_blog .card.cutPieceRight:hover {
+  background: #fff !important;
+  box-shadow: #0000005e 0 30px 26px -23px !important;
+}
+.right_section_blog .card.cutPieceRight:hover::before {
+  content: "";
+  bottom: 0;
+  height: calc(100% - 91px);
+  background: #00000017;
+  width: 100%;
+  position: absolute;
+  border-radius: 0 0 24px 24px;
+  left: -2px;
+  right: -2px;
+  z-index: -1;
+  filter: blur(10px);
+  rotate: 0deg;
+  transform: rotate(0deg);
+  top: unset;
+}
+
+.blog_page_card .lates_bog_section .why-feature .box-number.text-dark  i {
+  animation : goDown45 .6s linear;
+  color: #000 !important;
+
+}
+.blog_page_card .lates_bog_section .why-feature:hover .box-number.text-dark i {
+  animation: goUp45 .6s linear;
+  color: #fff !important;
+}
