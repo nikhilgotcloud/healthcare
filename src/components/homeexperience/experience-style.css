@@ -191,3 +191,24 @@ text-decoration-skip-ink: none;
   color: #fff !important;
   transition: all .5s ease
 }
+.card-video {
+  height: 70px;
+  width: 70px;
+}
+.why-feature.new_feature.cutPieceRight {
+  background: #fff !important;
+}
+.why-feature.new_feature.cutPieceRight .bg_image {
+  display: none;
+}
+.why-feature.new_feature.cutPieceRight .box-number {
+  right: 0;
+  top: 0px;
+}
+.mainexp .why-feature.new_feature.cutPieceRight::after {
+  width: 75px !important;
+}
+.mainexp .why-feature.new_feature.cutPieceRight {
+  padding: 16px 25px !important;
+  padding-top: 0 !important;
+}

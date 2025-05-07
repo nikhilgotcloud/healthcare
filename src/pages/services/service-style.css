@@ -8,3 +8,21 @@
     height: 100% !important;
     width: 100% !important;
   }
+
+  .service-card-container.service_cutPiece_bottom .card {
+    background: #fff;
+    border-radius: 26px !important;
+    height: 100% !important;
+    padding-bottom: 10px;
+  }
+  .service-card-container.service_cutPiece_bottom .card .bg_crad_img {
+    display: none !important;
+  }
+  .service-card-container.service_cutPiece_bottom .card .card__icon{
+    bottom: 0;
+    z-index: 10;
+  }
+  .service-card-container.service_cutPiece_bottom .card  .card__subtitle {
+    margin-top: 5px;
+    width: 50%;
+  }

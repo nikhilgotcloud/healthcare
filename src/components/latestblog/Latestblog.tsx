@@ -54,7 +54,7 @@ const Latestblog = () => {
             <div className="row">
               {cardData.map((card) => (
                 <div key={card.id} className="col-12 col-md-4 mb-4">
-                  <div className="why-feature ">
+                  <div className="why-feature cutPieceRight bottom_home">
                     <div className="box-number text-dark">
                       {/* <svg
                         width="30"

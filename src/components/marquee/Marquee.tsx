@@ -14,7 +14,7 @@ const Marquee = () => {
               <div className="contact-marquee-info d-flex align-items-center">
                 <span className="marquee-font">
                   <i className="bi bi-geo-alt-fill iconStyle" ></i>
-                  600 BROADWAY, STE 200 #5035, ALBANY, NEW YORK 12207
+                  600 Broadway , Ste 200 #5035, Albany , New York 12207 
                 </span>
                 <span className="marquee-font">
                   <i className="bi bi-telephone-fill iconStyle"></i>

@@ -7,21 +7,24 @@ const CarouselComponent: React.FC = () => {
     {
       src: "/image/hero-slider/hero-1.png",
       header: "Lorem Ipsum is sumply dun",
-      detail: "Lorem Ipsum is sumply dummy text",
+      detail: "Lorem Ipsum is ",
+      detail_2: "sumply dummy text",
       description:
         "Lorem Ipsum is simply dummy text of the printing  is simply dummy text of the printing",
     },
     {
       src: "/image/hero-slider/hero-2.png",
       header: "Lorem Ipsum is sumply dun",
-      detail: "Lorem Ipsum is sumply dummy text",
+      detail: "Lorem Ipsum is ",
+      detail_2: "sumply dummy text",
       description:
         "Lorem Ipsum is simply dummy text of the printing  is simply dummy text of the printing",
     },
     {
       src: "/image/hero-slider/hero-1.png",
       header: "Lorem Ipsum is sumply dun",
-      detail: "Lorem Ipsum is sumply dummy text",
+      detail: "Lorem Ipsum is ",
+      detail_2: "sumply dummy text",
       description:
         "Lorem Ipsum is simply dummy text of the printing  is simply dummy text of the printing",
     },
@@ -101,7 +104,10 @@ const CarouselComponent: React.FC = () => {
               </div>
              
               <h1 className={`${index === currentIndex && animate ? "animate__animated animate__fadeInRight" : ""}`}>
-                <b>{image.detail}</b>
+                {image.detail}
+              </h1>
+              <h1 className={`${index === currentIndex && animate ? "animate__animated animate__fadeInRight animate__delay-1s mt-2 margin_top_custom" : ""}`}>
+                {image.detail_2}
               </h1>
               <div className="carousel-footer">
                 <div className="animate__animated animated__fadeIn"> <RotatingTextButton/></div>

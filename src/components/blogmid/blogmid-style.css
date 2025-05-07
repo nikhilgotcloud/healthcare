@@ -431,3 +431,136 @@ text-decoration-skip-ink: none;
   gap:
 12px !important;
 }
+.why-feature.bottomReverse_cutPiece .bg_img {
+  display: none;
+}
+
+.why-feature.bottomReverse_cutPiece{
+  position: relative;
+}
+
+
+.why-feature.bottomReverse_cutPiece {
+  background: #fff !important;
+}
+.why-feature.bottomReverse_cutPiece::after {
+  display: block;
+  right: -3px !important;
+  position: absolute;
+  width: 87px !important;
+}
+.why-feature.bottomReverse_cutPiece .blog-title + p {
+  margin-bottom: 18px !important;
+}
+.why-feature.bottomReverse_cutPiece  .box-number{
+  bottom: 0 !important;
+}
+
+@media (max-width:767px){
+  .why-feature.bottomReverse_cutPiece .blog-title + p {
+    margin-bottom: 0 !important;
+  }
+  .blog_page_card .lates_bog_section .why-feature.bottomReverse_cutPiece .box-number {
+    bottom: 0px !important;
+    right: 0 !important;
+  }
+}
+.blog_page_card .why-feature:hover img.bg_img{
+  filter: drop-shadow(#0000001a 0 0 5px);
+}
+.blog_page_card .lates_bog_section .why-feature .box-number {
+  bottom: 0;
+  bottom: 4px;
+  top: unset;
+  height: 50px !important;
+  width: 50px !important;
+}
+
+.right_section_blog .card.cutPieceRight {
+  background: #fff !important;
+}
+.right_section_blog .card.cutPieceRight .bg_image_detail {
+  display: none !important;
+}
+.right_section_blog .card.cutPieceRight .side_up_icon.icon_one {
+  top: 0 !important;
+  z-index: 2;
+  right: 0;
+  transition: all .5s ease;
+}
+.right_section_blog .card.cutPieceRight::after{
+  width: 72px !important;
+  top: 0;
+  transition: all .5s ease;
+}
+
+.right_section_blog .card.cutPieceRight:hover::after {
+  width: 85px !important;
+}
+.right_section_blog .card.cutPieceRight:hover .side_up_icon.icon_one {
+  height: 50px !important;
+  width: 50px !important;
+  background: #ab0000;
+}
+.right_section_blog .card.cutPieceRight .side_up_icon.icon_one svg{
+  transition: all .5s ease;
+}
+.right_section_blog .card.cutPieceRight:hover .side_up_icon.icon_one svg path {
+  fill: #fff;
+}
+.right_section_blog .card.cutPieceRight:hover .side_up_icon.icon_one svg {
+  height: 40px;
+  width: 40px;
+  animation: bounceRotate 1s ease;
+  animation-play-state: running;
+  transform: rotate(216deg);
+}
+
+
+@keyframes bounceRotate {
+  0%{
+    transform: rotate(0deg);
+  }25%{
+    transform: rotate(310deg);
+  }
+  50%{
+    transform: rotate(170deg);
+  }
+  75%{
+    transform: rotate(265deg);
+  }
+  100%{
+    transform: rotate(216deg);
+  }
+}
+
+.right_section_blog .card.cutPieceRight:hover {
+  background: #fff !important;
+  box-shadow: #0000005e 0 30px 26px -23px !important;
+}
+.right_section_blog .card.cutPieceRight:hover::before {
+  content: "";
+  bottom: 0;
+  height: calc(100% - 91px);
+  background: #00000017;
+  width: 100%;
+  position: absolute;
+  border-radius: 0 0 24px 24px;
+  left: -2px;
+  right: -2px;
+  z-index: -1;
+  filter: blur(10px);
+  rotate: 0deg;
+  transform: rotate(0deg);
+  top: unset;
+}
+
+.blog_page_card .lates_bog_section .why-feature .box-number.text-dark  i {
+  animation : goDown45 .6s linear;
+  color: #000 !important;
+
+}
+.blog_page_card .lates_bog_section .why-feature:hover .box-number.text-dark i {
+  animation: goUp45 .6s linear;
+  color: #fff !important;
+}

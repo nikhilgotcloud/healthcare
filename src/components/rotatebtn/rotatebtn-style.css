@@ -35,3 +35,10 @@
     height: 100px !important;
   }
 }
+
+.carousel-control.sinde_text_crousal_btn {
+  height: 50px;
+  width: 50px;
+  font-size: 21px;
+  transition: all 1s ease;
+}

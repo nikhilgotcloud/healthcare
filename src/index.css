@@ -56,3 +56,128 @@ code {
     max-width: 95% !important;
   }
 }
+
+
+/* for common btn */
+.make_appoint_btn{
+  overflow: hidden;
+}
+.make_appoint_btn i {
+  animation : goDown45 .8s linear;
+  rotate: 45deg;
+  /* position: absolute; */
+  transition: all .5s ease;
+  right: 14px;
+  font-size: 15px !important;
+  
+}
+
+
+.make_appoint_btn:hover i {
+animation: goUp45 .8s linear;
+}
+/* for common btn */
+
+/* for arrow to go up 45deg */
+
+@keyframes goUp45 {
+  0%{
+    transform: translate(0, 0px);
+    opacity: 1;
+    color: #fff;
+
+  }25%{
+    transform: translate(0, -30px);
+    opacity:0;
+    color: #000;
+
+  }50%{
+    transform: translate(0, 0px);
+    opacity: 0;
+    color: #fff;
+  }
+  75%{
+    transform: translate(0, 30px);
+    opacity: 0;
+    color: #fff;
+  }
+  100%{
+    transform: translate(0, 0px);
+    opacity: 1;
+    color: #000;
+  }
+}
+
+
+@keyframes goDown45 {
+  0%{
+    transform: translate(0, 0px);
+    opacity: 1;
+    color: #000;
+
+  }25%{
+    transform: translate(0, -30px);
+    opacity: 0;
+    color: #000;
+
+  }50%{
+    transform: translate(0, 0px);
+    opacity: 0;
+    color: #fff;
+  }
+  75%{
+    transform: translate(0, 30px);
+    opacity: 0;
+    color: #fff;
+  }
+  100%{
+    transform: translate(0, 0px);
+    opacity: 1;
+    color: #fff;
+  }
+}
+
+/* for cut piece*/
+.cutPieceRight {
+  position: relative;
+}
+.cutPieceRight::after{
+  content: url("../public/image/right_side_cut.svg");
+  top: -1px;
+  display: block;
+  right: 0;
+  width: 105px;
+  position: absolute;
+  z-index: 1;
+  transition: all .5s ease;
+}
+
+.service_cutPiece_bottom .card::after{
+  
+  content: url("../public/image/service_right_bottom_cut.svg");
+  bottom: -7px;
+  display: block;
+  right: -1px;
+  width: 85px;
+  position: absolute;
+  z-index: 1;
+  transition: all .5s ease;
+}
+.service_cutPiece_bottom{
+  position: relative;
+}
+
+.bottomReverse_cutPiece::after {
+  transform: scaleX(-1);
+  rotate: 180deg;
+  top: unset !important;
+  bottom: 0 !important;
+  content: url("../public/image/right_side_cut.svg") !important;
+  display: block;
+  right: 0 !important;
+  width: 105px !important;
+  position: absolute;
+  z-index: 1;
+  transition: all .5s ease;
+}
+/* for cut piece */

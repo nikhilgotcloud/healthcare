@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./footer-style.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -6,12 +6,12 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Footer = () => {
-  const inputbg= {color: 'rgb(49, 49, 49)'}
+  const inputbg = { color: 'rgb(49, 49, 49)' }
   const [email, setEmail] = useState<string>("");
   const [error, setError] = useState<string>("");
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!email.trim()) {
       setError("Please enter an email Id to subscribe");
       return;
@@ -68,26 +68,24 @@ const Footer = () => {
               loading="lazy"
             />
             <p className="footer-description text-white">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
             </p>
             <div className="certification-badges">
               <img
-                src="/image/hippa-certified.png"
+                src="./image/footer_1.svg"
                 alt="HIPAA Compliant"
                 loading="lazy"
               />
               <div className="footer-divider"></div>
               <img
-                src="/image/iso-certfied.png"
+                src="./image/footer_2.svg"
                 alt="ISO 27000 Certified"
                 loading="lazy"
               />
             </div>
           </div>
 
-          <div className="col-lg-2 col-md-4 mb-4">
+          <div className="col-lg-3 ps-lg-4 col-md-4 mb-4">
             <h3 className="footer-heading">Our Services</h3>
             <ul className="footer-links">
               <li>
@@ -147,7 +145,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-lg-4 col-md-4 mb-4 footer_section_end">
+          <div className="col-lg-3 col-md-4 mb-4 footer_section_end">
             <h3 className="footer-heading">Register Newsletter</h3>
             <p>
               Sign up for our mailing list to get latest updates and offers.
@@ -160,46 +158,58 @@ const Footer = () => {
                 className="bg-white rounded-pill"
                 style={inputbg}
                 value={email}
-            onChange={(e) => {
-              setEmail(e.target.value);
-              setError("");
-            }}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                  setError("");
+                }}
               />
               <button type="submit" onClick={handleNewsletterSubmit} >Subscribe</button>
-              
+
+            {error && <span className="input_error" style={{ color: "white", display: "block", marginTop: "-3%" }}>{error}</span>}
             </div>
-            {error && <span style={{ color: "white", display: "block", marginTop:"-3%" }}>{error}</span>}
             <h3 className="footer-heading book_heading
             ">Book Your Free Demo</h3>
-            <button  className="demo-button rounded-pill">
+            {/* <button className="demo-button rounded-pill">
               Request Demo
-              <img src="image/iconArrow.svg" alt="" loading="lazy" />
+              <i className="fa-solid fa-arrow-up non_hover_icon"></i>
+              <i className="fa-solid fa-arrow-up hover_icon"></i>
+            </button> */}
+
+            <button className="demo-button new_btn_demo rounded-pill">
+              Request Demo
+              <i className="fa-solid fa-arrow-up "></i>
             </button>
           </div>
         </div>
 
         <div className="contact-info bg-white">
           <Link to="#" className="contact-item text-dark">
-            <img src="/image/footer-location.png" alt="Location" />
+            <div className="icon_footer_box">
+              <img src="./image/footer_location.svg" alt="Location" />
+            </div>
             <span>
-            600 BROADWAY, STE 200 #5035, ALBANY, NEW YORK 12207
+              600 BroadWay , Ste 200 #5035, Albany, New York 12207 
             </span>
-          <div className="navbar-divider"></div>
+            <div className="navbar-divider"></div>
           </Link>
           <Link to="tel:888-512-6265" className="contact-item text-dark">
-            <img src="/image/footer-call.png" alt="Phone" />
+          <div className="icon_footer_box">
+              <img src="./image/footer_call.svg" alt="Location" />
+            </div>
             <span>
-            888-512-6265
+              888-512-6265
             </span>
-          <div className="navbar-divider"></div>
+            <div className="navbar-divider"></div>
           </Link>
           <Link
             to="mailto:info@infhealthcare.com"
             className="contact-item text-dark"
           >
-            <img src="/image/footer-mail'.png" alt="Email" />
+          <div className="icon_footer_box">
+              <img src="./image/footerMAil.svg" alt="Location" />
+            </div>
             <span>
-            info@infhealthcare.com
+              info@infhealthcare.com
             </span>
           </Link>
         </div>
@@ -210,16 +220,16 @@ const Footer = () => {
           </div>
           <div className="social-footer-icons">
             <Link to="#" className="social-footer-icon">
-            <i className="bi bi-youtube socialIconStyle"></i>
+              <i className="bi bi-youtube socialIconStyle"></i>
             </Link>
             <Link to="#" className="social-footer-icon">
-            <i className="bi bi-facebook socialIconStyle"></i>
+              <i className="bi bi-facebook socialIconStyle"></i>
             </Link>
             <Link to="#" className="social-footer-icon">
-            <i className="bi bi-linkedin socialIconStyle"></i>
+              <i className="bi bi-linkedin socialIconStyle"></i>
             </Link>
             <Link to="#" className="social-footer-icon">
-            <i className="bi bi-instagram socialIconStyle"></i>
+              <i className="bi bi-instagram socialIconStyle"></i>
             </Link>
           </div>
         </div>

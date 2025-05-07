@@ -184,7 +184,9 @@
   opacity: 1;
   z-index: 2;
 }
-
+.margin_top_custom {
+  margin-top: 0 !important;
+}
 .carousel-text span {
   font-size: 20px;
   font-weight: 600;
@@ -195,9 +197,13 @@
 .carousel-text h1 {
   font-size: 60px;
   line-height: 75px;
-  width: 60%;
+  /* width: 60%; */
+  width: 73%;
  margin-top: 3vw;
  text-transform: capitalize;
+ font-family: Koh Santepheap;
+ font-weight: 700;
+  text-shadow: #00000063 0px 4px 4px;
 }
 .carousel-text p {
   font-size: 20px;
@@ -355,4 +361,8 @@
   .carousel-image img {
     object-fit: cover;
   }
+}
+
+.carousel-control{
+  transition: all 1s ease;
 }

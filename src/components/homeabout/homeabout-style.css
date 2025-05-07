@@ -20,7 +20,7 @@
     max-height: 20px; 
     transform: translate(0, 0);
     opacity: 1;
-    transition: all 1s ease;
+    transition: all .5s ease;
   }
   
   .make_appoint_btn:hover {
@@ -116,7 +116,7 @@ height: 35px;
 
 @media(min-width:700px){
   .about_text_sextion {
-    padding-top: 76px;
+    padding-top: 46px;
     padding-right: 56px !important;
   }
   .about_text_sextion .about-us-butn {
@@ -160,8 +160,12 @@ height: 35px;
   align-items: center;
   margin: 0 !important;
   position: absolute;
-  bottom: 0;
+  bottom: 3px;
   left: 0;
+}
+.about-main:hover  + .about-play-butn{
+  bottom: 4px;
+  left: -3px;
 }
 .about-section {
   margin-bottom: 73px;
@@ -183,7 +187,7 @@ height: 35px;
   width: 100%;
   height: 100% !important;
   border-radius: 10px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .about-image:hover{
   scale: 1.04;
@@ -201,25 +205,44 @@ height: 35px;
 }
 
 .about_image_2 {
-  display: none;
-  transition: all 1s ease !important;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s ease !important;
 }
 .about_image_1{
-  display: block;
-  transition: all 1s ease !important;
+  transition: all .5s ease !important;
 
 }
 .about-main:hover {
   box-shadow: none !important;
 }
-
+.about-main .about-image{
+  position: absolute;
+}
 .about-main:hover .about-image.about_image_1 {
-  display: none;
-
+  opacity: 0;
+  visibility: hidden;
 }
 .about-main:hover .about-image.about_image_2 {
-  display: block;
+  opacity: 1;
+  visibility: visible;
   scale: 1;
+  animation: bounceImage .5s ease-in-out ;
+
+}
+
+@keyframes bounceImage {
+  0%{
+   transform: scale(1);
+  }50%{
+   transform: scale(1.1);
+    
+  }
+  100%{
+    transform: scale(1);
+     
+   }
+  
 }
 
 .about-play-butn svg mask {
@@ -240,21 +263,214 @@ width: 80px !important;
   width: 50px !important;
   height: 50px;
 } */
+.about-main + .about-play-butn .svg_2,.about-main + .about-play-butn .svg_1{
+  position: absolute;
+}
 .about-main + .about-play-butn .svg_2{
-  display: none;
+ opacity: 0;
+ visibility: hidden;
+}
+.about-play-butn{
+  background: #fff;
 }
 
-.about-main:hover + .about-play-butn {
+/* .about-main:hover + .about-play-butn {
   background-color: rgb(171, 0, 0) !important;
-}
+} */
 .about-main:hover + .about-play-butn .svg_1{
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
+/* .about-main + .about-play-butn .svg_1{
+  animation: bounceImagebtnBack 1s ease-in ;
+} */
+.about-main  + .about-play-butn.backDropTransition{
+  animation: bounceImagebtnBack .5s ease-in ;
+
+}
+
+
 .about-main:hover + .about-play-butn .svg_2{
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  animation: bounceImagebtn .5s ease-in ;
+  transition: all .5s ease;
+
 }
+
+
 @media(max-width:767px){
   .home_expericecard .why-feature{
     margin: 8px auto !important ;
   }
+}
+
+.about-main:hover + .new_button_added  svg#Layer_1 {
+  height: 80px !important;
+  width: 80px !important;
+  animation: bounceImagebtn .5s ease-in ;
+
+}
+
+@keyframes bounceImagebtn {
+  0%{
+    transform: scale(1);
+    opacity: 0;
+   }50%{
+    transform: scale(1.1);
+    opacity: .75;
+     
+   }
+   100%{
+     transform: scale(1);
+     opacity: 1;
+      
+    }
+  }
+
+.about-main:hover + .new_button_added svg#Layer_1 .st0 {
+  fill: #ab0000;
+}
+.about-main:hover + .new_button_added svg#Layer_1 path {
+  fill: #fff;
+}
+.backDropTransitionTOImage{
+  animation: bounceImageBack .5s ease-in-out ;
+}
+@keyframes bounceImageBack {
+  0%{
+   transform: scale(1);
+  }25%{
+   transform: scale(.9.3);
+    
+  }50%{
+    transform: scale(.95)}
+    50%{
+      transform: scale(.9.3)}
+  100%{
+    transform: scale(1);
+     
+   }
+  
+}
+
+
+
+
+
+.new_button_added.backDropTransition path{
+  animation: bounceImagebtnBackChangeColorPath .5s ease-in;
+
+}
+
+
+@keyframes bounceImagebtnBackChangeColorPath {
+  0%{
+
+    fill: #ffffff67;
+
+ 
+   
+   }33%{
+    fill: #ab000031;
+  
+
+     
+   }
+   /* 75%{
+    transform: scale(1.2);
+    background: #ffffff93 ;
+    border-radius: 100px;
+
+     
+   } */
+   66%{
+    fill: #ab000094;
+
+  }
+    
+   100%{
+  
+     fill:#ab0000;
+
+      
+    }
+}
+
+
+.new_button_added.backDropTransition .st0 {
+  animation: bounceImagebtnBackChangeColor .5s ease-in;
+}
+
+
+
+
+@keyframes bounceImagebtnBackChangeColor {
+  0%{
+
+    fill: #ab0000;
+ 
+   
+   }33%{
+    fill: #ab000031;
+  
+
+     
+   }
+   /* 75%{
+    transform: scale(1.2);
+    background: #ffffff93 ;
+    border-radius: 100px;
+
+     
+   } */
+   66%{
+    fill: #ffffff67;
+
+  }
+    
+   100%{
+  
+     fill: #fff;
+
+      
+    }
+}
+
+
+
+@keyframes bounceImagebtnBack {
+  0%{
+    transform: scale(1.2);
+    opacity: .5;
+    background: #ab0000;
+ 
+   
+   }33%{
+    transform: scale(.9);
+    background: #ab000031;
+  
+
+     
+   }
+   /* 75%{
+    transform: scale(1.2);
+    background: #ffffff93 ;
+    border-radius: 100px;
+
+     
+   } */
+   66%{
+    transform: scale(1.1);
+    background: #ffffff67;
+
+  }
+    
+   100%{
+     transform: scale(1);
+     opacity: 1;
+     background: #ffffff67;
+
+      
+    }
 }

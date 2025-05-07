@@ -231,3 +231,59 @@
         margin-bottom: 0 !important;
       }
 }
+
+
+.right_side_image_bg .bg_main {
+    background-color: #fff !important;
+    border-radius:
+  0 70px 70px 0;
+  }
+  .right_side_image_bg .calender_bg {
+    top: 8px;
+    right: 8px;
+  }
+  .right_side_image_bg .bg_main::after {
+    content: url("../../../public/image/right_side_cut.svg");
+    top: -1px;
+    display: block;
+    right: 0;
+    width: 105px;
+    position: absolute;
+    z-index: 1;
+    transition: all .5s ease  ;
+
+  }
+ 
+  .right_side_image_bg .calender_bg img,.right_side_image_bg .calender_bg {
+    transition: all .5s ease  ;
+
+  }
+  .right_side_image_bg .mob_row:hover .calender_bg {
+    height: 80px;
+    width: 80px;
+    background:
+  #ab0000;
+
+  }
+  .right_side_image_bg .mob_row:hover .calender_bg img {
+    mix-blend-mode: difference;
+    height: 47px;
+  }
+  .right_side_image_bg .mob_row:hover .bg_main::after {
+    width: 150px;
+  }
+
+  .calender_bg svg {
+    height: 30px;
+    width: 30px;
+  }
+  .calender_bg svg path {
+    fill: #ab0000;
+  }
+  .right_side_image_bg .mob_row:hover   .calender_bg svg {
+    height: 50px !important;
+    width: 50px !important;
+  }
+  .right_side_image_bg .mob_row:hover  .calender_bg svg path {
+    fill: #ffff !important;
+  }

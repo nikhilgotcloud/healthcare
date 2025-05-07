@@ -25,3 +25,6 @@
       margin-bottom: 26px;
     }
   }
+  .about-main {
+    min-height: 520px;
+  }

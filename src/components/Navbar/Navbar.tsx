@@ -43,11 +43,11 @@ const HealthcareNavbar: React.FC = () => {
           </button>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto menu-items ">
-              <NavLink className="nav-link" to="/">HOME</NavLink>
-              <NavLink className="nav-link" to="about">ABOUT US</NavLink>
-              <NavLink className="nav-link" to="services">SERVICES</NavLink>
-              <NavLink className="nav-link" to="blog">BLOG</NavLink>
-              <NavLink className="nav-link" to="contact">CONTACT US</NavLink>
+              <NavLink   className={({ isActive }) => (isActive ? 'active nav-link' : ' nav-link')}   to="/">HOME</NavLink>
+              <NavLink className={({ isActive }) => (isActive ? 'active nav-link' : ' nav-link')}  to="about">ABOUT US</NavLink>
+              <NavLink className={({ isActive }) => (isActive ? 'active nav-link' : ' nav-link')}  to="services">SERVICES</NavLink>
+              <NavLink className={({ isActive }) => (isActive ? 'active nav-link' : ' nav-link')}  to="blog">BLOG</NavLink>
+              <NavLink className={({ isActive }) => (isActive ? 'active nav-link' : ' nav-link')}  to="contact">CONTACT US</NavLink>
 
             </Nav>
             <Form className="d-flex search-form ">
@@ -65,7 +65,8 @@ const HealthcareNavbar: React.FC = () => {
             <div className="navbar-divider d-none d-lg-block "></div>
             <button className="make_appoint_btn d-flex p-2" style={btncolor}>
               Make an Appointment{" "}
-              <img src="/image/iconArrow.svg" alt="Arrow Icon" loading="lazy" />
+              {/* <img src="/image/iconArrow.svg" alt="Arrow Icon" loading="lazy" /> */}
+              <i className="fa-solid fa-arrow-up "></i>
             </button>
           </Navbar.Collapse>
         </Navbar>
