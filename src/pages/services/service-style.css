@@ -24,5 +24,20 @@
   }
   .service-card-container.service_cutPiece_bottom .card  .card__subtitle {
     margin-top: 5px;
-    width: 50%;
+    width: 78% !important;
+  }
+  .service-card-container.service_cutPiece_bottom .card  .card__subtitle {
+    color: #0F0F0F;
+    font-weight: 500;
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    min-height: 84px;
+  }
+  .service-extendcard-container.service_cutPiece_bottom .card .card__subtitle {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    min-height: 63px;
   }

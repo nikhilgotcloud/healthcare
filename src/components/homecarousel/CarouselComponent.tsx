@@ -92,7 +92,7 @@ const CarouselComponent: React.FC = () => {
           >
             <img src={image.src} alt={`carousel-${index}`} />
             <div className="carousel-text">
-              <div className="col-lg-3">
+              <div className=" d-inline-block">
               <span
                 className={`badge mb-3 text-white about-us-butn p-3 crausal_lorem  ${
                   index === currentIndex && animate ? "animate__animated animate__pulse" : ""

@@ -180,3 +180,18 @@
     font-size: 18px !important;
   }
 }
+
+.margin_top_custom {
+  margin-top: 0 !important;
+}
+.carousel-text h1 {
+  font-size: 60px;
+  line-height: 75px;
+  /* width: 60%; */
+  width: 73%;
+ margin-top: 3vw;
+ text-transform: capitalize;
+ font-family: Koh Santepheap;
+ font-weight: 700;
+  text-shadow: #00000063 0px 4px 4px;
+}
