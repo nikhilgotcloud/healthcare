@@ -185,7 +185,7 @@ const Footer = () => {
         <div className="contact-info bg-white">
           <Link to="#" className="contact-item text-dark">
             <div className="icon_footer_box">
-              <img src="./image/footer_location.svg" alt="Location" />
+              <img src="/image/footer_location.svg" alt="Location" />
             </div>
             <span>
               600 BroadWay , Ste 200 #5035, Albany, New York 12207 
@@ -194,7 +194,7 @@ const Footer = () => {
           </Link>
           <Link to="tel:888-512-6265" className="contact-item text-dark">
           <div className="icon_footer_box">
-              <img src="./image/footer_call.svg" alt="Location" />
+              <img src="/image/footer_call.svg" alt="Location" />
             </div>
             <span>
               888-512-6265
@@ -206,7 +206,7 @@ const Footer = () => {
             className="contact-item text-dark"
           >
           <div className="icon_footer_box">
-              <img src="./image/footerMAil.svg" alt="Location" />
+              <img src="/image/footerMAil.svg" alt="Location" />
             </div>
             <span>
               info@infhealthcare.com

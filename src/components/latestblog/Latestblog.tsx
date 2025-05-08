@@ -66,8 +66,10 @@ const Latestblog = () => {
                       >
                         <path d="M7 17l9.2-9.2M17 17V7H7" />
                       </svg> */}
-                      <i className="fa-solid fa-arrow-up non_hover_icon"></i>
-                      <i className="fa-solid fa-arrow-up  hover_icon"></i>
+                      {/* <i className="fa-solid fa-arrow-up non_hover_icon"></i>
+                      <i className="fa-solid fa-arrow-up  hover_icon"></i> */}
+                      <i className="fa-solid fa-arrow-up "></i>
+
                     </div>
                     <div className="justify-content-center blog_imag_box">
                       <img src={card.image} alt="" className="blog-image " />

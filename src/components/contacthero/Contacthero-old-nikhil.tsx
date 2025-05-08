@@ -7,10 +7,8 @@ interface HeroContent {
   image: string;
   header: string;
   detail: string;
-  detail_2?: string;
   description: string;
   showBackButton?: boolean;
-  slug? : string;
 }
 
 // Update RouteContentMap to exclude /services/:slug since we'll handle it dynamically
@@ -26,7 +24,7 @@ const Contacthero: React.FC<ContactheroProps> = ({ slug }) => {
   const location = useLocation();
   const navigate = useNavigate();
   const [animate, setAnimate] = useState(true);
-  const [showServiceData , setShowServiceData] = useState<HeroContent  | null>(null)
+
   const contentMap: RouteContentMap = {
     "/contact": {
       image: "/image/contacthero.png",
@@ -78,72 +76,12 @@ const Contacthero: React.FC<ContactheroProps> = ({ slug }) => {
     },
   };
 
-  const serviceDetailContent = [
-    {
+  const serviceDetailContent: HeroContent = {
     image: "/image/serviceshero.png",
     header: "Service Details",
-    detail: "Simplified Denial ",
-    detail_2: "Management Services",
-    description: "Optimizing Revenue Through Effective Denial Management",
-    slug : 'denial-Management' ,
-
-  },{
-    image: "/image/serviceshero.png",
-    header: "Service Details",
-    detail: "Optimize Revenue with ",
-    detail_2: "Expert Billing Services",
-    description: "Efficient Hospital Billing Solutions for Financial Excellence",
-    slug : 'hospital-billing' ,
-  },{
-    image: "/image/serviceshero.png",
-    header: "Service Details",
-    detail: "Revitalize Your Financial ",
-    detail_2: "Health",
-    description: "Driving Success Through Optimized Revenue Cycle in Healthcare",
-    slug : "revenue-cycle-management" ,
-  },{
-    image: "/image/serviceshero.png",
-    header: "Service Details",
-    detail: "Transform Your Billing ",
-    detail_2: "Experience",
-    description: "Trustworthy Medical Billing Services for Healthcare Providers",
-    slug : "medical-billing" ,
-  },
-  {
-    image: "/image/serviceshero.png",
-    header: "Service Details",
-    detail: "Empowering Providers, ",
-    detail_2: "Transforming Healthcare",
-    description: "Unlock the Future of Healthcare with Virtual Assistant Solutions",
-    slug : 'medical-virtual-assistant' ,
-  },
-  {
-    image: "/image/serviceshero.png",
-    header: "Service Details",
-    detail: "Seamless Billing, ",
-    detail_2: "Amplified Profits",
-    description: "Driving Financial Excellence through Expert Physician Billing Services",
-    slug : "physician-billing" ,
-  }
-  ,
-  {
-    image: "/image/serviceshero.png",
-    header: "Service Details",
-    detail: "Maximize Your HME ",
-    detail_2: "Revenue Potential",
-    description: "Optimize Reimbursements with Our HME Billing Services",
-    slug : "hme-billing" ,
-  }
-  ,
-  {
-    image: "/image/serviceshero.png",
-    header: "Service Details",
-    detail: "Simplify Your Billing ",
-    detail_2: "Operations",
-    description: "Seamless DME Billing Services for Healthcare Providers",
-    slug : "dme-billing" ,
-  }
-];
+    detail: "In-Depth Information",
+    description: "Detailed insights into our specialized services",
+  };
 
   const defaultContent: HeroContent = {
     image: "/image/404hero.png",
@@ -154,19 +92,15 @@ const Contacthero: React.FC<ContactheroProps> = ({ slug }) => {
   };
 
   // Check if the current path is a service detail page (e.g., /services/medical-billing)
-  const isServiceDetailPage = location.pathname.startsWith("/services/") && location.pathname !== "/services";
+  const isServiceDetailPage =
+    location.pathname.startsWith("/services/") && location.pathname !== "/services";
 
   // Determine the current content
-  // const currentContent = isServiceDetailPage
-  //   ? serviceDetailContent
-  //   : (location.pathname as keyof RouteContentMap) in contentMap
-  //   ? contentMap[location.pathname as keyof RouteContentMap]
-  //   : defaultContent;
-
-    const currentContent =  (location.pathname as keyof RouteContentMap) in contentMap
+  const currentContent = isServiceDetailPage
+    ? serviceDetailContent
+    : (location.pathname as keyof RouteContentMap) in contentMap
     ? contentMap[location.pathname as keyof RouteContentMap]
     : defaultContent;
-
 
   useEffect(() => {
     console.log(location,slug);
@@ -174,12 +108,9 @@ const Contacthero: React.FC<ContactheroProps> = ({ slug }) => {
     const timeout = setTimeout(() => {
       setAnimate(true);
     }, 50);
-    if(isServiceDetailPage){
-      let  renderData: any = serviceDetailContent.find((item : any)=> item?.slug.trim() === slug?.trim())
-      setShowServiceData(renderData)
-    }
+
     return () => clearTimeout(timeout);
-  }, [location.pathname,slug]);
+  }, [location.pathname]);
 
   const headStyle: React.CSSProperties = {
     backgroundColor: "#ab0000",
@@ -199,7 +130,7 @@ const Contacthero: React.FC<ContactheroProps> = ({ slug }) => {
   const btncolor = { backgroundColor: '#ab0000' };
 
   return (
-    (!isServiceDetailPage ? <div className="header_containter container">
+    <div className="header_containter container">
       <div className="hero-container position-relative">
         <div className="hero-wrapper">
           <div className="hero-image">
@@ -258,65 +189,7 @@ const Contacthero: React.FC<ContactheroProps> = ({ slug }) => {
           </div>
         </div>
       </div>
-    </div> 
-    : 
-    // for the array of services
-  
-     <div className="header_containter container">
-      <div className="hero-container position-relative">
-        <div className="hero-wrapper">
-          <div className="hero-image">
-            <img src={showServiceData?.image} alt="Hero" />
-            <div className="hero-content">
-              <div className="col-lg-3">
-                {isServiceDetailPage && slug ? (
-                  <Link
-                    to={`/services/${slug}`}
-                    className="header-link"
-                    style={{ textDecoration: "none" }}
-                  >
-                    <span
-                      className={`badge mb-3 text-white crausal_lorem ${
-                        animate ? "animate__animated animate__pulse" : ""
-                      }`}
-                      style={headStyle}
-                    >
-                      {showServiceData?.header}
-                    </span>
-                  </Link>
-                ) : (
-                  <span
-                    className={`badge mb-3 text-white crausal_lorem ${
-                      animate ? "animate__animated animate__pulse" : ""
-                    }`}
-                    style={headStyle}
-                  >
-                    {showServiceData?.header}
-                  </span>
-                )}
-              </div>
-              <h1 className={`${animate ? "animate__animated animate__fadeInRight" : ""}`}>
-                {showServiceData?.detail}
-              </h1>
-              <h1 className={`${animate ? "animate__animated animate__fadeInRight animate__delay-1s mt-2 margin_top_custom" : ""}`}>
-                {showServiceData?.detail_2}
-              </h1>
-              <div className="hero-footer">
-                <div className="animate__animated animate__fadeIn">
-                  <RotatingTextButton />
-                </div>
-                <p className={`${animate ? "animate__animated animate__fadeInUpBig" : ""}`}>
-                  <b>{showServiceData?.description}</b>
-                </p>
-              </div>
-            </div>
-          
-          </div>
-        </div>
-      </div>
-    </div> )
-   
-   
+    </div>
   );
 };
 

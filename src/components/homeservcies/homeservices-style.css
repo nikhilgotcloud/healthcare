@@ -414,8 +414,8 @@ line {
 @media(max-width:1200px) and (min-width:992px){
   .service-card-container.bottom_btn .card .card__icon {
     position: absolute;
-    right: 11px;
-    bottom: -32px;
+    /* right: 11px; */
+    /* bottom: -32px; */
   }
   .service-extendcard-container .card__icon {
     /* right: -12px !important; */

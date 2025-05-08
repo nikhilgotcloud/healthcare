@@ -244,6 +244,7 @@ text-decoration-skip-ink: none;
   justify-content: center;
   align-items: center;
   top: 2px;
+  z-index: 10;
 }
 
 .service_box_deail .second_card .side_up_icon{
@@ -333,7 +334,10 @@ text-decoration-skip-ink: none;
   transform: rotate(-45deg);
 }
 .service_box_deail .row.mb-4 {
-  margin-bottom: 36px !important;
+  margin-bottom: 77px !important;
+}
+.service_box_deail .row.my-2.discription_box {
+  margin-bottom: 20px !important;
 }
 
 @media(max-width:767px){
@@ -411,7 +415,7 @@ text-decoration-skip-ink: none;
 }
 
 @media(min-width:992px){
-  .only_service_detail .why-feature.new_featureService::before {
+  /* .only_service_detail .why-feature.new_featureService::before {
     content: '';
     position: absolute;
     top: 50px;
@@ -422,7 +426,7 @@ text-decoration-skip-ink: none;
   #fff;
     border-radius:24px;
     z-index: -1;
-  }
+  } */
 }
 .why-feature.new_featureService {
   max-width: 400px;
@@ -430,3 +434,198 @@ text-decoration-skip-ink: none;
   margin-right: auto;
 }
 
+
+.discription_box .about-title.my-3 {
+  font-size: 21px;
+  line-height: 28px;
+  color: #0F0F0F;
+  font-weight: 600 !important;
+  width: 80%;
+  font-family: "Lato", serif;
+}
+.service_box_deail .row.my-2.discription_box {
+  align-items: center;
+}
+
+.why-feature.new_featureService {
+  background: #fff !important;
+}
+.margin_custon_feature {
+  margin-bottom: 20px;
+}
+.why-feature.new_featureService.cutPieceRight::after {
+  width: 70px;
+}
+
+.right_section_blog .card.cutPieceRight {
+  background: #fff !important;
+}
+.right_section_blog .card.cutPieceRight .bg_image_detail {
+  display: none !important;
+}
+.right_section_blog .card.cutPieceRight .side_up_icon.icon_one {
+  top: 0 !important;
+  z-index: 2;
+  right: 0;
+  transition: all .5s ease;
+}
+.right_section_blog .card.cutPieceRight::after{
+  width: 72px !important;
+  top: 0;
+  transition: all .5s ease;
+}
+
+.right_section_blog .card.cutPieceRight:hover::after {
+  width: 85px !important;
+}
+.right_section_blog .card.cutPieceRight:hover .side_up_icon {
+  height: 50px !important;
+  width: 50px !important;
+  background: #ab0000;
+}
+.right_section_blog .card.cutPieceRight .side_up_icon svg{
+  transition: all .5s ease;
+  height: 30px;
+  width: 30px;
+}
+.right_section_blog .card.cutPieceRight .side_up_icon svg path{
+  fill: #ab0000;
+}
+.right_section_blog .card.cutPieceRight:hover .side_up_icon svg path {
+  fill: #fff;
+}
+.right_section_blog .card.cutPieceRight:hover .side_up_icon.rotate svg{
+  animation: bounceRotate 1s ease;
+  animation-play-state: running;
+  transform: rotate(216deg);
+}
+.right_section_blog .card.cutPieceRight:hover .side_up_icon svg {
+  height: 40px;
+  width: 40px;
+ 
+}
+
+.right_section_blog .card.cutPieceRight:hover .side_up_icon{
+  animation: bounceIcon 1s ease;
+}
+
+@keyframes bounceIcon {
+  0%{
+    scale: 1;
+  }25%{
+    scale: 1.08;
+  }50%{
+    scale: .9;
+  }75%{
+    scale: 1.08;
+  }
+  100%{
+    scale: 1;
+  }
+}
+
+@keyframes bounceRotate {
+  0%{
+    transform: rotate(0deg);
+    width: 30px;
+    height: 30px;
+  }25%{
+    transform: rotate(310deg);
+    width: 42px;
+    height: 42px;
+  }
+  50%{
+    transform: rotate(170deg);
+    width: 35px;
+    height: 35px;
+  }
+  75%{
+    transform: rotate(265deg);
+    width: 42px;
+    height: 42px;
+  }
+  100%{
+    transform: rotate(216deg);
+    width: 40px;
+    height: 40px;
+
+  }
+}
+
+.right_section_blog .card.cutPieceRight:hover ,.why-feature.new_featureService.cutPieceRight:hover {
+  background: #fff !important;
+  box-shadow: #0000005e 0 30px 26px -23px !important;
+  
+
+}
+
+.why-feature.new_featureService.cutPieceRight::before{
+  transition: all .5s ease;
+  content: "";
+  bottom: 0;
+  height: calc(100% - 91px);
+  background: transparent;
+  width: 100%;
+  position: absolute;
+  border-radius: 0 0 24px 24px;
+  left: -2px;
+  right: -2px;
+  z-index: -1;
+  filter: blur(10px);
+  rotate: 0deg;
+  transform: rotate(0deg);
+  top: unset;
+
+}
+.right_section_blog .card.cutPieceRight:hover::before ,.why-feature.new_featureService.cutPieceRight:hover::before {
+  content: "";
+  bottom: 0;
+  height: calc(100% - 91px);
+  background: #00000017;
+  width: 100%;
+  position: absolute;
+  border-radius: 0 0 24px 24px;
+  left: -2px;
+  right: -2px;
+  z-index: -1;
+  filter: blur(10px);
+  rotate: 0deg;
+  transform: rotate(0deg);
+  top: unset;
+}
+
+.discription_box:hover .bottom_slider_image {
+  animation: bounceimage 1s ease-out;
+}
+
+@keyframes bounceimage {
+  0%{
+    transform: scale(1);
+  }25%{
+    transform: scale(1.2);
+
+  }50%{
+    transform: scale(1);
+
+  }
+  75%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.service_box_deail .row.my-2.discription_box .image_box {
+  border-radius: 40px;
+}
+
+@media(min-width:992px){
+  .scroll_boz{
+    max-height: 1050px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  overflow-x: hidden;
+  }
+}
