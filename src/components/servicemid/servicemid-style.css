@@ -311,8 +311,9 @@ text-decoration-skip-ink: none;
   margin-top: 8px !important;
 }
 .bottom_slider_image {
-  border-radius: 40px;
+  border-radius: 20px;
   object-fit: cover;
+  min-height: 227px;
 }
 .nav_box .text-teal-800.fw-medium {
   font-size: 20px;
@@ -617,15 +618,56 @@ text-decoration-skip-ink: none;
 }
 
 .service_box_deail .row.my-2.discription_box .image_box {
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 @media(min-width:992px){
   .scroll_boz{
     max-height: 1050px;
   overflow-y: scroll;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
   overflow-x: hidden;
   }
+}
+.list_bootom_sectoion {
+  margin-top: 85px;
+}
+.list_bootom_sectoion .why_para {
+  font-size: 19px;
+  line-height: 28px;
+  color: #0F0F0F;
+  font-weight: 600 !important;
+  width: 100%;
+  font-family: "Lato", serif;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.list_bootom_sectoion .image_text {
+  color: #0F0F0F;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.list_bootom_sectoion .image_text b {
+  color: #0F0F0F;
+  font-size: 14px !important;
+  line-height: 20px;
+  font-weight: 600;
+  margin-bottom: 2px !important;
+}
+.list_bootom_sectoion  .hippa-list li {
+
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.list_bootom_sectoion  .hover_box .image_inPara_box {
+  border-radius: 20px;
+overflow: hidden;
+}
+.list_bootom_sectoion  .hover_box .image_inPara_box  img{
+  object-fit: cover;
+}
+.list_bootom_sectoion  .hover_box:hover .image_inPara_box  img{
+  animation: bounceimage 1s ease-out;
 }

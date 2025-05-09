@@ -55,23 +55,23 @@ const Homeiso: React.FC = () => {
               <h2 className="services-heading mb-2">Our Services Include</h2>
               <ul className="services-list">
                 <li>
-                  <span className="checkmark-icon mb-1"><img src="/image/homesection/group18.png" alt="" /></span>Strong safeguards against
+                  <span className="checkmark-icon mb-1"><img src="/image/tick_one.svg" alt="" /></span>Strong safeguards against
                   unauthorized access and cyber threats.
                 </li>
                 <li>
-                  <span className="checkmark-icon mb-1"><img src="/image/homesection/group18.png" alt="" /></span>Adherence to industry
+                  <span className="checkmark-icon mb-1"><img src="/image/tick_one.svg" alt="" /></span>Adherence to industry
                   regulations for data protection.
                 </li>
                 <li>
-                  <span className="checkmark-icon mb-1"><img src="/image/homesection/group18.png" alt="" /></span>Proactive measures to
+                  <span className="checkmark-icon mb-1"><img src="/image/tick_one.svg" alt="" /></span>Proactive measures to
                   identify and mitigate potential risks.
                 </li>
                 <li>
-                  <span className="checkmark-icon mb-1"><img src="/image/homesection/group18.png" alt="" /></span>Assured confidentiality
+                  <span className="checkmark-icon mb-1"><img src="/image/tick_one.svg" alt="" /></span>Assured confidentiality
                   and meticulous handling of data.
                 </li>
                 <li>
-                  <span className="checkmark-icon mb-1"><img src="/image/homesection/group18.png" alt="" /></span>Setting us apart as a
+                  <span className="checkmark-icon mb-1"><img src="/image/tick_one.svg" alt="" /></span>Setting us apart as a
                   reliable and trusted partner.
                 </li>
               </ul>
