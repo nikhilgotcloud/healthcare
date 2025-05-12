@@ -3,6 +3,7 @@ import axios from "axios";
 import { Service } from "../../types/services.interface";
 import "./servicemid-style.css";
 import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
+import data from "./staticData";
 type StaticService = {
   title: string;
   slug: string;
@@ -26,127 +27,7 @@ const Servicemid = () => {
 
 
 
-  const staticServiceDetail: any = [
-    {
-      id: 1,
-      slug: 'denial-Management',
-      title: "Denial Management Services",
-      subtitle: "Enhance Efficiency with Advanced DME Billing Solutions",
-      detailsList: [
-        {
-          id: 1,
-          image: "/image/denial-card1.png",
-          title: "Identifying Key Denial Reasons",
-          description:
-            "At INF Healthcare, our denial management experts meticulously analyze and identify the key reasons behind claim denials. By understanding the root causes, we develop effective strategies to minimize denials, optimize revenue, and improve financial performance for healthcare providers.",
-        },
-        {
-          id: 2,
-          image: "/image/denial-card2.png",
-          title: "Categorizing Denials",
-          description:
-            "With our expert Denial Management Services, we categorize denials based on common patterns and trends. Through this classification, our team gains valuable insights that enable implementation of targeted solutions to streamline processes and ensure maximum reimbursement for healthcare organizations.",
-        },
-        {
-          id: 3,
-          image: "/image/denial-card3.png",
-          title: "Establishing Tracking Mechanisms",
-          description:
-            "To optimize denial management for healthcare providers we establish a robust tracking mechanism that monitors the entire claims process. From submission to adjudication, we track each claim, identify bottlenecks, and implement proactive measures. This allows us to mitigate denials, reduce revenue leakage, and enhance financial outcomes.",
-        },
-        {
-          id: 4,
-          image: "/image/denial-card4.png",
-          title: "Monitoring and Preventing",
-          description:
-            "The scope of our denial management services includes closely tracking claim status and payment patterns. This proactive approach enables us to identify potential risks in real-time, apply corrective actions promptly, and prevent denials from occurring. We empower healthcare providers to achieve sustainable financial performance and revenue optimization.",
-        },
-      ],
-      discripttionList: [
-        {
-          id: 1,
-          url: '/image/denial-s1.png',
-          title: "Denial Management Services: Unlocking Your Revenue Potential",
-          discription: "At INF Healthcare we are the leading trusted denial management services provider in the USA. Our team is dedicated to optimizing revenue and minimizing denials for healthcare providers. We offer comprehensive solutions to tackle the complexities of denial management in the ever-evolving healthcare sector."
-        },
-        {
-          id: 2,
-          url: '/image/denial-s1.png',
-          title: "Thorough Analysis",
-          discription: "Our denial management services start with a meticulous analysis of your organization's denial trends. We examine claim data, payer policies, and industry regulations to identify the root causes of denials. This comprehensive approach enables us to develop targeted strategies tailored to your specific needs."
-        }
-        ,
-        {
-          id: 3,
-          url: '/image/denial-s1.png',
-          title: "Customized Solutions",
-          discription: "At INF Healthcare, we understand that every healthcare provider is unique. Our dedicated team works closely with you to understand your challenges and goals. We develop customized denial management solutions that address specific pain points, ensuring maximum reimbursement and improved financial performance."
-        }
-        ,
-        {
-          id: 4,
-          url: '/image/denial-s1.png',
-          title: "Proactive Denial Prevention",
-          discription: "We believe that prevention is the key to success. Our proactive approach focuses on identifying and mitigating potential denial risks before they occur. Through continuous monitoring and analysis, we help implement robust processes, streamline workflows, and reduce the likelihood of future denials."
-        },
-        {
-          id: 5,
-          url: '/image/denial-s1.png',
-          title: "Streamlined Workflows",
-          discription: "Efficient workflows are essential for effective hospital denial management. By streamlining your operations, we enable effective resource allocation to improve overall revenue cycle performance. Our denial management services include evaluating your current processes and implementing streamlined workflows that minimize errors and enhance productivity."
-        },
-        {
-          id: 6,
-          url: '/image/denial-s1.png',
-          title: "Expert Team and Technology",
-          discription: "At INF Healthcare, we pride ourselves on our team of denial management experts and cutting-edge technology. Combined with advanced tools and analytics, we provide you with the insights and support needed to navigate the complexities of denial management successfully."
-        },
-        {
-          id: 7,
-          url: '/image/denial-s1.png',
-          title: "Expert Team and Technology",
-          discription: "At INF Healthcare, we pride ourselves on our team of denial management experts and cutting-edge technology. Combined with advanced tools and analytics, we provide you with the insights and support needed to navigate the complexities of denial management successfully."
-        }
-      ],
-      benifitsPoint: [{
-        img: "public/image/about-us.png",
-        points: [
-          {
-            id: 1,
-            title: "Industry Expertise",
-            discription: "Industry Expertise:With our in-depth knowledge of denial management, payer policies, and industry regulations, we ensure accurate and efficient handling of your claims."
-          },
-          {
-            id: 2,
-            title: "Cost Savings",
-            discription: "We provide cost-effective solutions that optimize revenue, allowing you to allocate resources strategically and focus on core healthcare operations."
-          }
-          ,
-          {
-            id: 3,
-            title: "Advanced Technology:",
-            discription: "Our robust technology driven by predictive analytics empowers you with actionable insights for proactive decision-making."
-          }
-          ,
-          {
-            id: 4,
-            title: "Scalability and Flexibility:",
-            discription: "INF Healthcare can easily adapt to fluctuations in claim volumes, ensuring consistent and efficient denial management services."
-          }
-          ,
-          {
-            id: 5,
-            title: "Focus on Patient Care:",
-            discription: "Our expertise and streamlined processes relieve administrative burdens, enabling you to prioritize patient satisfaction and overall healthcare outcomes."
-          }
-        ]
-      }
-
-      ]
-
-    }
-
-  ]
+  const staticServiceDetail: any = data
 
   // for static service list 
   const staticServiceList: any = [
@@ -259,7 +140,7 @@ const Servicemid = () => {
   useEffect(() => {
 
     setServicesList(staticServiceList)
-    console.log(slug, location)
+    console.log(slug, location, "sadsad")
 
   }, [slug]);
 
@@ -305,77 +186,122 @@ const Servicemid = () => {
         {/* <!-- Main Blog Listing Column (8 columns wide) --> */}
         <div className="col-lg-9">
           <div className="scroll_boz">
-            
-          
-          <div className="row">
-            <div className="upper_text col-12">
-              <span className="badge service_badge badge-white mb-3 p-3 text-white shadow-lg" style={headstyle}>
-                SERVICES
-              </span>
-              <h2 className="about-title my-3">{dataToshow?.title}</h2>
-              <p className="description mb-4">
-                {dataToshow?.subtitle}
-              </p>
-            </div>
-          </div>
 
-          {/* <div className="row">
+
+            <div className="row">
+              <div className="upper_text col-12">
+                <span className="badge service_badge badge-white mb-3 p-3 text-white shadow-lg" style={headstyle}>
+                  SERVICES
+                </span>
+                <h2 className="about-title my-3">{dataToshow?.title}</h2>
+                <p className="description mb-4">
+                  {dataToshow?.subtitle}
+                </p>
+              </div>
+            </div>
+
+            {/* <div className="row">
             <div className="col-lg-6"></div>
           </div> */}
 
 
-          <div className="row mb-4" >
-            {dataToshow?.detailsList.map((card: any, index: number) => {
-              return (
-                <div key={"card" + card?.id} className="col-lg-6 margin_custon_feature" >
-                  <div className="why-feature new_featureService cutPieceRight">
-                    <div className="box-number text-dark">{index + 1}</div>
-                    <div className="box-icon justify-content-center mb-3">
-                      <img src={card?.image || "/image/default.png"} alt={card?.title} className="card-image"
-                        width={100} height={100} />
+            <div className="row mb-4" >
+              {dataToshow?.detailsList.map((card: any, index: number) => {
+                return (
+                  <div key={"card" + card?.id} className={ index % 2 == 0  &&   ( index === dataToshow?.detailsList.length - 1)  ?'col-lg-12 margin_custon_feature':'col-lg-6 margin_custon_feature' }  >
+                     <div className="why-feature new_featureService cutPieceRight">
+                      <div className="box-number text-dark">{index + 1}</div>
+                      <div className="box-icon justify-content-center mb-3">
+                        <img src={card?.image || "/image/default.png"} alt={card?.title} className="card-image"
+                          width={100} height={100} />
+                      </div>
+                      <div className="divider mb-3 w-75 mx-5"></div>
+                      <h6 className="heading_card">{card?.title}</h6>
+                      <p className="text-muted mb-2 px-2 small text-center card-description py-2">
+                        {card?.description}
+                      </p>
+                      {/* <img className="bg_image" src="/image/bg_svg_service_Detail.svg" alt="" /> */}
                     </div>
-                    <div className="divider mb-3 w-75 mx-5"></div>
-                    <h6 className="heading_card">{card?.title}</h6>
-                    <p className="text-muted mb-2 px-2 small text-center card-description py-2">
-                      {card?.description}
+                  </div>
+                )
+              })}
+
+
+            </div>
+
+
+
+
+
+            {dataToshow?.discripttionList.map((item: any, index: number) => {
+             
+              return (
+                
+                <div key={"item" + item?.id} className={index % 2 !== 0 ? ' flex-row-reverse row my-2 discription_box ' : ' row my-2 discription_box'}>
+                  <div className="col-lg-8 ">
+                    <h3 className="about-title my-3">
+                      {item?.title}
+                    </h3>
+                    <p className="denial-service-para">
+                      {item?.discription}
                     </p>
-                    {/* <img className="bg_image" src="/image/bg_svg_service_Detail.svg" alt="" /> */}
+                  </div>
+
+                  <div className='col-lg-4'>
+                    <div className="image_box w-100 h-100 overflow-hidden">
+                      <img src={item?.url || "/image/default.png"} alt={item?.title} loading="lazy"
+                        className="w-100 bottom_slider_image" />
+                    </div>
+
                   </div>
                 </div>
               )
             })}
-
-
-          </div>
-
-{/* have to crete new list items  */}
-            <div className="row"></div>
-
-
-
-          {dataToshow?.discripttionList.map((item: any, index: number) => {
-            return (
-              <div key={"item" + item?.id} className={index % 2 !== 0 ? ' flex-row-reverse row my-2 discription_box ' : ' row my-2 discription_box'}>
-                <div className="col-lg-8 ">
-                  <h3 className="about-title my-3">
-                    {item?.title}
-                  </h3>
-                  <p className="denial-service-para">
-                    {item?.discription}
+            {/* have to crete new list items  */}
+            <div className="list_bootom_sectoion">
+              <div className="row">
+                <div className="col-12">
+                  <h5 className="why_line about-title">
+                    Why Outsource {dataToshow?.title} Services to INF Healthcare?
+                  </h5>
+                  <p className="why_para">
+                    {dataToshow?.benifitsPoint[0]?.paraOne}
                   </p>
-                </div>
 
-                <div className="col-lg-4">
-                  <div className="image_box w-100 h-100 overflow-hidden">
-                  <img src={item?.url || "/image/default.png"} alt={item?.title} loading="lazy"
-                    className="w-100 bottom_slider_image" />
+                </div>
+                <div className="row hover_box">
+                  <div className="col-lg-7 ">
+                    <ul className="hippa-list">
+                      {dataToshow?.benifitsPoint[0]?.points?.map((item: any, index: number) => {
+                        return (<li key={`benifit_${item?.id}`}>
+                          <span className="hippa-1-icon me-3">
+                            <img src="/image/tick_one.svg" alt="" />
+                          </span>
+                          <div className="image_text">
+                            <b>{item?.title}</b>
+                            {item?.discription}
+                          </div>
+                        </li>
+                        )
+                      })}
+                      <p className="next_line_text">
+                        {dataToshow?.benifitsPoint[0]?.paraTwo}
+                      </p>
+
+
+                    </ul>
                   </div>
-                 
+                  <div className="col-lg-5 h-100">
+                    <div className="image_inPara_box h-100">
+                      <img src={dataToshow?.benifitsPoint[0]?.img} className="h-100 w-100" alt="" />
+                    </div>
+                  </div>
                 </div>
               </div>
-            )
-          })}
-</div>
+
+            </div>
+          </div>
+
 
           <div className="d-flex justify-content-between align-items-center w-100 py-4">
             <div className="prev_nav nav_box">
@@ -477,7 +403,7 @@ const Servicemid = () => {
                   d="M15.5852 9.07982C14.5607 9.07982 13.7275 8.25345 13.7275 7.23585C13.7275 6.21825 14.5744 5.37822 15.5852 5.38505C16.5959 5.39188 17.4223 6.21825 17.4291 7.22902C17.436 8.24662 16.6096 9.07982 15.5852 9.07982ZM15.5715 8.32175C16.1793 8.32858 16.6711 7.84368 16.6711 7.24268C16.6711 6.64168 16.1793 6.14313 15.5783 6.14313C14.991 6.14313 14.4993 6.62802 14.4924 7.21536C14.4856 7.82319 14.9637 8.31492 15.5715 8.32175Z"
                   fill="#AB0000" />
               </svg> */}
-                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.0052 29.9897C7.71975 29.9897 1.50982 24.7932 0.237849 17.637C0.0775595 16.7373 0 15.8945 0 15.062C0 14.6225 0.274043 14.3123 0.661841 14.302C1.07549 14.302 1.34953 14.607 1.35988 15.0569C1.49948 20 3.65564 23.8573 7.76112 26.5253C9.89659 27.9111 12.3113 28.6143 14.938 28.6143C15.2999 28.6143 15.667 28.5988 16.0341 28.5729C21.7839 28.1644 26.6598 24.1107 28.1748 18.485C29.1417 14.8914 28.5988 11.1324 26.6443 7.91106C24.6949 4.69493 21.6184 2.4819 17.9886 1.67528C16.9493 1.44778 15.91 1.32885 14.9069 1.32885C12.3992 1.32885 9.96898 2.04757 7.68873 3.46432C7.56463 3.54188 7.44571 3.62461 7.32678 3.70734C7.24923 3.75905 7.20786 3.82627 7.18718 3.86763L6.95967 4.22958L7.3423 4.40021C7.39917 4.42089 7.45088 4.44157 7.51293 4.45191L7.75078 4.49328C8.17477 4.56567 8.59876 4.63289 9.02792 4.7001C9.27094 4.7363 9.46226 4.84488 9.57601 5C9.67942 5.13961 9.71562 5.31541 9.68459 5.51189C9.63289 5.84281 9.35367 6.05998 8.97622 6.05998C8.91934 6.05998 8.86246 6.05481 8.80559 6.04447C7.53361 5.83764 6.26163 5.63599 4.98966 5.43433C4.45708 5.3516 4.25026 5.06722 4.32782 4.53981C4.5243 3.2575 4.72079 1.97518 4.92761 0.692864C4.99483 0.274043 5.25336 0.0258531 5.61531 0.0258531C5.6515 0.0258531 5.6877 0.0258531 5.72389 0.0310238C6.10135 0.0775594 6.32885 0.423992 6.27715 0.873837C6.25129 1.08583 6.2151 1.29266 6.18408 1.50465L6.1272 1.87177C6.04964 2.14581 6.09617 2.33195 6.26163 2.45605L6.35471 2.52327L6.48397 2.52844C6.62358 2.52844 6.73733 2.45605 6.84592 2.38366C8.43847 1.36505 9.94829 0.718718 11.4891 0.398139C12.7766 0.134436 14.0383 0 15.2379 0C19.7156 0 23.5729 1.89762 26.7011 5.63599C28.8573 8.21613 30 11.4478 30 14.9793C30 22.001 25.0207 28.1696 18.1593 29.6536C17.12 29.8759 16.06 29.9897 15.0052 29.9897Z" fill="#AB0000" />
                 <path d="M14.9897 15.5738C14.6484 15.5738 14.3744 15.2997 14.3744 14.9584V4.74128C14.3744 4.40002 14.6484 4.12598 14.9897 4.12598C15.331 4.12598 15.605 4.40002 15.605 4.74128V14.9533C15.605 15.2997 15.331 15.5738 14.9897 15.5738Z" fill="#AB0000" />
                 <path d="M20.4498 20.1757C20.2119 20.4187 19.8241 20.4239 19.5811 20.186L14.7052 15.4497C14.4622 15.2119 14.457 14.8241 14.6949 14.5811C14.9327 14.338 15.3205 14.3329 15.5635 14.5707L20.4394 19.307C20.6773 19.5397 20.6824 19.9327 20.4498 20.1757Z" fill="#AB0000" />
