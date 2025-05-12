@@ -140,7 +140,7 @@ const Servicemid = () => {
   useEffect(() => {
 
     setServicesList(staticServiceList)
-    console.log(slug, location)
+    console.log(slug, location, "sadsad")
 
   }, [slug]);
 
@@ -208,8 +208,8 @@ const Servicemid = () => {
             <div className="row mb-4" >
               {dataToshow?.detailsList.map((card: any, index: number) => {
                 return (
-                  <div key={"card" + card?.id} className="col-lg-6 margin_custon_feature" >
-                    <div className="why-feature new_featureService cutPieceRight">
+                  <div key={"card" + card?.id} className={ index % 2 == 0  &&   ( index === dataToshow?.detailsList.length - 1)  ?'col-lg-12 margin_custon_feature':'col-lg-6 margin_custon_feature' }  >
+                     <div className="why-feature new_featureService cutPieceRight">
                       <div className="box-number text-dark">{index + 1}</div>
                       <div className="box-icon justify-content-center mb-3">
                         <img src={card?.image || "/image/default.png"} alt={card?.title} className="card-image"
@@ -234,7 +234,9 @@ const Servicemid = () => {
 
 
             {dataToshow?.discripttionList.map((item: any, index: number) => {
+             
               return (
+                
                 <div key={"item" + item?.id} className={index % 2 !== 0 ? ' flex-row-reverse row my-2 discription_box ' : ' row my-2 discription_box'}>
                   <div className="col-lg-8 ">
                     <h3 className="about-title my-3">
@@ -245,7 +247,7 @@ const Servicemid = () => {
                     </p>
                   </div>
 
-                  <div className="col-lg-4">
+                  <div className='col-lg-4'>
                     <div className="image_box w-100 h-100 overflow-hidden">
                       <img src={item?.url || "/image/default.png"} alt={item?.title} loading="lazy"
                         className="w-100 bottom_slider_image" />
@@ -256,47 +258,50 @@ const Servicemid = () => {
               )
             })}
             {/* have to crete new list items  */}
-          <div className="list_bootom_sectoion">
-            <div className="row">
-              <div className="col-12">
-                <h5 className="why_line about-title">
-                  Why Outsource Denial Management Services to INF Healthcare?
-                </h5>
-                <p className="why_para">
-                  Experience the benefits of seamless denial management and optimize your financial performance. Here’s what we offer:
-                </p>
-             
-              </div>
-              <div className="row hover_box">
-              <div className="col-lg-7 ">
-                  <ul className="hippa-list">
-                    {dataToshow?.benifitsPoint[0]?.points?.map((item: any, index: number) => {
-                      return (<li key={`benifit_${item?.id}`}>
-                        <span className="hippa-1-icon me-3">
-                          <img src="/image/tick_one.svg" alt="" />
-                        </span>
-                        <div className="image_text">
-                          <b>{item?.title}</b>
-                          {item?.discription}
-                        </div>
-                      </li>
-                      )
-                    })}
+            <div className="list_bootom_sectoion">
+              <div className="row">
+                <div className="col-12">
+                  <h5 className="why_line about-title">
+                    Why Outsource {dataToshow?.title} Services to INF Healthcare?
+                  </h5>
+                  <p className="why_para">
+                    {dataToshow?.benifitsPoint[0]?.paraOne}
+                  </p>
 
-
-                  </ul>
                 </div>
-                <div className="col-lg-5 h-100">
-                  <div className="image_inPara_box h-100">
-                    <img src={dataToshow?.benifitsPoint[0]?.img} className="h-100 w-100" alt="" />
+                <div className="row hover_box">
+                  <div className="col-lg-7 ">
+                    <ul className="hippa-list">
+                      {dataToshow?.benifitsPoint[0]?.points?.map((item: any, index: number) => {
+                        return (<li key={`benifit_${item?.id}`}>
+                          <span className="hippa-1-icon me-3">
+                            <img src="/image/tick_one.svg" alt="" />
+                          </span>
+                          <div className="image_text">
+                            <b>{item?.title}</b>
+                            {item?.discription}
+                          </div>
+                        </li>
+                        )
+                      })}
+                      <p className="next_line_text">
+                        {dataToshow?.benifitsPoint[0]?.paraTwo}
+                      </p>
+
+
+                    </ul>
+                  </div>
+                  <div className="col-lg-5 h-100">
+                    <div className="image_inPara_box h-100">
+                      <img src={dataToshow?.benifitsPoint[0]?.img} className="h-100 w-100" alt="" />
+                    </div>
                   </div>
                 </div>
-                </div>
-            </div>
+              </div>
 
+            </div>
           </div>
-          </div>
-          
+
 
           <div className="d-flex justify-content-between align-items-center w-100 py-4">
             <div className="prev_nav nav_box">
