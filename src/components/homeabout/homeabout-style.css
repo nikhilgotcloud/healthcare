@@ -116,9 +116,13 @@ height: 35px;
 
 @media(min-width:700px){
   .about_text_sextion {
-    padding-top: 46px;
+    /* padding-top: 46px; */
+    
     padding-right: 56px !important;
   }
+  .about-section {
+  align-items: center;
+}
   .about_text_sextion .about-us-butn {
     height: 30px;
     width: 90px;

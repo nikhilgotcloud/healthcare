@@ -437,7 +437,7 @@ const Blogmid = () => {
               <div className="card-body px-4 pt-2 bg-white">
                 <div className="mb-3">
                   <img
-                    src="/image/blog-side.png"
+                    src="/image/service/denial_service/DMS-Expert-Team-and-Technology.webp"
                     className="rounded-4 w-100 mb-3"
                     alt="Medical staff meeting"
                   />
@@ -454,7 +454,7 @@ const Blogmid = () => {
 
                 <div>
                   <img
-                    src="/image/blog-side2.png"
+                    src="/image/service/denial_service/DMS-Streamlined-Workflows.webp"
                     className="rounded-4 w-100 mb-3"
                     alt="Medical documentation"
                   />
