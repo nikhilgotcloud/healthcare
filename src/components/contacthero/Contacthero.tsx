@@ -80,7 +80,7 @@ const Contacthero: React.FC<ContactheroProps> = ({ slug }) => {
 
   const serviceDetailContent = [
     {
-    image: "/image/serviceshero.png",
+    image: "/image/service/denial_service/Denial-Management-Services-Banner.webp",
     header: "Service Details",
     detail: "Simplified Denial ",
     detail_2: "Management Services",
@@ -88,7 +88,7 @@ const Contacthero: React.FC<ContactheroProps> = ({ slug }) => {
     slug : 'denial-Management' ,
 
   },{
-    image: "/image/serviceshero.png",
+    image: "/image/service/health_billing/Hospital-Billing-Header.webp",
     header: "Service Details",
     detail: "Optimize Revenue with ",
     detail_2: "Expert Billing Services",
@@ -102,7 +102,7 @@ const Contacthero: React.FC<ContactheroProps> = ({ slug }) => {
     description: "Driving Success Through Optimized Revenue Cycle in Healthcare",
     slug : "revenue-cycle-management" ,
   },{
-    image: "/image/serviceshero.png",
+    image: "/image/service/medical_billing/Medical-Billing-Header.webp",
     header: "Service Details",
     detail: "Transform Your Billing ",
     detail_2: "Experience",
@@ -110,7 +110,7 @@ const Contacthero: React.FC<ContactheroProps> = ({ slug }) => {
     slug : "medical-billing" ,
   },
   {
-    image: "/image/serviceshero.png",
+    image: "/image/service/medical_virtual_biling/Medical-Virtual-Assistant-Header.webp",
     header: "Service Details",
     detail: "Empowering Providers, ",
     detail_2: "Transforming Healthcare",
@@ -118,7 +118,7 @@ const Contacthero: React.FC<ContactheroProps> = ({ slug }) => {
     slug : 'medical-virtual-assistant' ,
   },
   {
-    image: "/image/serviceshero.png",
+    image: "/image/service/physical_biling/Physician-Billing-Header.webp",
     header: "Service Details",
     detail: "Seamless Billing, ",
     detail_2: "Amplified Profits",
@@ -127,7 +127,7 @@ const Contacthero: React.FC<ContactheroProps> = ({ slug }) => {
   }
   ,
   {
-    image: "/image/serviceshero.png",
+    image: "/image/service/Hme_billing/HME-Billing-Header.webp",
     header: "Service Details",
     detail: "Maximize Your HME ",
     detail_2: "Revenue Potential",
@@ -136,7 +136,7 @@ const Contacthero: React.FC<ContactheroProps> = ({ slug }) => {
   }
   ,
   {
-    image: "/image/serviceshero.png",
+    image: "/image/service/dme_billing/DME-Billing-Header.webp",
     header: "Service Details",
     detail: "Simplify Your Billing ",
     detail_2: "Operations",
@@ -262,7 +262,7 @@ const Contacthero: React.FC<ContactheroProps> = ({ slug }) => {
     : 
     // for the array of services
   
-     <div className="header_containter container">
+     <div className="header_containter container header_service_detail_cro">
       <div className="hero-container position-relative">
         <div className="hero-wrapper">
           <div className="hero-image">

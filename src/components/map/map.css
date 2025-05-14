@@ -10,3 +10,9 @@
         border-radius: 30px !important;
       }
 }
+.google_map_box {
+  height: 480px;
+  border-radius: 55px;
+  overflow: hidden;
+  margin-bottom: 80px !important;
+}

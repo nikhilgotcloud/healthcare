@@ -452,7 +452,7 @@ text-decoration-skip-ink: none;
   background: #fff !important;
 }
 .margin_custon_feature {
-  margin-bottom: 20px;
+ margin-bottom: 33px;
 }
 .why-feature.new_featureService.cutPieceRight::after {
   width: 70px;
@@ -556,8 +556,9 @@ text-decoration-skip-ink: none;
 .right_section_blog .card.cutPieceRight:hover ,.why-feature.new_featureService.cutPieceRight:hover {
   background: #fff !important;
   box-shadow: #0000005e 0 30px 26px -23px !important;
-  
-
+}
+.why-feature.new_featureService.cutPieceRight {
+transition: all .5s ease;
 }
 
 .why-feature.new_featureService.cutPieceRight::before{
@@ -578,7 +579,7 @@ text-decoration-skip-ink: none;
   top: unset;
 
 }
-.right_section_blog .card.cutPieceRight:hover::before ,.why-feature.new_featureService.cutPieceRight:hover::before {
+.right_section_blog .card.cutPieceRight:hover::before {
   content: "";
   bottom: 0;
   height: calc(100% - 91px);
@@ -670,4 +671,19 @@ overflow: hidden;
 }
 .list_bootom_sectoion  .hover_box:hover .image_inPara_box  img{
   animation: bounceimage 1s ease-out;
+}
+
+.next_line_text {
+  font-size: 14px;
+  color: #0F0F0F;
+  margin-top: 24px;
+}
+.right_section_blog .card.second_card.cutPieceRight:hover .side_up_icon svg {
+  height: 34px;
+  width: 35px;
+}
+.right_section_blog .card.cutPieceRight img {
+  border-radius: 20px !important;
+  max-height: 137px;
+  object-fit: cover;
 }

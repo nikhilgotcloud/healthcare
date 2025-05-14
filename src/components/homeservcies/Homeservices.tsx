@@ -56,7 +56,7 @@ const Homeservices = () => {
   const staticData = [
     {
       id : 1,
-      cover_img : {url : "./image/services/denial-managment copy.png"},
+      cover_img : {url : "./image/services/Services-Denial-Management.webp"},
       title : "Denial Management",
       subtitle  :"Our team ensures efficient resolution of claim denials, minimizing revenue loss and optimizing reimbursement for healthcare providers.",
       slug : 'denial-Management' ,
@@ -64,7 +64,7 @@ const Homeservices = () => {
     },
     {
       id : 2,
-      cover_img : {url : "./image/services/hospital-billing.png"},
+      cover_img : {url : "./image/services/Services-Hospital-Billing.webp"},
       title : "Hospital Billing",
       subtitle  :"We offer comprehensive hospital billing services, including accurate coding, claim submission, and timely follow-up, ensuring smooth financial operations.",
       slug : 'hospital-billing' ,
@@ -72,7 +72,7 @@ const Homeservices = () => {
     },
     {
       id : 3,
-      cover_img : {url : "./image/services/hme-billing.png"},
+      cover_img : {url : "./image/services/Services-Revenue-Cycle-Management.webp"},
       title : "Revenue Cycle Management",
       subtitle  :"Maximize your revenue potential with our revenue cycle management experts, covering everything from patient registration to claim submission.",
       slug : "revenue-cycle-management" ,
@@ -80,7 +80,7 @@ const Homeservices = () => {
     },
     {
       id : 4,
-      cover_img : {url : "./image/services/dme-billing.png"},
+      cover_img : {url : "./image/services/Services-Medical-Billing.webp"},
       title : "Medical Billing",
       subtitle  :"Our medical billing experts ensure timely and accurate claim submission, efficient reimbursement, and revenue optimization for healthcare providers.",
       slug : "medical-billing" ,
@@ -89,7 +89,7 @@ const Homeservices = () => {
   
     {
       id : 5,
-      cover_img : {url : "./image/services/medical-virtual-assistant.png"},
+      cover_img : {url : "./image/services/Services-Medical-Virtual-Assistant.webp"},
       title : "Medical Virtual Assistant",
       subtitle  :"Experience the incredible benefits of superior administrative support, accurate appointment scheduling, and flawless documentation, to streamline your practice.",
       slug : 'medical-virtual-assistant' ,
@@ -98,7 +98,7 @@ const Homeservices = () => {
   
     {
       id : 6,
-      cover_img : {url : "./image/services/physician Billing.png"},
+      cover_img : {url : "./image/services/Services-Physician-Billing-Header.webp"},
       title : "Physician Billing",
       subtitle  :"Our experts are trained to handle the complexities of billing, coding, and claims management, ensuring accurate reimbursement for physicians.",
       slug : "physician-billing" ,
@@ -106,7 +106,7 @@ const Homeservices = () => {
     },
     {
       id : 7,
-      cover_img :  {url : "./image/services/hme-billing.png"},
+      cover_img :  {url : "./image/services/Services-HME-Billing.webp"},
       title : "HME Billing",
       subtitle  :"Our team handles coding, claims, and collections with precision to enhance operational efficiency and financial outcomes for healthcare providers.",
       slug : "hme-billing" ,
@@ -114,7 +114,7 @@ const Homeservices = () => {
     },
     {
       id : 8,
-      cover_img :  {url : "./image/services/dme-billing.png"}, 
+      cover_img :  {url : "./image/services/Services-DME-Billing.webp"}, 
       title : "DME Billing",
       subtitle  :"Our experts ensure accurate and prompt billing for durable medical equipment, optimizing reimbursement and compliance with billing regulations.",
       slug : "dme-billing" ,
@@ -175,7 +175,7 @@ const Homeservices = () => {
 
             return (
              
-              <div key={service.id} className={colClass}>
+              <div key={service.id} className={colClass}  onClick={()=>navigate(`/services/${service.slug}`)}>
                 <div className={containerClass}>
                   <div className="card position-relative">
                     <div className="image_box_main">

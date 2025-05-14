@@ -175,9 +175,12 @@ const Servicemid = () => {
   // };
 
   const currentIndex = servicesList.findIndex((s) => s.slug === slug);
-  const prevService = currentIndex > 0 ? servicesList[currentIndex - 1] : null;
+  // const prevService = currentIndex > 0 ? servicesList[currentIndex - 1] : null;
+  // const nextService =
+  //   currentIndex < servicesList.length - 1 ? servicesList[currentIndex + 1] : null;
+    const prevService = currentIndex > 0 ? servicesList[currentIndex - 1] : servicesList[servicesList.length - 1];
   const nextService =
-    currentIndex < servicesList.length - 1 ? servicesList[currentIndex + 1] : null;
+    currentIndex < servicesList.length - 1 ? servicesList[currentIndex + 1] : servicesList[0];
 
   return (
     <div className="container  service_box_deail only_service_detail">
@@ -284,17 +287,20 @@ const Servicemid = () => {
                         </li>
                         )
                       })}
-                      <p className="next_line_text">
-                        {dataToshow?.benifitsPoint[0]?.paraTwo}
-                      </p>
+                     
 
 
                     </ul>
                   </div>
-                  <div className="col-lg-5 h-100">
+                  <div className="col-lg-5">
                     <div className="image_inPara_box h-100">
                       <img src={dataToshow?.benifitsPoint[0]?.img} className="h-100 w-100" alt="" />
                     </div>
+                  </div>
+                  <div className="col-12">
+                     <p className="next_line_text">
+                        {dataToshow?.benifitsPoint[0]?.paraTwo}
+                      </p>
                   </div>
                 </div>
               </div>

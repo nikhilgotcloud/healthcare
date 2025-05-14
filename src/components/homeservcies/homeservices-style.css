@@ -451,11 +451,11 @@ line {
 }
 
 .service-card-container.service_cutPiece_bottom .card__icon.new_btn_animation i {
-  animation : goDown45 .8s linear;
+  animation : goDown45 .4s linear;
   color: #000 !important;
 
 }
 .service-card-container.service_cutPiece_bottom .card:hover .card__icon.new_btn_animation i {
-  animation: goUp45 .8s linear;
+  animation: goUp45 .4s linear;
   color: #fff !important;
 }

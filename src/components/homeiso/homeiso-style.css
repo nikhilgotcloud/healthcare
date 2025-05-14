@@ -6,7 +6,7 @@
 }
 
   .section-container .content-container {
-    padding-top: 50px;
+    /* padding-top: 50px; */
   }
   .section-container .content-container .about-us-butn {
     font-size: 14px !important;
@@ -190,4 +190,10 @@
   .home_service_section .services-list li {
     line-height: 22px !important;
   }
+}
+.home_service_section .healthcare-section .content-container.h-100 {
+  padding-top: 0;
+}
+.home_service_section .healthcare-section .row {
+  align-items: center;
 }
